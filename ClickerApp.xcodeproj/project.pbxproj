@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		838298FF1C8F7EFB00AC17ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */; };
+		838299011C8F7EFB00AC17ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838299001C8F7EFB00AC17ED /* ViewController.swift */; };
+		838299041C8F7EFB00AC17ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838299021C8F7EFB00AC17ED /* Main.storyboard */; };
+		838299061C8F7EFB00AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838299051C8F7EFB00AC17ED /* Assets.xcassets */; };
+		838299091C8F7EFB00AC17ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838299071C8F7EFB00AC17ED /* LaunchScreen.storyboard */; };
+		838299141C8F7EFC00AC17ED /* ClickerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838299131C8F7EFC00AC17ED /* ClickerAppTests.swift */; };
+		8382991F1C8F7EFC00AC17ED /* ClickerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382991E1C8F7EFC00AC17ED /* ClickerAppUITests.swift */; };
+		838299241C8F7EFC00AC17ED /* ClickerApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 838299231C8F7EFC00AC17ED /* ClickerApp WatchKit App.app */; };
+		8382992A1C8F7EFC00AC17ED /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838299281C8F7EFC00AC17ED /* Interface.storyboard */; };
+		8382992C1C8F7EFC00AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8382992B1C8F7EFC00AC17ED /* Assets.xcassets */; };
+		838299331C8F7EFC00AC17ED /* ClickerApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 838299321C8F7EFC00AC17ED /* ClickerApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8382993A1C8F7EFC00AC17ED /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838299391C8F7EFC00AC17ED /* InterfaceController.swift */; };
+		8382993C1C8F7EFC00AC17ED /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382993B1C8F7EFC00AC17ED /* ExtensionDelegate.swift */; };
+		8382993E1C8F7EFC00AC17ED /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382993D1C8F7EFC00AC17ED /* NotificationController.swift */; };
+		838299401C8F7EFC00AC17ED /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382993F1C8F7EFC00AC17ED /* GlanceController.swift */; };
+		838299421C8F7EFC00AC17ED /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838299411C8F7EFC00AC17ED /* ComplicationController.swift */; };
+		838299441C8F7EFC00AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838299431C8F7EFC00AC17ED /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		838299101C8F7EFC00AC17ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 838298F31C8F7EFB00AC17ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 838298FA1C8F7EFB00AC17ED;
+			remoteInfo = ClickerApp;
+		};
+		8382991B1C8F7EFC00AC17ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 838298F31C8F7EFB00AC17ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 838298FA1C8F7EFB00AC17ED;
+			remoteInfo = ClickerApp;
+		};
+		838299251C8F7EFC00AC17ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 838298F31C8F7EFB00AC17ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 838299221C8F7EFC00AC17ED;
+			remoteInfo = "ClickerApp WatchKit App";
+		};
+		838299341C8F7EFC00AC17ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 838298F31C8F7EFB00AC17ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 838299311C8F7EFC00AC17ED;
+			remoteInfo = "ClickerApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8382994B1C8F7EFC00AC17ED /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				838299331C8F7EFC00AC17ED /* ClickerApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8382994F1C8F7EFC00AC17ED /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				838299241C8F7EFC00AC17ED /* ClickerApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		838298FB1C8F7EFB00AC17ED /* ClickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		838299001C8F7EFB00AC17ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		838299031C8F7EFB00AC17ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		838299051C8F7EFB00AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		838299081C8F7EFB00AC17ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8382990A1C8F7EFB00AC17ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8382990F1C8F7EFC00AC17ED /* ClickerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		838299131C8F7EFC00AC17ED /* ClickerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerAppTests.swift; sourceTree = "<group>"; };
+		838299151C8F7EFC00AC17ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8382991A1C8F7EFC00AC17ED /* ClickerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8382991E1C8F7EFC00AC17ED /* ClickerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerAppUITests.swift; sourceTree = "<group>"; };
+		838299201C8F7EFC00AC17ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838299231C8F7EFC00AC17ED /* ClickerApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ClickerApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		838299291C8F7EFC00AC17ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8382992B1C8F7EFC00AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8382992D1C8F7EFC00AC17ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838299321C8F7EFC00AC17ED /* ClickerApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ClickerApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		838299381C8F7EFC00AC17ED /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		838299391C8F7EFC00AC17ED /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8382993B1C8F7EFC00AC17ED /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8382993D1C8F7EFC00AC17ED /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8382993F1C8F7EFC00AC17ED /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		838299411C8F7EFC00AC17ED /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		838299431C8F7EFC00AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		838299451C8F7EFC00AC17ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		838298F81C8F7EFB00AC17ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8382990C1C8F7EFC00AC17ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		838299171C8F7EFC00AC17ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8382992F1C8F7EFC00AC17ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		838298F21C8F7EFB00AC17ED = {
+			isa = PBXGroup;
+			children = (
+				838298FD1C8F7EFB00AC17ED /* ClickerApp */,
+				838299121C8F7EFC00AC17ED /* ClickerAppTests */,
+				8382991D1C8F7EFC00AC17ED /* ClickerAppUITests */,
+				838299271C8F7EFC00AC17ED /* ClickerApp WatchKit App */,
+				838299361C8F7EFC00AC17ED /* ClickerApp WatchKit Extension */,
+				838298FC1C8F7EFB00AC17ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		838298FC1C8F7EFB00AC17ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				838298FB1C8F7EFB00AC17ED /* ClickerApp.app */,
+				8382990F1C8F7EFC00AC17ED /* ClickerAppTests.xctest */,
+				8382991A1C8F7EFC00AC17ED /* ClickerAppUITests.xctest */,
+				838299231C8F7EFC00AC17ED /* ClickerApp WatchKit App.app */,
+				838299321C8F7EFC00AC17ED /* ClickerApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		838298FD1C8F7EFB00AC17ED /* ClickerApp */ = {
+			isa = PBXGroup;
+			children = (
+				838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */,
+				838299001C8F7EFB00AC17ED /* ViewController.swift */,
+				838299021C8F7EFB00AC17ED /* Main.storyboard */,
+				838299051C8F7EFB00AC17ED /* Assets.xcassets */,
+				838299071C8F7EFB00AC17ED /* LaunchScreen.storyboard */,
+				8382990A1C8F7EFB00AC17ED /* Info.plist */,
+			);
+			path = ClickerApp;
+			sourceTree = "<group>";
+		};
+		838299121C8F7EFC00AC17ED /* ClickerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				838299131C8F7EFC00AC17ED /* ClickerAppTests.swift */,
+				838299151C8F7EFC00AC17ED /* Info.plist */,
+			);
+			path = ClickerAppTests;
+			sourceTree = "<group>";
+		};
+		8382991D1C8F7EFC00AC17ED /* ClickerAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8382991E1C8F7EFC00AC17ED /* ClickerAppUITests.swift */,
+				838299201C8F7EFC00AC17ED /* Info.plist */,
+			);
+			path = ClickerAppUITests;
+			sourceTree = "<group>";
+		};
+		838299271C8F7EFC00AC17ED /* ClickerApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				838299281C8F7EFC00AC17ED /* Interface.storyboard */,
+				8382992B1C8F7EFC00AC17ED /* Assets.xcassets */,
+				8382992D1C8F7EFC00AC17ED /* Info.plist */,
+			);
+			path = "ClickerApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		838299361C8F7EFC00AC17ED /* ClickerApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				838299391C8F7EFC00AC17ED /* InterfaceController.swift */,
+				8382993B1C8F7EFC00AC17ED /* ExtensionDelegate.swift */,
+				8382993D1C8F7EFC00AC17ED /* NotificationController.swift */,
+				8382993F1C8F7EFC00AC17ED /* GlanceController.swift */,
+				838299411C8F7EFC00AC17ED /* ComplicationController.swift */,
+				838299431C8F7EFC00AC17ED /* Assets.xcassets */,
+				838299451C8F7EFC00AC17ED /* Info.plist */,
+				838299371C8F7EFC00AC17ED /* Supporting Files */,
+			);
+			path = "ClickerApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		838299371C8F7EFC00AC17ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				838299381C8F7EFC00AC17ED /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		838298FA1C8F7EFB00AC17ED /* ClickerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 838299501C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerApp" */;
+			buildPhases = (
+				838298F71C8F7EFB00AC17ED /* Sources */,
+				838298F81C8F7EFB00AC17ED /* Frameworks */,
+				838298F91C8F7EFB00AC17ED /* Resources */,
+				8382994F1C8F7EFC00AC17ED /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				838299261C8F7EFC00AC17ED /* PBXTargetDependency */,
+			);
+			name = ClickerApp;
+			productName = ClickerApp;
+			productReference = 838298FB1C8F7EFB00AC17ED /* ClickerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8382990E1C8F7EFC00AC17ED /* ClickerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 838299531C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerAppTests" */;
+			buildPhases = (
+				8382990B1C8F7EFC00AC17ED /* Sources */,
+				8382990C1C8F7EFC00AC17ED /* Frameworks */,
+				8382990D1C8F7EFC00AC17ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				838299111C8F7EFC00AC17ED /* PBXTargetDependency */,
+			);
+			name = ClickerAppTests;
+			productName = ClickerAppTests;
+			productReference = 8382990F1C8F7EFC00AC17ED /* ClickerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		838299191C8F7EFC00AC17ED /* ClickerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 838299561C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerAppUITests" */;
+			buildPhases = (
+				838299161C8F7EFC00AC17ED /* Sources */,
+				838299171C8F7EFC00AC17ED /* Frameworks */,
+				838299181C8F7EFC00AC17ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8382991C1C8F7EFC00AC17ED /* PBXTargetDependency */,
+			);
+			name = ClickerAppUITests;
+			productName = ClickerAppUITests;
+			productReference = 8382991A1C8F7EFC00AC17ED /* ClickerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		838299221C8F7EFC00AC17ED /* ClickerApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8382994C1C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerApp WatchKit App" */;
+			buildPhases = (
+				838299211C8F7EFC00AC17ED /* Resources */,
+				8382994B1C8F7EFC00AC17ED /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				838299351C8F7EFC00AC17ED /* PBXTargetDependency */,
+			);
+			name = "ClickerApp WatchKit App";
+			productName = "ClickerApp WatchKit App";
+			productReference = 838299231C8F7EFC00AC17ED /* ClickerApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		838299311C8F7EFC00AC17ED /* ClickerApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 838299481C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerApp WatchKit Extension" */;
+			buildPhases = (
+				8382992E1C8F7EFC00AC17ED /* Sources */,
+				8382992F1C8F7EFC00AC17ED /* Frameworks */,
+				838299301C8F7EFC00AC17ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ClickerApp WatchKit Extension";
+			productName = "ClickerApp WatchKit Extension";
+			productReference = 838299321C8F7EFC00AC17ED /* ClickerApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		838298F31C8F7EFB00AC17ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = greenpixels;
+				TargetAttributes = {
+					838298FA1C8F7EFB00AC17ED = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					8382990E1C8F7EFC00AC17ED = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 838298FA1C8F7EFB00AC17ED;
+					};
+					838299191C8F7EFC00AC17ED = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 838298FA1C8F7EFB00AC17ED;
+					};
+					838299221C8F7EFC00AC17ED = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					838299311C8F7EFC00AC17ED = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 838298F61C8F7EFB00AC17ED /* Build configuration list for PBXProject "ClickerApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 838298F21C8F7EFB00AC17ED;
+			productRefGroup = 838298FC1C8F7EFB00AC17ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				838298FA1C8F7EFB00AC17ED /* ClickerApp */,
+				8382990E1C8F7EFC00AC17ED /* ClickerAppTests */,
+				838299191C8F7EFC00AC17ED /* ClickerAppUITests */,
+				838299221C8F7EFC00AC17ED /* ClickerApp WatchKit App */,
+				838299311C8F7EFC00AC17ED /* ClickerApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		838298F91C8F7EFB00AC17ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838299091C8F7EFB00AC17ED /* LaunchScreen.storyboard in Resources */,
+				838299061C8F7EFB00AC17ED /* Assets.xcassets in Resources */,
+				838299041C8F7EFB00AC17ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8382990D1C8F7EFC00AC17ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		838299181C8F7EFC00AC17ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		838299211C8F7EFC00AC17ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8382992C1C8F7EFC00AC17ED /* Assets.xcassets in Resources */,
+				8382992A1C8F7EFC00AC17ED /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		838299301C8F7EFC00AC17ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838299441C8F7EFC00AC17ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		838298F71C8F7EFB00AC17ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838299011C8F7EFB00AC17ED /* ViewController.swift in Sources */,
+				838298FF1C8F7EFB00AC17ED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8382990B1C8F7EFC00AC17ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838299141C8F7EFC00AC17ED /* ClickerAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		838299161C8F7EFC00AC17ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8382991F1C8F7EFC00AC17ED /* ClickerAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8382992E1C8F7EFC00AC17ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8382993E1C8F7EFC00AC17ED /* NotificationController.swift in Sources */,
+				8382993C1C8F7EFC00AC17ED /* ExtensionDelegate.swift in Sources */,
+				838299421C8F7EFC00AC17ED /* ComplicationController.swift in Sources */,
+				8382993A1C8F7EFC00AC17ED /* InterfaceController.swift in Sources */,
+				838299401C8F7EFC00AC17ED /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		838299111C8F7EFC00AC17ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 838298FA1C8F7EFB00AC17ED /* ClickerApp */;
+			targetProxy = 838299101C8F7EFC00AC17ED /* PBXContainerItemProxy */;
+		};
+		8382991C1C8F7EFC00AC17ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 838298FA1C8F7EFB00AC17ED /* ClickerApp */;
+			targetProxy = 8382991B1C8F7EFC00AC17ED /* PBXContainerItemProxy */;
+		};
+		838299261C8F7EFC00AC17ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 838299221C8F7EFC00AC17ED /* ClickerApp WatchKit App */;
+			targetProxy = 838299251C8F7EFC00AC17ED /* PBXContainerItemProxy */;
+		};
+		838299351C8F7EFC00AC17ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 838299311C8F7EFC00AC17ED /* ClickerApp WatchKit Extension */;
+			targetProxy = 838299341C8F7EFC00AC17ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		838299021C8F7EFB00AC17ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				838299031C8F7EFB00AC17ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		838299071C8F7EFB00AC17ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				838299081C8F7EFB00AC17ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		838299281C8F7EFC00AC17ED /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				838299291C8F7EFC00AC17ED /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		838299461C8F7EFC00AC17ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		838299471C8F7EFC00AC17ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		838299491C8F7EFC00AC17ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "ClickerApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		8382994A1C8F7EFC00AC17ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "ClickerApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		8382994D1C8F7EFC00AC17ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ClickerApp_WatchKit_Extension;
+				INFOPLIST_FILE = "ClickerApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		8382994E1C8F7EFC00AC17ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ClickerApp_WatchKit_Extension;
+				INFOPLIST_FILE = "ClickerApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		838299511C8F7EFC00AC17ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ClickerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		838299521C8F7EFC00AC17ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ClickerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		838299541C8F7EFC00AC17ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ClickerAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClickerApp.app/ClickerApp";
+			};
+			name = Debug;
+		};
+		838299551C8F7EFC00AC17ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ClickerAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClickerApp.app/ClickerApp";
+			};
+			name = Release;
+		};
+		838299571C8F7EFC00AC17ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ClickerAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ClickerApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		838299581C8F7EFC00AC17ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ClickerAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ClickerApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		838298F61C8F7EFB00AC17ED /* Build configuration list for PBXProject "ClickerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838299461C8F7EFC00AC17ED /* Debug */,
+				838299471C8F7EFC00AC17ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		838299481C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838299491C8F7EFC00AC17ED /* Debug */,
+				8382994A1C8F7EFC00AC17ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8382994C1C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8382994D1C8F7EFC00AC17ED /* Debug */,
+				8382994E1C8F7EFC00AC17ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		838299501C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838299511C8F7EFC00AC17ED /* Debug */,
+				838299521C8F7EFC00AC17ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		838299531C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838299541C8F7EFC00AC17ED /* Debug */,
+				838299551C8F7EFC00AC17ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		838299561C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838299571C8F7EFC00AC17ED /* Debug */,
+				838299581C8F7EFC00AC17ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 838298F31C8F7EFB00AC17ED /* Project object */;
+}
