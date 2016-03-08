@@ -11,6 +11,12 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+    
+    @IBOutlet var clickerCountLabel: WKInterfaceLabel!
+    
+    
+    @IBOutlet var clickerCountButton: WKInterfaceButton!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -28,4 +34,9 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func clickedAddTouched() {
+        
+        self.clickerCountLabel.setText("0")
+        
+    }
 }
