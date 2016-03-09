@@ -11,9 +11,9 @@ import Foundation
 /**
  *  Basic class to handle the clicker count values
  */
-public struct ClickerDataStorage {
+public class ClickerDataStorage {
     
-    let defaults = NSUserDefaults.init(suiteName: "group.com.greenpixels.clicker")
+    let defaults = NSUserDefaults.standardUserDefaults()
     
     public init(){}
     
@@ -32,9 +32,7 @@ public struct ClickerDataStorage {
     public func getClickerCount() -> Int{
         
         var count = 0
-        if let clickerCount = defaults?.integerForKey(StorageKeys.clickerCountKey) {
-            count = clickerCount
-        }
+        count = defaults.integerForKey(StorageKeys.clickerCountKey)
         return count
     }
     
@@ -45,9 +43,9 @@ public struct ClickerDataStorage {
      */
     public func setClickerCount(count : Int){
         
-        defaults?.setValue(count, forKey: StorageKeys.clickerCountKey)
+        defaults.setValue(count, forKey: StorageKeys.clickerCountKey)
         
-        defaults?.synchronize()
+        defaults.synchronize()
         
     }
     
@@ -79,7 +77,7 @@ public struct ClickerDataStorage {
      */
     public func resetCount()
     {
-        defaults?.removeObjectForKey(StorageKeys.clickerCountKey)
+        defaults.removeObjectForKey(StorageKeys.clickerCountKey)
         setClickerCount(0)
     }
     

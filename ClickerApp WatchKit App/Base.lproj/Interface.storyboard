@@ -11,7 +11,7 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ClickerApp_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="center" text="999" textAlignment="center" id="z19-0H-xiV">
-                            <color key="textColor" red="1" green="0.5754749468" blue="0.076872545910000006" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="1" green="0.57647058823529407" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="boldSystem" pointSize="74"/>
                             <variation key="device=watch38mm" minimumScaleFactor="0.80000000000000004"/>
                         </label>

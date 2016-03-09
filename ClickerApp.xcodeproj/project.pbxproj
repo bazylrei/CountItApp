@@ -90,6 +90,7 @@
 		838287631C8FEA9400F5D92D /* ClickerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClickerApp.entitlements; sourceTree = "<group>"; };
 		838287641C8FEAD600F5D92D /* ClickerApp WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ClickerApp WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		838287671C8FF1CB00F5D92D /* ClickerDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerDataStorage.swift; sourceTree = "<group>"; };
+		8382876A1C90004100F5D92D /* ClickerApp WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ClickerApp WatchKit App.entitlements"; sourceTree = "<group>"; };
 		838298FB1C8F7EFB00AC17ED /* ClickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838299001C8F7EFB00AC17ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +220,7 @@
 		838299271C8F7EFC00AC17ED /* ClickerApp WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				8382876A1C90004100F5D92D /* ClickerApp WatchKit App.entitlements */,
 				838299281C8F7EFC00AC17ED /* Interface.storyboard */,
 				8382992D1C8F7EFC00AC17ED /* Info.plist */,
 				8382995B1C8F8E1100AC17ED /* Assets.xcassets */,
@@ -354,10 +356,10 @@
 				TargetAttributes = {
 					838298FA1C8F7EFB00AC17ED = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 7JMURSKQQ8;
+						DevelopmentTeam = WEENFV7RVZ;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -371,13 +373,19 @@
 					};
 					838299221C8F7EFC00AC17ED = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = WEENFV7RVZ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					838299311C8F7EFC00AC17ED = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 7JMURSKQQ8;
+						DevelopmentTeam = WEENFV7RVZ;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -631,12 +639,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "ClickerApp WatchKit Extension/ClickerApp WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ClickerApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -650,12 +657,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "ClickerApp WatchKit Extension/ClickerApp WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ClickerApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -669,11 +675,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = WatchAppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = ClickerApp_WatchKit_Extension;
 				INFOPLIST_FILE = "ClickerApp WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -685,11 +694,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = WatchAppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = ClickerApp_WatchKit_Extension;
 				INFOPLIST_FILE = "ClickerApp WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -701,12 +713,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ClickerApp/ClickerApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ClickerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -716,12 +727,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ClickerApp/ClickerApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ClickerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
