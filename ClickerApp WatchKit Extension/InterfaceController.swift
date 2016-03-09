@@ -17,9 +17,13 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBOutlet var clickerCountButton: WKInterfaceButton!
+    
+    let clickerStorage : ClickerDataStorage = ClickerDataStorage()
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        
+        self.clickerCountLabel.setText(String(clickerStorage.getClickerCount()))
         
         // Configure interface objects here.
     }
@@ -36,7 +40,10 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func clickedAddTouched() {
         
-        self.clickerCountLabel.setText("0")
+        clickerStorage.incrementCount()
+        
+        self.clickerCountLabel.setText(String(clickerStorage.getClickerCount()))
+        
         
     }
 }
