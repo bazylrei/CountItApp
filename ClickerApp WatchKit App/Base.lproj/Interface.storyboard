@@ -15,7 +15,7 @@
                             <fontDescription key="font" type="boldSystem" pointSize="74"/>
                             <variation key="device=watch38mm" minimumScaleFactor="0.80000000000000004"/>
                         </label>
-                        <button alignment="center" backgroundImage="addIcon" id="ODb-ZR-3f4">
+                        <button alignment="center" backgroundImage="AddIcon" id="ODb-ZR-3f4">
                             <connections>
                                 <action selector="clickedAddTouched" destination="AgC-eL-Hgc" id="1zk-Em-ahb"/>
                             </connections>

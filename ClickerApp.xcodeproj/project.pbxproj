@@ -85,6 +85,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		838287631C8FEA9400F5D92D /* ClickerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClickerApp.entitlements; sourceTree = "<group>"; };
+		838287641C8FEAD600F5D92D /* ClickerApp WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ClickerApp WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		838298FB1C8F7EFB00AC17ED /* ClickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838299001C8F7EFB00AC17ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		838298FD1C8F7EFB00AC17ED /* ClickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				838287631C8FEA9400F5D92D /* ClickerApp.entitlements */,
 				838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */,
 				838299001C8F7EFB00AC17ED /* ViewController.swift */,
 				838299021C8F7EFB00AC17ED /* Main.storyboard */,
@@ -213,6 +216,7 @@
 		838299361C8F7EFC00AC17ED /* ClickerApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				838287641C8FEAD600F5D92D /* ClickerApp WatchKit Extension.entitlements */,
 				838299391C8F7EFC00AC17ED /* InterfaceController.swift */,
 				8382993B1C8F7EFC00AC17ED /* ExtensionDelegate.swift */,
 				8382993D1C8F7EFC00AC17ED /* NotificationController.swift */,
@@ -337,6 +341,12 @@
 				TargetAttributes = {
 					838298FA1C8F7EFB00AC17ED = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7JMURSKQQ8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8382990E1C8F7EFC00AC17ED = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -351,6 +361,12 @@
 					};
 					838299311C8F7EFC00AC17ED = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7JMURSKQQ8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -600,10 +616,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "ClickerApp WatchKit Extension/ClickerApp WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ClickerApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -615,10 +635,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "ClickerApp WatchKit Extension/ClickerApp WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ClickerApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -662,10 +686,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClickerApp/ClickerApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ClickerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -673,10 +701,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClickerApp/ClickerApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ClickerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.ClickerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -747,6 +779,7 @@
 				8382994A1C8F7EFC00AC17ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8382994C1C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerApp WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -755,6 +788,7 @@
 				8382994E1C8F7EFC00AC17ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		838299501C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerApp" */ = {
 			isa = XCConfigurationList;
@@ -763,6 +797,7 @@
 				838299521C8F7EFC00AC17ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		838299531C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerAppTests" */ = {
 			isa = XCConfigurationList;
@@ -771,6 +806,7 @@
 				838299551C8F7EFC00AC17ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		838299561C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -779,6 +815,7 @@
 				838299581C8F7EFC00AC17ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
