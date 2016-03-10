@@ -17,17 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Ef-lf-58C">
-                                <rect key="frame" x="177" y="223" width="247" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Ef-lf-58C">
+                                <rect key="frame" x="177" y="223" width="247" height="153.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EK8-v5-iaK">
-                                        <rect key="frame" x="0.0" y="1" width="247" height="96"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="95.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
                                         <color key="textColor" red="1" green="0.57647058819999997" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZW-qX-j6a">
-                                        <rect key="frame" x="0.0" y="106" width="247" height="22"/>
+                                        <rect key="frame" x="0.0" y="105" width="247" height="48"/>
                                         <state key="normal" image="AddIcon"/>
                                         <connections>
                                             <action selector="clickerIncrementTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuV-U4-MW5"/>
