@@ -110,9 +110,7 @@ public class Clicker: NSObject, NSCoding{
 }
 
 
-extension Clicker : Comparable{
-}
-
+extension Clicker : Comparable{}
 
 func == (lhs: Clicker, rhs: Clicker) -> Bool {
     return lhs.timeStamp === rhs.timeStamp || lhs.timeStamp.compare(rhs.timeStamp) == .OrderedSame
