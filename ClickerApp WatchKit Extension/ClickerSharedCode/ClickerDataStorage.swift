@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- *  Basic class to handle the clicker count values
+ *  NSUserDefault storage of the clicker instance
  */
 public class ClickerDataStorage {
     
