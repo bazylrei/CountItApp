@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var session: WCSession? {
         didSet {
             if let session = session {
-                session.delegate = self
+                //session.delegate = self
                 session.activateSession()
             }
         }
@@ -68,13 +68,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-extension AppDelegate: WCSessionDelegate {
-    
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
-        if let _ = message[WCSessionMessages.GetClickerMessage.rawValue] as? String {
-            replyHandler([WCSessionMessages.GetClickerResponse.rawValue: clickerDataStorage.getClicker().currentCount])
-        }
-    }
-    
-}
 

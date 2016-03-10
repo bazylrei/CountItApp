@@ -89,10 +89,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		838287631C8FEA9400F5D92D /* ClickerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClickerApp.entitlements; sourceTree = "<group>"; };
-		838287641C8FEAD600F5D92D /* ClickerApp WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ClickerApp WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		838287671C8FF1CB00F5D92D /* ClickerDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClickerDataStorage.swift; path = "ClickerApp WatchKit Extension/ClickerSharedCode/ClickerDataStorage.swift"; sourceTree = SOURCE_ROOT; };
-		8382876A1C90004100F5D92D /* ClickerApp WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ClickerApp WatchKit App.entitlements"; sourceTree = "<group>"; };
 		8382876C1C90CF3900F5D92D /* Clicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clicker.swift; sourceTree = "<group>"; };
 		838298FB1C8F7EFB00AC17ED /* ClickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -209,7 +206,6 @@
 		838298FD1C8F7EFB00AC17ED /* ClickerApp */ = {
 			isa = PBXGroup;
 			children = (
-				838287631C8FEA9400F5D92D /* ClickerApp.entitlements */,
 				838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */,
 				838299001C8F7EFB00AC17ED /* ViewController.swift */,
 				838299021C8F7EFB00AC17ED /* Main.storyboard */,
@@ -241,7 +237,6 @@
 		838299271C8F7EFC00AC17ED /* ClickerApp WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				8382876A1C90004100F5D92D /* ClickerApp WatchKit App.entitlements */,
 				838299281C8F7EFC00AC17ED /* Interface.storyboard */,
 				8382992D1C8F7EFC00AC17ED /* Info.plist */,
 				8382995B1C8F8E1100AC17ED /* Assets.xcassets */,
@@ -252,7 +247,6 @@
 		838299361C8F7EFC00AC17ED /* ClickerApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				838287641C8FEAD600F5D92D /* ClickerApp WatchKit Extension.entitlements */,
 				838299391C8F7EFC00AC17ED /* InterfaceController.swift */,
 				8382993B1C8F7EFC00AC17ED /* ExtensionDelegate.swift */,
 				8382993D1C8F7EFC00AC17ED /* NotificationController.swift */,
