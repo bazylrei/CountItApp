@@ -7,15 +7,40 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let clickerDataStorage: ClickerDataStorage = ClickerDataStorage()
 
     var window: UIWindow?
+    
+    var session: WCSession? {
+        didSet {
+            if let session = session {
+                session.delegate = self
+                session.activateSession()
+            }
+        }
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if WCSession.isSupported() {
+            session = WCSession.defaultSession()
+            
+//            //Swift
+//            do {
+//                let applicationDict:[String:AnyObject] = ["clickerCount":clickerDataStorage.getClicker().currentCount]
+//                try WCSession.defaultSession().updateApplicationContext(applicationDict)
+//            } catch {
+//                // Handle errors here
+//            }
+        }
+        
         return true
     }
 
@@ -41,6 +66,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+}
 
+extension AppDelegate: WCSessionDelegate {
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        if let _ = message[WCSessionMessages.GetClickerMessage.rawValue] as? String {
+            replyHandler([WCSessionMessages.GetClickerResponse.rawValue: clickerDataStorage.getClicker().currentCount])
+        }
+    }
+    
 }
 

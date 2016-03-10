@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 class ViewController: UIViewController {
 
@@ -14,12 +15,60 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var clickerButton: UIButton!
     
-    let clickerStorage: ClickerDataStorage = ClickerDataStorage()
+    let dataStorage = ClickerDataStorage()
+    
+    var clicker: Clicker = Clicker()
+    
+    var session: WCSession? {
+        didSet {
+            if let session = session {
+                session.delegate = self
+                session.activateSession()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.clickerCountLabel.text = String(clickerStorage.getClickerCount())
+        
+        if WCSession.isSupported() {
+            
+            session = WCSession.defaultSession()
+            
+            if let clickerDict = session?.receivedApplicationContext["clicker"] as? [String : AnyObject]{
+                
+                let clicker = Clicker(clickerDict: clickerDict)
+                
+                let clickerStored = dataStorage.getClicker()
+                
+                if clicker > clickerStored{
+                    
+                    self.clicker = clicker
+                }
+                else{
+                    self.clicker = clickerStored
+                }
+                
+            }
+            else
+            {
+                self.clicker = dataStorage.getClicker()
+            }
+            
+        }
+    
+            
+        setClickerCount()
+        
+        //Swift
+        do {
+            let applicationDict:[String:AnyObject] = ["clicker":clicker.toDictionary()]
+            try session?.updateApplicationContext(applicationDict)
+        } catch {
+            // Handle errors here
+        }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -30,11 +79,45 @@ class ViewController: UIViewController {
 
     @IBAction func clickerIncrementTouched(sender: AnyObject) {
         
-        clickerStorage.incrementCount()
+       clicker.incrementCount()
         
-        self.clickerCountLabel.text = String(clickerStorage.getClickerCount())
+       setClickerCount()
+        
+        //Swift
+        do {
+            let applicationDict:[String:AnyObject] = ["clicker":clicker.toDictionary()]
+            try session?.updateApplicationContext(applicationDict)
+        } catch {
+            // Handle errors here
+        }
+        
         
     }
+    
+    func setClickerCount()
+    {
+        self.clickerCountLabel.text = clicker.description
+        
+        dataStorage.saveClicker(clicker)
 
+    }
+
+}
+
+extension ViewController : WCSessionDelegate{
+    
+    // Receiving data
+    func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
+        
+        if let clickerDict = applicationContext["clicker"] as? [String:AnyObject]{
+            
+            self.clicker = Clicker(clickerDict: clickerDict)
+            
+            dispatch_async(dispatch_get_main_queue()) { [weak self] in
+               self?.setClickerCount()
+            }
+        }
+    }
+    
 }
 

@@ -20,20 +20,26 @@ public class ClickerDataStorage {
     /// Storage keys
     private enum StorageKeys{
         
-        static let clickerCountKey = "ClickerCount"
+        static let clicker = "clicker"
     }
     
-   
+    
     /**
      Gets the clicker current count
      
      - returns: <#return value description#>
      */
-    public func getClickerCount() -> Int{
+    public func getClicker() -> Clicker{
         
-        var count = 0
-        count = defaults.integerForKey(StorageKeys.clickerCountKey)
-        return count
+        var clicker = Clicker()
+        
+        if let clickerData = defaults.dataForKey(StorageKeys.clicker) {
+            
+            clicker = NSKeyedUnarchiver.unarchiveObjectWithData(clickerData) as! Clicker
+            
+        }
+        
+        return clicker
     }
     
     /**
@@ -41,45 +47,14 @@ public class ClickerDataStorage {
      
      - parameter count: <#count description#>
      */
-    public func setClickerCount(count : Int){
+    public func saveClicker(clicker : Clicker){
         
-        defaults.setValue(count, forKey: StorageKeys.clickerCountKey)
+        let clickerData = NSKeyedArchiver.archivedDataWithRootObject(clicker)
+        
+        defaults.setObject(clickerData, forKey: StorageKeys.clicker)
         
         defaults.synchronize()
         
     }
-    
-    
-    /**
-     Increment the count by one
-     */
-    public func incrementCount(){
-        
-        let currentCount = getClickerCount()
-        
-        setClickerCount(currentCount + 1)
-        
-    }
-    
-    /**
-     Decrement the count by one
-     */
-    public func decrementCount(){
-        
-        let currentCount = getClickerCount()
-        
-         setClickerCount(currentCount - 1)
-        
-    }
-    
-    /**
-     Reset the count
-     */
-    public func resetCount()
-    {
-        defaults.removeObjectForKey(StorageKeys.clickerCountKey)
-        setClickerCount(0)
-    }
-    
 }
 
