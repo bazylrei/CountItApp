@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
+		834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
+		834AC7D71C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
 		838287681C8FF1CB00F5D92D /* ClickerDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287671C8FF1CB00F5D92D /* ClickerDataStorage.swift */; };
 		8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382876C1C90CF3900F5D92D /* Clicker.swift */; };
 		8382876E1C90CFA800F5D92D /* Clicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382876C1C90CF3900F5D92D /* Clicker.swift */; };
@@ -92,6 +94,7 @@
 
 /* Begin PBXFileReference section */
 		834AC7D21C92278200524C20 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		834AC7D51C92517C00524C20 /* ClickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModel.swift; sourceTree = "<group>"; };
 		838287671C8FF1CB00F5D92D /* ClickerDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClickerDataStorage.swift; path = "ClickerApp WatchKit Extension/ClickerSharedCode/ClickerDataStorage.swift"; sourceTree = SOURCE_ROOT; };
 		8382876C1C90CF3900F5D92D /* Clicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clicker.swift; sourceTree = "<group>"; };
 		838298FB1C8F7EFB00AC17ED /* ClickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +163,7 @@
 				838287721C90DDB300F5D92D /* Data */,
 				8382876B1C90CF2F00F5D92D /* Model */,
 				834AC7D21C92278200524C20 /* WatchSessionManager.swift */,
+				834AC7D51C92517C00524C20 /* ClickerViewModel.swift */,
 			);
 			name = ClickerSharedCode;
 			path = "ClickerApp WatchKit Extension/ClickerSharedCode";
@@ -487,6 +491,7 @@
 				8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */,
 				838287681C8FF1CB00F5D92D /* ClickerDataStorage.swift in Sources */,
 				838298FF1C8F7EFB00AC17ED /* AppDelegate.swift in Sources */,
+				834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */,
 				834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +523,7 @@
 				8382993C1C8F7EFC00AC17ED /* ExtensionDelegate.swift in Sources */,
 				838299421C8F7EFC00AC17ED /* ComplicationController.swift in Sources */,
 				8382993A1C8F7EFC00AC17ED /* InterfaceController.swift in Sources */,
+				834AC7D71C92517C00524C20 /* ClickerViewModel.swift in Sources */,
 				838299401C8F7EFC00AC17ED /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

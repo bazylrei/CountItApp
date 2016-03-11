@@ -47,12 +47,9 @@ public class WatchSessionManager: NSObject{
             if WCSession.isSupported() {
                 
                 if let session = session{
-                
                     return session.receivedApplicationContext
-
                 }
             }
-            
             return nil
         }
     }

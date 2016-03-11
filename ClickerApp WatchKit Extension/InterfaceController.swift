@@ -28,7 +28,6 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
-    
     var session: WCSession? {
         
         didSet{
@@ -99,7 +98,6 @@ class InterfaceController: WKInterfaceController {
             } catch {
                 // Handle errors here
             }
-
 
         }
         
