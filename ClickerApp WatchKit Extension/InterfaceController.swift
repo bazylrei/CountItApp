@@ -24,11 +24,7 @@ class InterfaceController: WKInterfaceController {
     var clicker: Clicker?  = Clicker(){
         
         didSet{
-            
-            
-                setClickerLabel()
-            
-            
+            setClickerLabel()
         }
     }
     
@@ -50,52 +46,6 @@ class InterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
         
     }
-    
-    
-//    override func didAppear() {
-//        super.didAppear()
-//            
-//            if WCSession.isSupported() {
-//                
-//                session = WCSession.defaultSession()
-//                
-//                if let count = session?.applicationContext["clickerCount"] as? Int{
-//                    
-//                     let clicker = Clicker(currentCount: count)
-//                    
-//                     self.clicker = clicker
-//                    
-//                }
-//                
-//                
-//                
-//                
-//                
-//                
-//                //Swift
-//                do {
-//                    
-//                                   } catch {
-//                    // Handle errors here
-//                }
-//            
-////                session = WCSession.defaultSession()
-////        
-////                session!.sendMessage([WCSessionMessages.GetClickerMessage.rawValue: ""], replyHandler: { (response) -> Void in
-////                
-////                if let clickerCount = response[WCSessionMessages.GetClickerResponse.rawValue] as? Int{
-////                    
-////                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-////                        self.clicker = Clicker(currentCount: clickerCount)
-////                    })
-////                }
-////                }, errorHandler: { (error) -> Void in
-////                    
-////                    print(error)
-////            })
-//        }
-//        
-//    }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
