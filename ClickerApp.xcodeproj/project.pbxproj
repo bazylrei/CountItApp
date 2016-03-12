@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147F13CCE922F8320C51F5FE /* Pods_ClickerAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70225997BBAE3C3AA3FA6A91 /* Pods_ClickerAppUITests.framework */; };
+		4BDF55FE896B65BD82A16186 /* Pods_ClickerAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1887DDB0D450CAE2AE986BD /* Pods_ClickerAppTests.framework */; };
+		7578DF99E7EBB0D1FE3F1456 /* Pods_ClickerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A21CB43E118CC9D93B2B35E /* Pods_ClickerApp.framework */; };
 		834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
@@ -34,6 +37,7 @@
 		8382995D1C8F8E1100AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8382995B1C8F8E1100AC17ED /* Assets.xcassets */; };
 		8382995E1C8F8E1100AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8382995B1C8F8E1100AC17ED /* Assets.xcassets */; };
 		83F816621C9124BB00773DF3 /* ClickerDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287671C8FF1CB00F5D92D /* ClickerDataStorage.swift */; };
+		DD8C2ECD4282FCD5B1FEE5A1 /* Pods_ClickerApp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D40C74E2EDDF32A48E4A17B /* Pods_ClickerApp_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D40C74E2EDDF32A48E4A17B /* Pods_ClickerApp_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerApp_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		615F97C4DD7338597FC15904 /* Pods-ClickerApp WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerApp WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerApp WatchKit Extension/Pods-ClickerApp WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		70225997BBAE3C3AA3FA6A91 /* Pods_ClickerAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7879FED7BDAC453005D4BCD6 /* Pods-ClickerAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppUITests/Pods-ClickerAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C7BF5624236BBF6C4E062A7 /* Pods-ClickerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerApp/Pods-ClickerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		80590DBE5D6D0F651A854BB2 /* Pods-ClickerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppTests/Pods-ClickerAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		834AC7D21C92278200524C20 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		834AC7D51C92517C00524C20 /* ClickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModel.swift; sourceTree = "<group>"; };
 		838287671C8FF1CB00F5D92D /* ClickerDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClickerDataStorage.swift; path = "ClickerApp WatchKit Extension/ClickerSharedCode/ClickerDataStorage.swift"; sourceTree = SOURCE_ROOT; };
@@ -123,6 +133,12 @@
 		838299431C8F7EFC00AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		838299451C8F7EFC00AC17ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8382995B1C8F8E1100AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A21CB43E118CC9D93B2B35E /* Pods_ClickerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD199217418770747E15F955 /* Pods-ClickerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppUITests/Pods-ClickerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1887DDB0D450CAE2AE986BD /* Pods_ClickerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9DC749CE939B06F7B63EBD /* Pods-ClickerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppTests/Pods-ClickerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F061168D4EC6864A138F4E6F /* Pods-ClickerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerApp/Pods-ClickerApp.release.xcconfig"; sourceTree = "<group>"; };
+		FA07DED6474B86E4DFC33C5D /* Pods-ClickerApp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerApp WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerApp WatchKit Extension/Pods-ClickerApp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7578DF99E7EBB0D1FE3F1456 /* Pods_ClickerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDF55FE896B65BD82A16186 /* Pods_ClickerAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,10 +162,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147F13CCE922F8320C51F5FE /* Pods_ClickerAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8382992F1C8F7EFC00AC17ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8C2ECD4282FCD5B1FEE5A1 /* Pods_ClickerApp_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB44A800531998CFBDB8F50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,6 +223,8 @@
 				838299271C8F7EFC00AC17ED /* ClickerApp WatchKit App */,
 				838299361C8F7EFC00AC17ED /* ClickerApp WatchKit Extension */,
 				838298FC1C8F7EFB00AC17ED /* Products */,
+				FC0881BB22A0D169822F105C /* Pods */,
+				E0C466A05FA768D4FAFBD1C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,6 +304,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E0C466A05FA768D4FAFBD1C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A21CB43E118CC9D93B2B35E /* Pods_ClickerApp.framework */,
+				3D40C74E2EDDF32A48E4A17B /* Pods_ClickerApp_WatchKit_Extension.framework */,
+				D1887DDB0D450CAE2AE986BD /* Pods_ClickerAppTests.framework */,
+				70225997BBAE3C3AA3FA6A91 /* Pods_ClickerAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC0881BB22A0D169822F105C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C7BF5624236BBF6C4E062A7 /* Pods-ClickerApp.debug.xcconfig */,
+				F061168D4EC6864A138F4E6F /* Pods-ClickerApp.release.xcconfig */,
+				615F97C4DD7338597FC15904 /* Pods-ClickerApp WatchKit Extension.debug.xcconfig */,
+				FA07DED6474B86E4DFC33C5D /* Pods-ClickerApp WatchKit Extension.release.xcconfig */,
+				DF9DC749CE939B06F7B63EBD /* Pods-ClickerAppTests.debug.xcconfig */,
+				80590DBE5D6D0F651A854BB2 /* Pods-ClickerAppTests.release.xcconfig */,
+				7879FED7BDAC453005D4BCD6 /* Pods-ClickerAppUITests.debug.xcconfig */,
+				BD199217418770747E15F955 /* Pods-ClickerAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,10 +337,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 838299501C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerApp" */;
 			buildPhases = (
+				8B0B2DBE45A68EAA84C27CB0 /* 📦 Check Pods Manifest.lock */,
 				838298F71C8F7EFB00AC17ED /* Sources */,
 				838298F81C8F7EFB00AC17ED /* Frameworks */,
 				838298F91C8F7EFB00AC17ED /* Resources */,
 				8382994F1C8F7EFC00AC17ED /* Embed Watch Content */,
+				B04EE3421ABD2EC7235C6AC9 /* 📦 Embed Pods Frameworks */,
+				AF1547A053AA3178CC8FF4BE /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,9 +359,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 838299531C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerAppTests" */;
 			buildPhases = (
+				C45F93B099AC641E210A76F3 /* 📦 Check Pods Manifest.lock */,
 				8382990B1C8F7EFC00AC17ED /* Sources */,
 				8382990C1C8F7EFC00AC17ED /* Frameworks */,
 				8382990D1C8F7EFC00AC17ED /* Resources */,
+				6F349940E6C27C57DAF38EC9 /* 📦 Embed Pods Frameworks */,
+				00D0947520416BB7BCA11890 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,9 +380,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 838299561C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerAppUITests" */;
 			buildPhases = (
+				A755DEE3164F138704B7B84F /* 📦 Check Pods Manifest.lock */,
 				838299161C8F7EFC00AC17ED /* Sources */,
 				838299171C8F7EFC00AC17ED /* Frameworks */,
 				838299181C8F7EFC00AC17ED /* Resources */,
+				D1CD55DA954B7DF7D6DAE6B4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,6 +402,7 @@
 			buildPhases = (
 				838299211C8F7EFC00AC17ED /* Resources */,
 				8382994B1C8F7EFC00AC17ED /* Embed App Extensions */,
+				EDB44A800531998CFBDB8F50 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,9 +418,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 838299481C8F7EFC00AC17ED /* Build configuration list for PBXNativeTarget "ClickerApp WatchKit Extension" */;
 			buildPhases = (
+				19C03E6AF1EB0E2D1C1853A9 /* 📦 Check Pods Manifest.lock */,
 				8382992E1C8F7EFC00AC17ED /* Sources */,
 				8382992F1C8F7EFC00AC17ED /* Frameworks */,
 				838299301C8F7EFC00AC17ED /* Resources */,
+				E2275AFAAEFF63D26E0F7C29 /* 📦 Embed Pods Frameworks */,
+				AB8ACFDB7A81E8AA250959F0 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -481,6 +548,174 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00D0947520416BB7BCA11890 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickerAppTests/Pods-ClickerAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19C03E6AF1EB0E2D1C1853A9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F349940E6C27C57DAF38EC9 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickerAppTests/Pods-ClickerAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B0B2DBE45A68EAA84C27CB0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A755DEE3164F138704B7B84F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB8ACFDB7A81E8AA250959F0 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickerApp WatchKit Extension/Pods-ClickerApp WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF1547A053AA3178CC8FF4BE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickerApp/Pods-ClickerApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B04EE3421ABD2EC7235C6AC9 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickerApp/Pods-ClickerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C45F93B099AC641E210A76F3 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1CD55DA954B7DF7D6DAE6B4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickerAppUITests/Pods-ClickerAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2275AFAAEFF63D26E0F7C29 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickerApp WatchKit Extension/Pods-ClickerApp WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		838298F71C8F7EFB00AC17ED /* Sources */ = {
@@ -666,6 +901,7 @@
 		};
 		838299491C8F7EFC00AC17ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615F97C4DD7338597FC15904 /* Pods-ClickerApp WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -684,6 +920,7 @@
 		};
 		8382994A1C8F7EFC00AC17ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA07DED6474B86E4DFC33C5D /* Pods-ClickerApp WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -740,6 +977,7 @@
 		};
 		838299511C8F7EFC00AC17ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C7BF5624236BBF6C4E062A7 /* Pods-ClickerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -754,6 +992,7 @@
 		};
 		838299521C8F7EFC00AC17ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F061168D4EC6864A138F4E6F /* Pods-ClickerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -768,6 +1007,7 @@
 		};
 		838299541C8F7EFC00AC17ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9DC749CE939B06F7B63EBD /* Pods-ClickerAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ClickerAppTests/Info.plist;
@@ -780,6 +1020,7 @@
 		};
 		838299551C8F7EFC00AC17ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80590DBE5D6D0F651A854BB2 /* Pods-ClickerAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ClickerAppTests/Info.plist;
@@ -792,6 +1033,7 @@
 		};
 		838299571C8F7EFC00AC17ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7879FED7BDAC453005D4BCD6 /* Pods-ClickerAppUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ClickerAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -804,6 +1046,7 @@
 		};
 		838299581C8F7EFC00AC17ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD199217418770747E15F955 /* Pods-ClickerAppUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ClickerAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
