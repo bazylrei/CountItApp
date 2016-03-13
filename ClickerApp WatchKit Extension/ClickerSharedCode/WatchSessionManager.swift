@@ -25,20 +25,11 @@ public class WatchSessionManager: NSObject{
         super.init()
         
         session = WCSession.defaultSession()
+        session?.delegate = self
+        session?.activateSession()
     }
     
-    var session: WCSession? {
-        
-        didSet{
-            
-            if let session = session
-            {
-                session.delegate = self
-                session.activateSession()
-            }
-        }
-    }
-    
+    var session: WCSession?    
     /// Get the latest received application context
     public var receivedApplicationContext: [String : AnyObject]? {
         

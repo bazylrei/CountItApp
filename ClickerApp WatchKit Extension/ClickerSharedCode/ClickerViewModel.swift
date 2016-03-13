@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 public class ClickerViewModel: NSObject{
     
@@ -22,20 +24,26 @@ public class ClickerViewModel: NSObject{
     }
     
     /// Clicker model marked as dynamic for KVO
-    var clicker: Clicker? = Clicker()
+    var clicker: Clicker = Clicker()
     {
         didSet{
-            self.clickerCountText = self.clicker?.description
-        }
+           
+            clickerCount.value = clicker.currentCount
             
+        }
     }
     
-    /// Gets the clicker text
-    var clickerCountText: String?
+    var clickerCount =  Variable(0)
+    
+    
+    var clickerCountDriver: Driver<Int>?
+    
     
     public override init(){
         
         super.init()
+        
+        clickerCountDriver = clickerCount.asDriver()
         
         updateToLatestClicker()
         
@@ -85,13 +93,13 @@ public class ClickerViewModel: NSObject{
      */
     public func incrementCliker(){
         
-        if let clicker = clicker{
+      
             
             clicker.incrementCount()
-            
+        
             saveAndUpdateCliker()
            
-        }
+        
     }
     
     /**
@@ -99,13 +107,13 @@ public class ClickerViewModel: NSObject{
      */
     public func decrementCliker(){
         
-        if let clicker = clicker{
+       
             
             clicker.decrementCount()
             
             saveAndUpdateCliker()
             
-        }
+        
     }
     
     /**
@@ -113,13 +121,13 @@ public class ClickerViewModel: NSObject{
      */
     public func resetClicker(){
         
-        if let clicker = clicker{
+       
             
             clicker.resetCount()
             
             saveAndUpdateCliker()
             
-        }
+        
     }
     
     
@@ -128,13 +136,11 @@ public class ClickerViewModel: NSObject{
      */
     private func saveAndUpdateCliker()
     {
-         if let clicker = clicker{
-            
+            clickerCount.value = clicker.currentCount
+
             dataStorage.saveClicker(clicker)
         
             watchSession.updateApplicationContext(withKey: ApplicationContextKey.ClikerKey.rawValue, content: clicker.toDictionary())
-            
-        }
     }
     
     deinit{
@@ -154,9 +160,9 @@ extension ClickerViewModel: ApplicationContextChangedDelegate{
         
         if let clickerDict = applicationContext[ApplicationContextKey.ClikerKey.rawValue] as? [String:AnyObject]{
             
-            dispatch_async(dispatch_get_main_queue()) { [weak self] in
-                 self?.clicker = Clicker(clickerDict: clickerDict)
-            }
+            
+            self.clicker = Clicker(clickerDict: clickerDict)
+            
         }
     }
     

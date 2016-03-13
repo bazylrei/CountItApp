@@ -9,6 +9,7 @@
 import WatchKit
 import Foundation
 import WatchConnectivity
+import RxSwift
 
 
 class InterfaceController: WKInterfaceController {
@@ -18,13 +19,19 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var clickerCountButton: WKInterfaceButton!
     
+    var disposeBag = DisposeBag()
     
-    lazy var viewModel: ClickerViewModel = ClickerViewModel()
+    var viewModel: ClickerViewModel = ClickerViewModel()
     
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
+        viewModel.clickerCountDriver?
+                    .map { String($0) }
+                    .driveNext{ [weak self] count in
+                        self?.clickerCountLabel.setText(count)
+                    }.addDisposableTo(disposeBag)
     }
 
     override func willActivate() {
@@ -43,14 +50,9 @@ class InterfaceController: WKInterfaceController {
     @IBAction func clickedAddTouched() {
         
         viewModel.incrementCliker()
-            
-        setClickerText()
         
     }
     
-    func setClickerText()
-    {
-        self.clickerCountLabel.setText(viewModel.clickerCountText)
-    }
+
 }
 
