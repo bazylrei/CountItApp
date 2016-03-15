@@ -10,9 +10,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UITableViewController {
     
-    @IBOutlet weak var doneButtonItem: UIBarButtonItem!
     
     @IBOutlet weak var colorLabel: UILabel!
 
@@ -24,10 +23,10 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var greenButton: UIButton!
     
-    let buttonCornerRadius: CGFloat = 30
+    let buttonCornerRadius: CGFloat = 15
     
     let buttonBorderWidth: CGFloat = 1
-    
+
     let viewModel: SettingsViewModel = SettingsViewModel()
     
     var disposeBag = DisposeBag()
@@ -35,19 +34,21 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        shapeButton(self.yellowButton)
+        shapeButton(self.yellowButton, withColor: ClickerColors.YellowColor.uiColor)
         
-        shapeButton(self.blueButton)
+        shapeButton(self.blueButton, withColor: ClickerColors.BlueColor.uiColor)
         
-        shapeButton(self.redButton)
+        shapeButton(self.redButton, withColor: ClickerColors.RedColor.uiColor)
         
-        shapeButton(self.greenButton)
+        shapeButton(self.greenButton, withColor: ClickerColors.GreenColor.uiColor)
+        
+        self.navigationController?.navigationBar.hidden = false
         
         viewModel.settingsChangedDriver.driveNext{ [weak self ]settings in
             
-            self?.view.backgroundColor = settings.color.uiColor
+         //   self?.view.backgroundColor = settings.color.uiColor
             
-            self?.doneButtonItem.tintColor = settings.color.uiColor
+//            self?.doneButtonItem.tintColor = settings.color.uiColor
             
             self?.navigationController?.navigationBar.tintColor = settings.color.uiColor
             
@@ -63,19 +64,18 @@ class SettingsViewController: UIViewController {
         return UIStatusBarStyle.LightContent;
     }
     
-    private func shapeButton(button : UIView){
+    private func shapeButton(button : UIButton, withColor color:UIColor){
         
         button.layer.cornerRadius = buttonCornerRadius
         
         button.layer.borderWidth = buttonBorderWidth
         
-        button.layer.shadowColor = UIColor.blackColor().CGColor
+        button.layer.borderColor = color.darkerColor().CGColor
         
-        button.layer.shadowOpacity = 0.8
+        button.layer.backgroundColor = color.CGColor
         
-        button.layer.shadowRadius = 0.3
+        button.setTitle("", forState: UIControlState.Normal)
         
-        button.layer.shadowOffset = CGSizeMake(1.5, 1.5)
     }
 
     override func didReceiveMemoryWarning() {
@@ -109,20 +109,5 @@ class SettingsViewController: UIViewController {
         
     }
     
-    @IBAction func acceptTouched(sender: AnyObject) {
-        
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

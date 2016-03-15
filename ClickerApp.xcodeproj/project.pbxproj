@@ -16,6 +16,8 @@
 		830F2B7D1C978E5700B01638 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B7B1C978E5700B01638 /* SettingsViewModel.swift */; };
 		830F2B7F1C97904200B01638 /* Dictionatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B7E1C97904200B01638 /* Dictionatable.swift */; };
 		830F2B811C97927300B01638 /* Dictionatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B7E1C97904200B01638 /* Dictionatable.swift */; };
+		830F2BBD1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2BBC1C98C31700B01638 /* UIColor-LighterDarker.swift */; };
+		830F2BBE1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2BBC1C98C31700B01638 /* UIColor-LighterDarker.swift */; };
 		834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
@@ -117,6 +119,7 @@
 		830F2B751C97676900B01638 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		830F2B7B1C978E5700B01638 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		830F2B7E1C97904200B01638 /* Dictionatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionatable.swift; sourceTree = "<group>"; };
+		830F2BBC1C98C31700B01638 /* UIColor-LighterDarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-LighterDarker.swift"; sourceTree = "<group>"; };
 		834AC7D21C92278200524C20 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		834AC7D51C92517C00524C20 /* ClickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModel.swift; sourceTree = "<group>"; };
 		838287671C8FF1CB00F5D92D /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStorage.swift; path = "ClickerApp WatchKit Extension/ClickerSharedCode/DataStorage.swift"; sourceTree = SOURCE_ROOT; };
@@ -214,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				83FE52201C97ADAA00246976 /* UIColor-Hex.swift */,
+				830F2BBC1C98C31700B01638 /* UIColor-LighterDarker.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -763,6 +767,7 @@
 			files = (
 				838299011C8F7EFB00AC17ED /* ViewController.swift in Sources */,
 				8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */,
+				830F2BBD1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */,
 				830F2B7F1C97904200B01638 /* Dictionatable.swift in Sources */,
 				838287681C8FF1CB00F5D92D /* DataStorage.swift in Sources */,
 				838298FF1C8F7EFB00AC17ED /* AppDelegate.swift in Sources */,
@@ -801,6 +806,7 @@
 				8382876E1C90CFA800F5D92D /* Clicker.swift in Sources */,
 				834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */,
 				83FE52221C97ADAA00246976 /* UIColor-Hex.swift in Sources */,
+				830F2BBE1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */,
 				8382993E1C8F7EFC00AC17ED /* NotificationController.swift in Sources */,
 				8382993C1C8F7EFC00AC17ED /* ExtensionDelegate.swift in Sources */,
 				838299421C8F7EFC00AC17ED /* ComplicationController.swift in Sources */,
