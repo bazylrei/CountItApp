@@ -11,7 +11,7 @@ import Foundation
 /**
  *  NSUserDefault storage of the clicker instance
  */
-public class ClickerDataStorage {
+public class DataStorage {
     
     let defaults = NSUserDefaults.standardUserDefaults()
     
@@ -21,6 +21,7 @@ public class ClickerDataStorage {
     private enum StorageKeys{
         
         static let clicker = "clicker"
+        static let settings = "settings"
     }
     
     
@@ -52,6 +53,40 @@ public class ClickerDataStorage {
         let clickerData = NSKeyedArchiver.archivedDataWithRootObject(clicker)
         
         defaults.setObject(clickerData, forKey: StorageKeys.clicker)
+        
+        defaults.synchronize()
+        
+    }
+    
+    
+    /**
+     Retunrns the settings saved in the datastorage
+     
+     - returns: <#return value description#>
+     */
+    public func getSettings() -> Settings{
+        
+        var settings = Settings()
+        
+        if let settingsData = defaults.dataForKey(StorageKeys.settings) {
+            
+            settings = NSKeyedUnarchiver.unarchiveObjectWithData(settingsData) as! Settings
+            
+        }
+        
+        return settings
+    }
+    
+    /**
+     Gets the settings from the data storage
+     
+     - parameter settings: Save settings
+     */
+    public func saveSettings(settings : Settings){
+        
+        let settingsData = NSKeyedArchiver.archivedDataWithRootObject(settings)
+        
+        defaults.setObject(settingsData, forKey: StorageKeys.settings)
         
         defaults.synchronize()
         

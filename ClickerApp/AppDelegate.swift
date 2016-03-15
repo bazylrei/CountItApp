@@ -11,35 +11,12 @@ import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    let clickerDataStorage: ClickerDataStorage = ClickerDataStorage()
 
     var window: UIWindow?
     
-    var session: WCSession? {
-        didSet {
-            if let session = session {
-                //session.delegate = self
-                session.activateSession()
-            }
-        }
-    }
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        if WCSession.isSupported() {
-            session = WCSession.defaultSession()
-            
-//            //Swift
-//            do {
-//                let applicationDict:[String:AnyObject] = ["clickerCount":clickerDataStorage.getClicker().currentCount]
-//                try WCSession.defaultSession().updateApplicationContext(applicationDict)
-//            } catch {
-//                // Handle errors here
-//            }
-        }
         
         return true
     }

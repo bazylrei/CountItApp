@@ -11,7 +11,7 @@ import Foundation
 /**
  *  Clicker to countain the current ecount
  */
-public class Clicker: NSObject, NSCoding{
+public class Clicker: NSObject, NSCoding, Dictionatable{
     
     /// The currentCount
     public var currentCount: Int = 0
@@ -56,14 +56,14 @@ public class Clicker: NSObject, NSCoding{
      
      - returns:
      */
-    public convenience init(clickerDict: [String : AnyObject]) {
+    public convenience required init(dictionary: [String : AnyObject]) {
         self.init()
         
-        if let currentCount = clickerDict[DictionaryKeys.currentCount] as? Int {
+        if let currentCount = dictionary[DictionaryKeys.currentCount] as? Int {
             self.currentCount = currentCount
         }
         
-        if let timeStamp = clickerDict[DictionaryKeys.timeStamp] as? NSDate{
+        if let timeStamp = dictionary[DictionaryKeys.timeStamp] as? NSDate{
             self.timeStamp = timeStamp
         }
         

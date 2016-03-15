@@ -10,11 +10,17 @@
 		147F13CCE922F8320C51F5FE /* Pods_ClickerAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70225997BBAE3C3AA3FA6A91 /* Pods_ClickerAppUITests.framework */; };
 		4BDF55FE896B65BD82A16186 /* Pods_ClickerAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1887DDB0D450CAE2AE986BD /* Pods_ClickerAppTests.framework */; };
 		7578DF99E7EBB0D1FE3F1456 /* Pods_ClickerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A21CB43E118CC9D93B2B35E /* Pods_ClickerApp.framework */; };
+		830F2B761C97676900B01638 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B751C97676900B01638 /* Settings.swift */; };
+		830F2B771C97676900B01638 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B751C97676900B01638 /* Settings.swift */; };
+		830F2B7C1C978E5700B01638 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B7B1C978E5700B01638 /* SettingsViewModel.swift */; };
+		830F2B7D1C978E5700B01638 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B7B1C978E5700B01638 /* SettingsViewModel.swift */; };
+		830F2B7F1C97904200B01638 /* Dictionatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B7E1C97904200B01638 /* Dictionatable.swift */; };
+		830F2B811C97927300B01638 /* Dictionatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B7E1C97904200B01638 /* Dictionatable.swift */; };
 		834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
 		834AC7D71C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
-		838287681C8FF1CB00F5D92D /* ClickerDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287671C8FF1CB00F5D92D /* ClickerDataStorage.swift */; };
+		838287681C8FF1CB00F5D92D /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287671C8FF1CB00F5D92D /* DataStorage.swift */; };
 		8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382876C1C90CF3900F5D92D /* Clicker.swift */; };
 		8382876E1C90CFA800F5D92D /* Clicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382876C1C90CF3900F5D92D /* Clicker.swift */; };
 		838298FF1C8F7EFB00AC17ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */; };
@@ -36,7 +42,10 @@
 		8382995C1C8F8E1100AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8382995B1C8F8E1100AC17ED /* Assets.xcassets */; };
 		8382995D1C8F8E1100AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8382995B1C8F8E1100AC17ED /* Assets.xcassets */; };
 		8382995E1C8F8E1100AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8382995B1C8F8E1100AC17ED /* Assets.xcassets */; };
-		83F816621C9124BB00773DF3 /* ClickerDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287671C8FF1CB00F5D92D /* ClickerDataStorage.swift */; };
+		83BF9BC21C974AC000962289 /* UIColor_Clicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF9BC11C974AC000962289 /* UIColor_Clicker.swift */; };
+		83BF9BC31C974AC000962289 /* UIColor_Clicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF9BC11C974AC000962289 /* UIColor_Clicker.swift */; };
+		83BF9BC51C97597300962289 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF9BC41C97597300962289 /* SettingsViewController.swift */; };
+		83F816621C9124BB00773DF3 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287671C8FF1CB00F5D92D /* DataStorage.swift */; };
 		DD8C2ECD4282FCD5B1FEE5A1 /* Pods_ClickerApp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D40C74E2EDDF32A48E4A17B /* Pods_ClickerApp_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,9 +112,12 @@
 		7879FED7BDAC453005D4BCD6 /* Pods-ClickerAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppUITests/Pods-ClickerAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C7BF5624236BBF6C4E062A7 /* Pods-ClickerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerApp/Pods-ClickerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		80590DBE5D6D0F651A854BB2 /* Pods-ClickerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppTests/Pods-ClickerAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		830F2B751C97676900B01638 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		830F2B7B1C978E5700B01638 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		830F2B7E1C97904200B01638 /* Dictionatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionatable.swift; sourceTree = "<group>"; };
 		834AC7D21C92278200524C20 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		834AC7D51C92517C00524C20 /* ClickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModel.swift; sourceTree = "<group>"; };
-		838287671C8FF1CB00F5D92D /* ClickerDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClickerDataStorage.swift; path = "ClickerApp WatchKit Extension/ClickerSharedCode/ClickerDataStorage.swift"; sourceTree = SOURCE_ROOT; };
+		838287671C8FF1CB00F5D92D /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStorage.swift; path = "ClickerApp WatchKit Extension/ClickerSharedCode/DataStorage.swift"; sourceTree = SOURCE_ROOT; };
 		8382876C1C90CF3900F5D92D /* Clicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clicker.swift; sourceTree = "<group>"; };
 		838298FB1C8F7EFB00AC17ED /* ClickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +145,8 @@
 		838299431C8F7EFC00AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		838299451C8F7EFC00AC17ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8382995B1C8F8E1100AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83BF9BC11C974AC000962289 /* UIColor_Clicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor_Clicker.swift; sourceTree = "<group>"; };
+		83BF9BC41C97597300962289 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8A21CB43E118CC9D93B2B35E /* Pods_ClickerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD199217418770747E15F955 /* Pods-ClickerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppUITests/Pods-ClickerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D1887DDB0D450CAE2AE986BD /* Pods_ClickerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,13 +198,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		830F2B7A1C978E1400B01638 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				834AC7D51C92517C00524C20 /* ClickerViewModel.swift */,
+				830F2B7B1C978E5700B01638 /* SettingsViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		830F2B801C97916800B01638 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83BF9BC11C974AC000962289 /* UIColor_Clicker.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		838287661C8FF17C00F5D92D /* ClickerSharedCode */ = {
 			isa = PBXGroup;
 			children = (
+				830F2B801C97916800B01638 /* Extensions */,
+				830F2B7A1C978E1400B01638 /* ViewModel */,
 				838287721C90DDB300F5D92D /* Data */,
 				8382876B1C90CF2F00F5D92D /* Model */,
 				834AC7D21C92278200524C20 /* WatchSessionManager.swift */,
-				834AC7D51C92517C00524C20 /* ClickerViewModel.swift */,
+				830F2B7E1C97904200B01638 /* Dictionatable.swift */,
 			);
 			name = ClickerSharedCode;
 			path = "ClickerApp WatchKit Extension/ClickerSharedCode";
@@ -200,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				8382876C1C90CF3900F5D92D /* Clicker.swift */,
+				830F2B751C97676900B01638 /* Settings.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -207,7 +241,7 @@
 		838287721C90DDB300F5D92D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				838287671C8FF1CB00F5D92D /* ClickerDataStorage.swift */,
+				838287671C8FF1CB00F5D92D /* DataStorage.swift */,
 			);
 			name = Data;
 			path = ../../ClickerApp;
@@ -249,6 +283,7 @@
 				838299051C8F7EFB00AC17ED /* Assets.xcassets */,
 				838299071C8F7EFB00AC17ED /* LaunchScreen.storyboard */,
 				8382990A1C8F7EFB00AC17ED /* Info.plist */,
+				83BF9BC41C97597300962289 /* SettingsViewController.swift */,
 			);
 			path = ClickerApp;
 			sourceTree = "<group>";
@@ -724,10 +759,15 @@
 			files = (
 				838299011C8F7EFB00AC17ED /* ViewController.swift in Sources */,
 				8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */,
-				838287681C8FF1CB00F5D92D /* ClickerDataStorage.swift in Sources */,
+				83BF9BC21C974AC000962289 /* UIColor_Clicker.swift in Sources */,
+				830F2B7F1C97904200B01638 /* Dictionatable.swift in Sources */,
+				838287681C8FF1CB00F5D92D /* DataStorage.swift in Sources */,
 				838298FF1C8F7EFB00AC17ED /* AppDelegate.swift in Sources */,
+				830F2B7C1C978E5700B01638 /* SettingsViewModel.swift in Sources */,
 				834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */,
+				830F2B761C97676900B01638 /* Settings.swift in Sources */,
 				834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */,
+				83BF9BC51C97597300962289 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,15 +791,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83F816621C9124BB00773DF3 /* ClickerDataStorage.swift in Sources */,
+				830F2B811C97927300B01638 /* Dictionatable.swift in Sources */,
+				83F816621C9124BB00773DF3 /* DataStorage.swift in Sources */,
 				8382876E1C90CFA800F5D92D /* Clicker.swift in Sources */,
 				834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */,
+				83BF9BC31C974AC000962289 /* UIColor_Clicker.swift in Sources */,
 				8382993E1C8F7EFC00AC17ED /* NotificationController.swift in Sources */,
 				8382993C1C8F7EFC00AC17ED /* ExtensionDelegate.swift in Sources */,
 				838299421C8F7EFC00AC17ED /* ComplicationController.swift in Sources */,
 				8382993A1C8F7EFC00AC17ED /* InterfaceController.swift in Sources */,
 				834AC7D71C92517C00524C20 /* ClickerViewModel.swift in Sources */,
+				830F2B771C97676900B01638 /* Settings.swift in Sources */,
 				838299401C8F7EFC00AC17ED /* GlanceController.swift in Sources */,
+				830F2B7D1C978E5700B01638 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -941,16 +985,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = WatchAppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = ClickerApp_WatchKit_Extension;
 				INFOPLIST_FILE = "ClickerApp WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -960,11 +1007,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = WatchAppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = ClickerApp_WatchKit_Extension;
 				INFOPLIST_FILE = "ClickerApp WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

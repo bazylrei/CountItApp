@@ -12,7 +12,7 @@ import RxCocoa
 
 public class ClickerViewModel: NSObject{
     
-    let dataStorage : ClickerDataStorage = ClickerDataStorage()
+    let dataStorage : DataStorage = DataStorage()
     
     let watchSession : WatchSessionManager = WatchSessionManager.sharedManager
     
@@ -67,7 +67,7 @@ public class ClickerViewModel: NSObject{
         if let clickerDict = watchSession.receivedApplicationContext?[ApplicationContextKey.ClikerKey.rawValue] as? [String : AnyObject]
         {
             //Get the clicker object from the application Context
-            let clickerFromApplicationContext = Clicker(clickerDict: clickerDict)
+            let clickerFromApplicationContext = Clicker(dictionary: clickerDict)
             
             //Get the most resent clicker that we have in storage
             let clickerFromStorage = dataStorage.getClicker()
@@ -92,14 +92,10 @@ public class ClickerViewModel: NSObject{
      Increment the clicker count and update its datastorage and application context
      */
     public func incrementCliker(){
+    
+        clicker.incrementCount()
         
-      
-            
-            clicker.incrementCount()
-        
-            saveAndUpdateCliker()
-           
-        
+        saveAndUpdateCliker()
     }
     
     /**
@@ -107,13 +103,9 @@ public class ClickerViewModel: NSObject{
      */
     public func decrementCliker(){
         
-       
+        clicker.decrementCount()
             
-            clicker.decrementCount()
-            
-            saveAndUpdateCliker()
-            
-        
+        saveAndUpdateCliker()
     }
     
     /**
@@ -121,13 +113,9 @@ public class ClickerViewModel: NSObject{
      */
     public func resetClicker(){
         
-       
+        clicker.resetCount()
             
-            clicker.resetCount()
-            
-            saveAndUpdateCliker()
-            
-        
+        saveAndUpdateCliker()
     }
     
     
@@ -136,11 +124,11 @@ public class ClickerViewModel: NSObject{
      */
     private func saveAndUpdateCliker()
     {
-            clickerCount.value = clicker.currentCount
+        clickerCount.value = clicker.currentCount
 
-            dataStorage.saveClicker(clicker)
+        dataStorage.saveClicker(clicker)
         
-            watchSession.updateApplicationContext(withKey: ApplicationContextKey.ClikerKey.rawValue, content: clicker.toDictionary())
+        watchSession.updateApplicationContext(withKey: ApplicationContextKey.ClikerKey.rawValue, content: clicker.toDictionary())
     }
     
     deinit{
@@ -161,11 +149,9 @@ extension ClickerViewModel: ApplicationContextChangedDelegate{
         if let clickerDict = applicationContext[ApplicationContextKey.ClikerKey.rawValue] as? [String:AnyObject]{
             
             
-            self.clicker = Clicker(clickerDict: clickerDict)
+            self.clicker = Clicker(dictionary: clickerDict)
             
         }
     }
-    
-    
     
 }
