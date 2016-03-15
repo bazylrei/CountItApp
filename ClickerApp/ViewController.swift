@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     var disposeBag: DisposeBag = DisposeBag()
     
     let viewModel:ClickerViewModel = ClickerViewModel()
+    
+    let settingsViewModel: SettingsViewModel = SettingsViewModel()
 
     
     override func viewDidLoad() {
@@ -30,12 +32,23 @@ class ViewController: UIViewController {
                  .drive(clickerCountLabel.rx_text)
                  .addDisposableTo(disposeBag)
         
+        
+        settingsViewModel.settingsChangedDriver.driveNext { [weak self] settings in
+            
+            self?.view.backgroundColor = settings.color.uiColor
+            
+            self?.navigationController?.navigationBar.tintColor = settings.color.uiColor
+        
+        }.addDisposableTo(disposeBag)
+        
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         viewModel.updateToLatestClicker()
+        
+        settingsViewModel.getLatestSettings()
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import WatchConnectivity
+import RxSwift
+import RxCocoa
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

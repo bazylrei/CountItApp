@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class SettingsViewController: UIViewController {
     
+    @IBOutlet weak var doneButtonItem: UIBarButtonItem!
     
     @IBOutlet weak var colorLabel: UILabel!
 
@@ -21,9 +24,13 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var greenButton: UIButton!
     
-    let buttonCornerRadius: CGFloat = 25
+    let buttonCornerRadius: CGFloat = 30
     
     let buttonBorderWidth: CGFloat = 1
+    
+    let viewModel: SettingsViewModel = SettingsViewModel()
+    
+    var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,15 +42,30 @@ class SettingsViewController: UIViewController {
         shapeButton(self.redButton)
         
         shapeButton(self.greenButton)
-    
+        
+        viewModel.settingsChangedDriver.driveNext{ [weak self ]settings in
+            
+            self?.view.backgroundColor = settings.color.uiColor
+            
+            self?.doneButtonItem.tintColor = settings.color.uiColor
+            
+            self?.navigationController?.navigationBar.tintColor = settings.color.uiColor
+            
+        }.addDisposableTo(disposeBag)
+        
+        viewModel.getLatestSettings()
+        
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent;
     }
     
     private func shapeButton(button : UIView){
         
         button.layer.cornerRadius = buttonCornerRadius
-        
         
         button.layer.borderWidth = buttonBorderWidth
         
@@ -63,16 +85,28 @@ class SettingsViewController: UIViewController {
     
     
     @IBAction func yellowButtonTouched(sender: AnyObject) {
+        
+        viewModel.setColor(ClickerColors.YellowColor)
     }
     
 
     @IBAction func blueButtonTouched(sender: AnyObject) {
+        
+        viewModel.setColor(ClickerColors.BlueColor)
     }
     
     @IBAction func greenButtonTouched(sender: AnyObject) {
+        
+         viewModel.setColor(ClickerColors.GreenColor)
+        
     }
     
     @IBAction func redButtonTouched(sender: AnyObject) {
+        
+         viewModel.setColor(ClickerColors.RedColor)
+        
+        
+        
     }
     
     @IBAction func acceptTouched(sender: AnyObject) {

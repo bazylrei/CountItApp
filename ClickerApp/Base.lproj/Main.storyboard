@@ -159,7 +159,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lU-zt-HeZ">
                                         <rect key="frame" x="452" y="0.0" width="108" height="59"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.35576311081816314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="59" id="2qG-rt-jDZ"/>
                                             <constraint firstAttribute="width" constant="59" id="xNb-G0-ogU"/>
@@ -197,6 +197,7 @@
                     <connections>
                         <outlet property="blueButton" destination="PQb-8S-J7M" id="61K-4q-wE5"/>
                         <outlet property="colorLabel" destination="iQs-cw-N8I" id="f0t-La-pRr"/>
+                        <outlet property="doneButtonItem" destination="gtN-Nz-p9I" id="cgK-VX-zAU"/>
                         <outlet property="greenButton" destination="qrp-PM-asv" id="rCo-kY-uoU"/>
                         <outlet property="redButton" destination="4lU-zt-HeZ" id="u63-1i-ZMq"/>
                         <outlet property="yellowButton" destination="x6R-oy-UaI" id="wwA-As-orL"/>

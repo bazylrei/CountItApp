@@ -12,7 +12,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     
     
     /// The currentCount
-    public var color: UIColor = UIColor.redColor()
+    public var color: ClickerColors = ClickerColors.RedColor
     
     // Storage and dictionary keys
     private enum DictionaryKeys{
@@ -39,8 +39,8 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     public convenience required init(dictionary: [String : AnyObject]) {
         self.init()
         
-        if let color = dictionary[DictionaryKeys.color] as? UIColor {
-            self.color = color
+        if let color = dictionary[DictionaryKeys.color] as? String {
+            self.color = ClickerColors(rawValue: color)!
         }
     }
     
@@ -52,7 +52,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     public func toDictionary() -> [String : AnyObject]
     {
         
-        return [DictionaryKeys.color : self.color]
+        return [DictionaryKeys.color : self.color.rawValue]
     }
     
     /**
@@ -64,7 +64,9 @@ public class Settings: NSObject, NSCoding, Dictionatable {
      */
     public required init(coder decoder: NSCoder) {
         
-        self.color = decoder.decodeObjectForKey(DictionaryKeys.color) as! UIColor
+        let colorString = decoder.decodeObjectForKey(DictionaryKeys.color) as! String
+        
+        self.color = ClickerColors(rawValue: colorString)!
         super.init()
     }
     
@@ -74,7 +76,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
      - parameter coder: <#coder description#>
      */
     public func encodeWithCoder(coder: NSCoder) {
-        coder.encodeObject(self.color, forKey: DictionaryKeys.color)
+        coder.encodeObject(self.color.rawValue, forKey: DictionaryKeys.color)
     }
     
 }

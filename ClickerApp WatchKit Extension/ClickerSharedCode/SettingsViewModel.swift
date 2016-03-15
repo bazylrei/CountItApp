@@ -16,35 +16,34 @@ public class SettingsViewModel: NSObject {
     
     let watchSession : WatchSessionManager = WatchSessionManager.sharedManager
     
-    
     /// Key to be use in the application context dictionary
-    enum ApplicationContextKey: String{
+    public enum ApplicationContextKey: String{
         
         case SettingsKey = "settings"
         
     }
     
-    /// Clicker model marked as dynamic for KVO
+    /// Clicker model marked as dynamic for KVO 
     var settings: Settings = Settings()
-//        {
-//        didSet{
-//            
-//            clickerCount.value = clicker.currentCount
-//            
-//        }
-//    }
+    {
+        didSet{
+            
+           saveAndUpdate()
+        }
+    }
     
-//    var clickerCount =  Variable(0)
-//    
-//    
-//    var clickerCountDriver: Driver<Int>?
-//    
+   
+    var settingsChangedDriver : Driver<Settings>
     
     public override init(){
         
-        super.init()
+        settingsChangedDriver =  NSNotificationCenter.defaultCenter().rx_notification(SettingsViewModel.ApplicationContextKey.SettingsKey.rawValue, object: settings).map{
+            
+            return $0.object as! Settings
+            
+        }.asDriver(onErrorJustReturn: Settings())
         
-//        clickerCountDriver = clickerCount.asDriver()
+        super.init()
         
         getLatestSettings()
         
@@ -79,7 +78,7 @@ public class SettingsViewModel: NSObject {
     /**
      Increment the clicker count and update its datastorage and application context
      */
-    public func setColor(color: UIColor){
+    public func setColor(color: ClickerColors){
         
         settings.color = color
         
@@ -92,9 +91,9 @@ public class SettingsViewModel: NSObject {
      */
     private func saveAndUpdate()
     {
-//        clickerCount.value = clicker.currentCount
-        
         dataStorage.saveSettings(settings)
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(ApplicationContextKey.SettingsKey.rawValue, object: settings)
         
         watchSession.updateApplicationContext(withKey: ApplicationContextKey.SettingsKey.rawValue, content: settings.toDictionary())
     }
