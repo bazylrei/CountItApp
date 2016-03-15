@@ -28,14 +28,17 @@ public class SettingsViewModel: NSObject {
     {
         didSet{
             
-           saveAndUpdate()
+           updateObservers()
         }
     }
     
+    var settingsChangedSubject: ReplaySubject<Settings>
    
     var settingsChangedDriver : Driver<Settings>
     
     public override init(){
+        
+        settingsChangedSubject = ReplaySubject.create(bufferSize: 1)
         
         settingsChangedDriver =  NSNotificationCenter.defaultCenter().rx_notification(SettingsViewModel.ApplicationContextKey.SettingsKey.rawValue, object: settings).map{
             
@@ -93,10 +96,19 @@ public class SettingsViewModel: NSObject {
     {
         dataStorage.saveSettings(settings)
         
-        NSNotificationCenter.defaultCenter().postNotificationName(ApplicationContextKey.SettingsKey.rawValue, object: settings)
+        
+        self.updateObservers()
         
         watchSession.updateApplicationContext(withKey: ApplicationContextKey.SettingsKey.rawValue, content: settings.toDictionary())
     }
+    
+    private func updateObservers(){
+        
+        settingsChangedSubject.on(.Next(settings))
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(ApplicationContextKey.SettingsKey.rawValue, object: settings)
+    }
+    
     
     deinit{
         

@@ -10,24 +10,31 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ClickerApp_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" text="0" textAlignment="center" baselineAdjustment="alignCenters" minimumScaleFactor="0.29999999999999999" id="z19-0H-xiV">
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="font" type="boldSystem" pointSize="85"/>
-                        </label>
-                        <button alignment="center" backgroundImage="ic_add_48pt" id="ODb-ZR-3f4">
-                            <connections>
-                                <action selector="clickedAddTouched" destination="AgC-eL-Hgc" id="1zk-Em-ahb"/>
-                            </connections>
-                        </button>
+                        <group width="1" height="1" alignment="left" layout="vertical" radius="0.0" id="sxO-oQ-4Z5">
+                            <items>
+                                <label alignment="center" text="0" textAlignment="center" baselineAdjustment="alignCenters" minimumScaleFactor="0.29999999999999999" id="z19-0H-xiV">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="85"/>
+                                </label>
+                                <button alignment="center" backgroundImage="ic_add_48pt" id="ODb-ZR-3f4">
+                                    <connections>
+                                        <action selector="clickedAddTouched" destination="AgC-eL-Hgc" id="1zk-Em-ahb"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.95686274510000002" green="0.0" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
                     </items>
-                    <color key="backgroundColor" red="0.95686274509803926" green="0.0" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.0" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                     <connections>
+                        <outlet property="backgroundContainer" destination="sxO-oQ-4Z5" id="eEg-0v-g5q"/>
                         <outlet property="clickerCountButton" destination="ODb-ZR-3f4" id="dz9-mv-gO7"/>
                         <outlet property="clickerCountLabel" destination="z19-0H-xiV" id="obD-bt-a6Y"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="235" y="347.25"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">

@@ -14,6 +14,7 @@ import RxSwift
 
 class InterfaceController: WKInterfaceController {
     
+    @IBOutlet var backgroundContainer: WKInterfaceGroup!
     
     @IBOutlet var clickerCountLabel: WKInterfaceLabel!
     
@@ -23,6 +24,7 @@ class InterfaceController: WKInterfaceController {
     
     var viewModel: ClickerViewModel = ClickerViewModel()
     
+    var settingsViewModel: SettingsViewModel = SettingsViewModel()
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -32,6 +34,15 @@ class InterfaceController: WKInterfaceController {
                     .driveNext{ [weak self] count in
                         self?.clickerCountLabel.setText(count)
                     }.addDisposableTo(disposeBag)
+        
+        
+        settingsViewModel.settingsChangedSubject
+                         .subscribeNext{ [weak self] settings in
+                            
+                    self?.backgroundContainer.setBackgroundColor(settings.color.uiColor)
+            
+            
+        }.addDisposableTo(disposeBag)
     }
 
     override func willActivate() {
@@ -39,6 +50,8 @@ class InterfaceController: WKInterfaceController {
         super.willActivate()
         
         viewModel.updateToLatestClicker()
+        
+        settingsViewModel.getLatestSettings()
 
     }
 

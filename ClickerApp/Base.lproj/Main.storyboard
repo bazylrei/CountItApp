@@ -19,15 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Ef-lf-58C">
-                                <rect key="frame" x="267.5" y="211.5" width="65.5" height="177.5"/>
+                                <rect key="frame" x="257.5" y="193.5" width="85" height="213.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EK8-v5-iaK">
-                                        <rect key="frame" x="0.0" y="0.0" width="65.5" height="119.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EK8-v5-iaK">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="155.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="130"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZW-qX-j6a">
-                                        <rect key="frame" x="0.0" y="129" width="65.5" height="48"/>
+                                        <rect key="frame" x="0.0" y="165" width="85" height="48"/>
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                         <state key="normal" image="ic_add_48pt"/>
                                         <connections>
