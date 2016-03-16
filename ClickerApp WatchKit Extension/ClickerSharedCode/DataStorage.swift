@@ -34,9 +34,9 @@ public class DataStorage {
         
         var clicker = Clicker()
         
-        if let clickerData = defaults.dataForKey(StorageKeys.clicker) {
+        if let clickerFromStorage = getObjectWithKey(StorageKeys.clicker) as? Clicker {
             
-            clicker = NSKeyedUnarchiver.unarchiveObjectWithData(clickerData) as! Clicker
+            clicker = clickerFromStorage
             
         }
         
@@ -50,11 +50,7 @@ public class DataStorage {
      */
     public func saveClicker(clicker : Clicker){
         
-        let clickerData = NSKeyedArchiver.archivedDataWithRootObject(clicker)
-        
-        defaults.setObject(clickerData, forKey: StorageKeys.clicker)
-        
-        defaults.synchronize()
+        self.saveObject(clicker, withKey: StorageKeys.clicker)
         
     }
     
@@ -68,9 +64,9 @@ public class DataStorage {
         
         var settings = Settings()
         
-        if let settingsData = defaults.dataForKey(StorageKeys.settings) {
+        if let settingsFromStorage = getObjectWithKey(StorageKeys.settings) as? Settings{
             
-            settings = NSKeyedUnarchiver.unarchiveObjectWithData(settingsData) as! Settings
+            settings = settingsFromStorage
             
         }
         
@@ -84,12 +80,47 @@ public class DataStorage {
      */
     public func saveSettings(settings : Settings){
         
-        let settingsData = NSKeyedArchiver.archivedDataWithRootObject(settings)
         
-        defaults.setObject(settingsData, forKey: StorageKeys.settings)
+        self.saveObject(settings, withKey: StorageKeys.settings)
+        
+    }
+    
+    
+    /**
+     Save the object to the data storage
+     
+     - parameter object: Object to be save
+     - parameter key:    key of the storage
+     */
+    private func saveObject(object: NSCoding, withKey key: String){
+        
+        
+        let data = NSKeyedArchiver.archivedDataWithRootObject(object)
+        
+        defaults.setObject(data, forKey: key)
         
         defaults.synchronize()
         
+    }
+    
+    /**
+     Get the object with key from the datastorage
+     
+     - parameter key: key of the object
+     
+     - returns: objet from the storage
+     */
+    private func getObjectWithKey(key: String) -> AnyObject?{
+        
+        var object: AnyObject? = nil
+        
+        if let data = defaults.dataForKey(key) {
+            
+            object = NSKeyedUnarchiver.unarchiveObjectWithData(data)
+            
+        }
+        
+        return object
     }
 }
 
