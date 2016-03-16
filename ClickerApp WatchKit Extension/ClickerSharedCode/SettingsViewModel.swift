@@ -88,6 +88,12 @@ public class SettingsViewModel: NSObject {
         saveAndUpdate()
     }
     
+    public func setIncrementsMultiple(value: Int){
+        
+        settings.incrementsMultiples = value
+        
+        saveAndUpdate()
+    }
     
     /**
      Save the settings to dataStorage and update the application context with the information of the settings

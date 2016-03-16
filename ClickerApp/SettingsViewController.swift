@@ -11,9 +11,6 @@ import RxSwift
 import RxCocoa
 
 class SettingsViewController: UITableViewController {
-    
-    
-    @IBOutlet weak var colorLabel: UILabel!
 
     @IBOutlet weak var yellowButton: UIButton!
     
@@ -22,6 +19,10 @@ class SettingsViewController: UITableViewController {
     @IBOutlet weak var redButton: UIButton!
     
     @IBOutlet weak var greenButton: UIButton!
+    
+    @IBOutlet weak var incrementStepper: UIStepper!
+    
+    @IBOutlet weak var incrementLabel: UILabel!
     
     let buttonCornerRadius: CGFloat = 15
     
@@ -34,6 +35,17 @@ class SettingsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.setupUI()
+        
+        self.setupObservers()
+        
+        viewModel.getLatestSettings()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    func setupUI(){
+        
         shapeButton(self.yellowButton, withColor: ClickerColors.YellowColor.uiColor)
         
         shapeButton(self.blueButton, withColor: ClickerColors.BlueColor.uiColor)
@@ -41,28 +53,36 @@ class SettingsViewController: UITableViewController {
         shapeButton(self.redButton, withColor: ClickerColors.RedColor.uiColor)
         
         shapeButton(self.greenButton, withColor: ClickerColors.GreenColor.uiColor)
+    }
+    
+    func setupObservers(){
         
-        self.navigationController?.navigationBar.hidden = false
         
         viewModel.settingsChangedDriver.driveNext{ [weak self ]settings in
             
-         //   self?.view.backgroundColor = settings.color.uiColor
-            
-//            self?.doneButtonItem.tintColor = settings.color.uiColor
-            
             self?.navigationController?.navigationBar.tintColor = settings.color.uiColor
             
-        }.addDisposableTo(disposeBag)
+            self?.incrementStepper.tintColor = settings.color.uiColor.darkerColor()
+            
+            }.addDisposableTo(disposeBag)
         
-        viewModel.getLatestSettings()
+        
+        viewModel.settingsChangedDriver.map{
+            
+            return Double($0.incrementsMultiples)
+            
+            }.drive(incrementStepper.rx_value)
+            .addDisposableTo(disposeBag)
         
         
-        // Do any additional setup after loading the view.
+        viewModel.settingsChangedDriver.map{
+            
+            return "Increment in multiples of : \($0.incrementsMultiples)"
+            
+            }.drive(incrementLabel.rx_text)
+            .addDisposableTo(disposeBag)
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent;
-    }
     
     private func shapeButton(button : UIButton, withColor color:UIColor){
         
@@ -104,10 +124,13 @@ class SettingsViewController: UITableViewController {
     @IBAction func redButtonTouched(sender: AnyObject) {
         
          viewModel.setColor(ClickerColors.RedColor)
+    }
+    
+    @IBAction func stepperChanged(sender: UIStepper) {
         
+        viewModel.setIncrementsMultiple(Int(sender.value))
         
         
     }
-    
 
 }
