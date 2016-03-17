@@ -48,6 +48,7 @@
 		83887FE81C9A6A7A00E44C28 /* String-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83887FE61C9A6A7A00E44C28 /* String-Extensions.swift */; };
 		83887FEB1C9A6AD000E44C28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83887FEA1C9A6AD000E44C28 /* Localizable.strings */; };
 		83887FEC1C9A6AD000E44C28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83887FEA1C9A6AD000E44C28 /* Localizable.strings */; };
+		83887FF31C9A780700E44C28 /* ColorPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83887FF21C9A780700E44C28 /* ColorPickerButton.swift */; };
 		839369891C97DBFD00DB85DB /* ClickerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839369881C97DBFD00DB85DB /* ClickerColors.swift */; };
 		8393698A1C97DBFD00DB85DB /* ClickerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839369881C97DBFD00DB85DB /* ClickerColors.swift */; };
 		83BF9BC51C97597300962289 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF9BC41C97597300962289 /* SettingsViewController.swift */; };
@@ -156,6 +157,7 @@
 		8382995B1C8F8E1100AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83887FE61C9A6A7A00E44C28 /* String-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extensions.swift"; sourceTree = "<group>"; };
 		83887FEA1C9A6AD000E44C28 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		83887FF21C9A780700E44C28 /* ColorPickerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerButton.swift; sourceTree = "<group>"; };
 		839369881C97DBFD00DB85DB /* ClickerColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerColors.swift; sourceTree = "<group>"; };
 		83BF9BC41C97597300962289 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		83FE52201C97ADAA00246976 /* UIColor-Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Hex.swift"; sourceTree = "<group>"; };
@@ -292,8 +294,8 @@
 		838298FD1C8F7EFB00AC17ED /* ClickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				83887FEF1C9A77B000E44C28 /* Views */,
 				83887FE91C9A6AB000E44C28 /* SupportingFiles */,
-				83887FE51C9A6A3600E44C28 /* Extensions */,
 				83887FE41C9A696800E44C28 /* ViewControllers */,
 				838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */,
 				838299021C8F7EFB00AC17ED /* Main.storyboard */,
@@ -364,19 +366,20 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		83887FE51C9A6A3600E44C28 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
 		83887FE91C9A6AB000E44C28 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				83887FEA1C9A6AD000E44C28 /* Localizable.strings */,
 			);
 			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		83887FEF1C9A77B000E44C28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83887FF21C9A780700E44C28 /* ColorPickerButton.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		E0C466A05FA768D4FAFBD1C2 /* Frameworks */ = {
@@ -808,6 +811,7 @@
 				838298FF1C8F7EFB00AC17ED /* AppDelegate.swift in Sources */,
 				839369891C97DBFD00DB85DB /* ClickerColors.swift in Sources */,
 				830F2B7C1C978E5700B01638 /* SettingsViewModel.swift in Sources */,
+				83887FF31C9A780700E44C28 /* ColorPickerButton.swift in Sources */,
 				834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */,
 				830F2B761C97676900B01638 /* Settings.swift in Sources */,
 				834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */,

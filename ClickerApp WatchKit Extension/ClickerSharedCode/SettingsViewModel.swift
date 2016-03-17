@@ -90,7 +90,7 @@ public class SettingsViewModel: NSObject {
     
     public func setIncrementsMultiple(value: Int){
         
-        settings.incrementsMultiples = value
+        settings.incrementMultiplier = value
         
         saveAndUpdate()
     }

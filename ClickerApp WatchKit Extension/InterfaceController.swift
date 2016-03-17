@@ -62,7 +62,7 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func clickedAddTouched() {
         
-        viewModel.incrementCliker()
+        viewModel.incrementClikerByMultiplier()
         
     }
     

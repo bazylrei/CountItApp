@@ -116,9 +116,9 @@ public class Clicker: NSObject, NSCoding, Dictionatable{
     /**
      Increment the count and update the timestamp
      */
-    public func incrementCount(){
+    public func incrementCountByMultiplier(multiplier: Int){
         
-       currentCount = currentCount + 1
+       currentCount = currentCount + multiplier
        timeStamp = NSDate()
         
     }
@@ -126,9 +126,9 @@ public class Clicker: NSObject, NSCoding, Dictionatable{
     /**
      Decrement the count by one and update the timestamp
      */
-    public func decrementCount(){
+    public func decrementCountByMultiplier(multiplier: Int){
         
-        currentCount = currentCount - 1
+        currentCount = currentCount - multiplier
         timeStamp = NSDate()
         
     }

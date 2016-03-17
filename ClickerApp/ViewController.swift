@@ -38,6 +38,8 @@ class ViewController: UIViewController {
             self?.view.backgroundColor = settings.color.uiColor
             
             self?.navigationController?.navigationBar.tintColor = settings.color.uiColor
+            
+            self?.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: settings.color.uiColor]
         
         }.addDisposableTo(disposeBag)
         
@@ -58,7 +60,9 @@ class ViewController: UIViewController {
 
     @IBAction func clickerIncrementTouched(sender: AnyObject) {
         
-        viewModel.incrementCliker()
+        let multiplier = settingsViewModel.settings.incrementMultiplier
+        
+        viewModel.incrementClikerByMultiplier(multiplier)
         
     }
 

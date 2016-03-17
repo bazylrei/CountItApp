@@ -14,13 +14,13 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     /// The currentCount
     public var color: ClickerColors = ClickerColors.RedColor
     
-    public var incrementsMultiples : Int  = 1
+    public var incrementMultiplier : Int  = 1
     
     // Storage and dictionary keys
     private enum DictionaryKeys{
         
         static let color = "color"
-        static let incrementMultiples = "incrementMultiples"
+        static let incrementMultiples = "incrementMultiplier"
     }
     
     /**
@@ -47,7 +47,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
         }
         
         if let incrementsMultiples = dictionary[DictionaryKeys.incrementMultiples] as? Int {
-            self.incrementsMultiples = incrementsMultiples
+            self.incrementMultiplier = incrementsMultiples
         }
     }
     
@@ -59,7 +59,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     public func toDictionary() -> [String : AnyObject]
     {
         
-        return [DictionaryKeys.color : self.color.rawValue, DictionaryKeys.incrementMultiples : self.incrementsMultiples]
+        return [DictionaryKeys.color : self.color.rawValue, DictionaryKeys.incrementMultiples : self.incrementMultiplier]
     }
     
     /**
@@ -74,7 +74,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
         let colorString = decoder.decodeObjectForKey(DictionaryKeys.color) as! String
         self.color = ClickerColors(rawValue: colorString)!
         
-        self.incrementsMultiples = decoder.decodeIntegerForKey(DictionaryKeys.incrementMultiples)
+        self.incrementMultiplier = decoder.decodeIntegerForKey(DictionaryKeys.incrementMultiples)
         
         
         super.init()
@@ -87,7 +87,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
      */
     public func encodeWithCoder(coder: NSCoder) {
         coder.encodeObject(self.color.rawValue, forKey: DictionaryKeys.color)
-        coder.encodeInt(Int32(self.incrementsMultiples), forKey: DictionaryKeys.incrementMultiples)
+        coder.encodeInt(Int32(self.incrementMultiplier), forKey: DictionaryKeys.incrementMultiples)
     }
     
 }

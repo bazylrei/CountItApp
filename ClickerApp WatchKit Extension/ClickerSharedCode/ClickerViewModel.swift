@@ -91,9 +91,9 @@ public class ClickerViewModel: NSObject{
     /**
      Increment the clicker count and update its datastorage and application context
      */
-    public func incrementCliker(){
+    public func incrementClikerByMultiplier(multiplier: Int = 1){
     
-        clicker.incrementCount()
+        clicker.incrementCountByMultiplier(multiplier)
         
         saveAndUpdateCliker()
     }
@@ -101,9 +101,9 @@ public class ClickerViewModel: NSObject{
     /**
      Decrement the clicker and update its datastorage and application context
      */
-    public func decrementCliker(){
+    public func decrementClikerByMultiplier(multiplier: Int = 1){
         
-        clicker.decrementCount()
+        clicker.decrementCountByMultiplier(multiplier)
             
         saveAndUpdateCliker()
     }

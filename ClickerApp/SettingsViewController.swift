@@ -12,21 +12,17 @@ import RxCocoa
 
 class SettingsViewController: UITableViewController {
 
-    @IBOutlet weak var yellowButton: UIButton!
+    @IBOutlet weak var yellowButton: ColorPickerButton!
     
-    @IBOutlet weak var blueButton: UIButton!
+    @IBOutlet weak var blueButton: ColorPickerButton!
     
-    @IBOutlet weak var redButton: UIButton!
+    @IBOutlet weak var redButton: ColorPickerButton!
     
-    @IBOutlet weak var greenButton: UIButton!
+    @IBOutlet weak var greenButton: ColorPickerButton!
     
     @IBOutlet weak var incrementStepper: UIStepper!
     
     @IBOutlet weak var incrementLabel: UILabel!
-    
-    let buttonCornerRadius: CGFloat = 15
-    
-    let buttonBorderWidth: CGFloat = 1
 
     let viewModel: SettingsViewModel = SettingsViewModel()
     
@@ -46,21 +42,20 @@ class SettingsViewController: UITableViewController {
     
     func setupUI(){
         
-        shapeButton(self.yellowButton, withColor: ClickerColors.YellowColor.uiColor)
+        self.yellowButton.setupWithColor(ClickerColors.YellowColor.uiColor)
         
-        shapeButton(self.blueButton, withColor: ClickerColors.BlueColor.uiColor)
+        self.blueButton.setupWithColor(ClickerColors.BlueColor.uiColor)
         
-        shapeButton(self.redButton, withColor: ClickerColors.RedColor.uiColor)
+        self.redButton.setupWithColor(ClickerColors.RedColor.uiColor)
         
-        shapeButton(self.greenButton, withColor: ClickerColors.GreenColor.uiColor)
+        self.greenButton.setupWithColor(ClickerColors.GreenColor.uiColor)
+
     }
     
     func setupObservers(){
         
         
         viewModel.settingsChangedDriver.driveNext{ [weak self ]settings in
-            
-            self?.navigationController?.navigationBar.tintColor = settings.color.uiColor
             
             self?.incrementStepper.tintColor = settings.color.uiColor.darkerColor()
             
@@ -69,7 +64,7 @@ class SettingsViewController: UITableViewController {
         
         viewModel.settingsChangedDriver.map{
             
-            return Double($0.incrementsMultiples)
+            return Double($0.incrementMultiplier)
             
             }.drive(incrementStepper.rx_value)
             .addDisposableTo(disposeBag)
@@ -77,26 +72,26 @@ class SettingsViewController: UITableViewController {
         
         viewModel.settingsChangedDriver.map{
             
-            return "\("increment_text".localized) \($0.incrementsMultiples)"
+            return "\("increment_text".localized) \($0.incrementMultiplier)"
             
             }.drive(incrementLabel.rx_text)
             .addDisposableTo(disposeBag)
     }
     
     
-    private func shapeButton(button : UIButton, withColor color:UIColor){
-        
-        button.layer.cornerRadius = buttonCornerRadius
-        
-        button.layer.borderWidth = buttonBorderWidth
-        
-        button.layer.borderColor = color.darkerColor().CGColor
-        
-        button.layer.backgroundColor = color.CGColor
-        
-        button.setTitle("", forState: UIControlState.Normal)
-        
-    }
+//    private func shapeButton(button : UIButton, withColor color:UIColor){
+//        
+//        button.layer.cornerRadius = buttonCornerRadius
+//        
+//        button.layer.borderWidth = buttonBorderWidth
+//        
+//        button.layer.borderColor = color.darkerColor().CGColor
+//        
+//        button.layer.backgroundColor = color.CGColor
+//        
+//        button.setTitle("", forState: UIControlState.Normal)
+//        
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
