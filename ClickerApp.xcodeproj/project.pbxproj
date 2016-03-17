@@ -44,6 +44,10 @@
 		8382995C1C8F8E1100AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8382995B1C8F8E1100AC17ED /* Assets.xcassets */; };
 		8382995D1C8F8E1100AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8382995B1C8F8E1100AC17ED /* Assets.xcassets */; };
 		8382995E1C8F8E1100AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8382995B1C8F8E1100AC17ED /* Assets.xcassets */; };
+		83887FE71C9A6A7A00E44C28 /* String-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83887FE61C9A6A7A00E44C28 /* String-Extensions.swift */; };
+		83887FE81C9A6A7A00E44C28 /* String-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83887FE61C9A6A7A00E44C28 /* String-Extensions.swift */; };
+		83887FEB1C9A6AD000E44C28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83887FEA1C9A6AD000E44C28 /* Localizable.strings */; };
+		83887FEC1C9A6AD000E44C28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83887FEA1C9A6AD000E44C28 /* Localizable.strings */; };
 		839369891C97DBFD00DB85DB /* ClickerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839369881C97DBFD00DB85DB /* ClickerColors.swift */; };
 		8393698A1C97DBFD00DB85DB /* ClickerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839369881C97DBFD00DB85DB /* ClickerColors.swift */; };
 		83BF9BC51C97597300962289 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF9BC41C97597300962289 /* SettingsViewController.swift */; };
@@ -150,6 +154,8 @@
 		838299431C8F7EFC00AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		838299451C8F7EFC00AC17ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8382995B1C8F8E1100AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83887FE61C9A6A7A00E44C28 /* String-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extensions.swift"; sourceTree = "<group>"; };
+		83887FEA1C9A6AD000E44C28 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		839369881C97DBFD00DB85DB /* ClickerColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerColors.swift; sourceTree = "<group>"; };
 		83BF9BC41C97597300962289 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		83FE52201C97ADAA00246976 /* UIColor-Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Hex.swift"; sourceTree = "<group>"; };
@@ -218,6 +224,7 @@
 			children = (
 				83FE52201C97ADAA00246976 /* UIColor-Hex.swift */,
 				830F2BBC1C98C31700B01638 /* UIColor-LighterDarker.swift */,
+				83887FE61C9A6A7A00E44C28 /* String-Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -285,13 +292,14 @@
 		838298FD1C8F7EFB00AC17ED /* ClickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				83887FE91C9A6AB000E44C28 /* SupportingFiles */,
+				83887FE51C9A6A3600E44C28 /* Extensions */,
+				83887FE41C9A696800E44C28 /* ViewControllers */,
 				838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */,
-				838299001C8F7EFB00AC17ED /* ViewController.swift */,
 				838299021C8F7EFB00AC17ED /* Main.storyboard */,
 				838299051C8F7EFB00AC17ED /* Assets.xcassets */,
 				838299071C8F7EFB00AC17ED /* LaunchScreen.storyboard */,
 				8382990A1C8F7EFB00AC17ED /* Info.plist */,
-				83BF9BC41C97597300962289 /* SettingsViewController.swift */,
 			);
 			path = ClickerApp;
 			sourceTree = "<group>";
@@ -345,6 +353,30 @@
 				838299381C8F7EFC00AC17ED /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83887FE41C9A696800E44C28 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				838299001C8F7EFB00AC17ED /* ViewController.swift */,
+				83BF9BC41C97597300962289 /* SettingsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		83887FE51C9A6A3600E44C28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		83887FE91C9A6AB000E44C28 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				83887FEA1C9A6AD000E44C28 /* Localizable.strings */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		E0C466A05FA768D4FAFBD1C2 /* Frameworks */ = {
@@ -551,6 +583,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83887FEB1C9A6AD000E44C28 /* Localizable.strings in Resources */,
 				838299091C8F7EFB00AC17ED /* LaunchScreen.storyboard in Resources */,
 				838299061C8F7EFB00AC17ED /* Assets.xcassets in Resources */,
 				8382995C1C8F8E1100AC17ED /* Assets.xcassets in Resources */,
@@ -586,6 +619,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8382995E1C8F8E1100AC17ED /* Assets.xcassets in Resources */,
+				83887FEC1C9A6AD000E44C28 /* Localizable.strings in Resources */,
 				838299441C8F7EFC00AC17ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,6 +801,7 @@
 			files = (
 				838299011C8F7EFB00AC17ED /* ViewController.swift in Sources */,
 				8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */,
+				83887FE71C9A6A7A00E44C28 /* String-Extensions.swift in Sources */,
 				830F2BBD1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */,
 				830F2B7F1C97904200B01638 /* Dictionatable.swift in Sources */,
 				838287681C8FF1CB00F5D92D /* DataStorage.swift in Sources */,
@@ -807,6 +842,7 @@
 				834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */,
 				83FE52221C97ADAA00246976 /* UIColor-Hex.swift in Sources */,
 				830F2BBE1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */,
+				83887FE81C9A6A7A00E44C28 /* String-Extensions.swift in Sources */,
 				8382993E1C8F7EFC00AC17ED /* NotificationController.swift in Sources */,
 				8382993C1C8F7EFC00AC17ED /* ExtensionDelegate.swift in Sources */,
 				838299421C8F7EFC00AC17ED /* ComplicationController.swift in Sources */,

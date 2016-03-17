@@ -77,7 +77,7 @@ class SettingsViewController: UITableViewController {
         
         viewModel.settingsChangedDriver.map{
             
-            return "Increment in multiples of : \($0.incrementsMultiples)"
+            return "\("increment_text".localized) \($0.incrementsMultiples)"
             
             }.drive(incrementLabel.rx_text)
             .addDisposableTo(disposeBag)

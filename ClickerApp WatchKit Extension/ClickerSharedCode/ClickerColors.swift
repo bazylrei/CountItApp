@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Colors to be used for the App
 public enum ClickerColors : String{
     
     case RedColor = "F10045"
@@ -16,13 +17,11 @@ public enum ClickerColors : String{
     case YellowColor = "FDF855"
     case GreenColor = "A2FB09"
     
+    /// Gets the UIColor 
     var uiColor: UIColor{
         
         return UIColor(hexString: self.rawValue)!
 
     }
-        
-    
-    
 
 }

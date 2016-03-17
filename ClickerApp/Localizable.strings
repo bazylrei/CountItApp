@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  ClickerApp
+
+  Created by Chris Jimenez on 3/16/16.
+  Copyright © 2016 greenpixels. All rights reserved.
+*/
+
+
+"app_name" = "Clicker";
+"increment_text" = "Increment in multiples of :";
