@@ -12,10 +12,10 @@ import UIKit
 /// Colors to be used for the App
 public enum ClickerColors : String{
     
-    case RedColor = "F10045"
-    case BlueColor = "1EEFC9"
+    case RedColor    = "F10045"
+    case BlueColor   = "1EEFC9"
     case YellowColor = "FDF855"
-    case GreenColor = "A2FB09"
+    case GreenColor  = "A2FB09"
     
     /// Gets the UIColor 
     var uiColor: UIColor{

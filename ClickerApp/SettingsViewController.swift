@@ -78,20 +78,6 @@ class SettingsViewController: UITableViewController {
             .addDisposableTo(disposeBag)
     }
     
-    
-//    private func shapeButton(button : UIButton, withColor color:UIColor){
-//        
-//        button.layer.cornerRadius = buttonCornerRadius
-//        
-//        button.layer.borderWidth = buttonBorderWidth
-//        
-//        button.layer.borderColor = color.darkerColor().CGColor
-//        
-//        button.layer.backgroundColor = color.CGColor
-//        
-//        button.setTitle("", forState: UIControlState.Normal)
-//        
-//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
