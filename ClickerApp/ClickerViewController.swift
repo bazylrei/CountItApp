@@ -79,19 +79,13 @@ class ClickerViewController: UIViewController {
 
     @IBAction func resetClickerTouched(sender: AnyObject) {
         
-        let resetAlert = UIAlertController(title: "app_name".localized, message: "reset_message".localized, preferredStyle: UIAlertControllerStyle.Alert)
         
-        let cancelAction = UIAlertAction(title: "cancel".localized, style: .Cancel, handler: nil )
-        
-        resetAlert.addAction(cancelAction)
-        
-        let okAction = UIAlertAction(title: "ok".localized, style: .Default){ [weak self] action in
-             self?.viewModel.resetClicker()
+        let alertController = AlertControllerBuilder.buildOkCancelAlertWithTitle("app_name".localized, message: "reset_message".localized){ [weak self] Void in
+            
+            self?.viewModel.resetClicker()
         }
-        
-        resetAlert.addAction(okAction)
        
-        self.presentViewController(resetAlert, animated: true, completion: nil)
+        self.presentViewController(alertController, animated: true, completion: nil)
         
     }
 }

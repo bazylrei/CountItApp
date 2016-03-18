@@ -23,6 +23,7 @@
 		832A4CD51C9B7376000EEEBB /* VersionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A4CD31C9B7376000EEEBB /* VersionUtil.swift */; };
 		832A4CD71C9B7C0E000EEEBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A4CD61C9B7C0E000EEEBB /* Constants.swift */; };
 		832A4CD81C9B7C0E000EEEBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A4CD61C9B7C0E000EEEBB /* Constants.swift */; };
+		832A4CDA1C9B833F000EEEBB /* AlertControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A4CD91C9B833F000EEEBB /* AlertControllerBuilder.swift */; };
 		834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
@@ -133,6 +134,7 @@
 		832A4CD01C9B7306000EEEBB /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		832A4CD31C9B7376000EEEBB /* VersionUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionUtil.swift; sourceTree = "<group>"; };
 		832A4CD61C9B7C0E000EEEBB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		832A4CD91C9B833F000EEEBB /* AlertControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerBuilder.swift; sourceTree = "<group>"; };
 		834AC7D21C92278200524C20 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		834AC7D51C92517C00524C20 /* ClickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModel.swift; sourceTree = "<group>"; };
 		838287671C8FF1CB00F5D92D /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStorage.swift; path = "ClickerApp WatchKit Extension/ClickerSharedCode/DataStorage.swift"; sourceTree = SOURCE_ROOT; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				832A4CD31C9B7376000EEEBB /* VersionUtil.swift */,
+				832A4CD91C9B833F000EEEBB /* AlertControllerBuilder.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -829,6 +832,7 @@
 				838287681C8FF1CB00F5D92D /* DataStorage.swift in Sources */,
 				838298FF1C8F7EFB00AC17ED /* AppDelegate.swift in Sources */,
 				839369891C97DBFD00DB85DB /* ClickerColors.swift in Sources */,
+				832A4CDA1C9B833F000EEEBB /* AlertControllerBuilder.swift in Sources */,
 				830F2B7C1C978E5700B01638 /* SettingsViewModel.swift in Sources */,
 				83887FF31C9A780700E44C28 /* ColorPickerButton.swift in Sources */,
 				834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */,
