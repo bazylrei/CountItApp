@@ -16,7 +16,32 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clicker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-5s-bUB">
+                                <rect key="frame" x="225" y="420" width="151" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="RLv-Xh-8Pb"/>
+                                    <constraint firstAttribute="height" constant="29" id="Xpq-ty-QYT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="AKh-Fv-t2M">
+                                <rect key="frame" x="190" y="188" width="221" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="4gw-f1-u3e"/>
+                                    <constraint firstAttribute="height" constant="224" id="AVd-rm-fKR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AKh-Fv-t2M" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DmU-kV-FEi"/>
+                            <constraint firstItem="1oe-5s-bUB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KvN-uj-6VH"/>
+                            <constraint firstItem="AKh-Fv-t2M" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="h5J-hg-6vJ"/>
+                            <constraint firstItem="1oe-5s-bUB" firstAttribute="top" secondItem="AKh-Fv-t2M" secondAttribute="bottom" constant="8" id="hYb-VW-eVX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +49,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon" width="512" height="512"/>
+    </resources>
 </document>

@@ -135,6 +135,8 @@ extension SettingsViewModel: ApplicationContextChangedDelegate{
             
             self.settings = Settings(dictionary : settingsDict)
             
+            self.dataStorage.saveSettings(settings)
+            
         }
     }
     

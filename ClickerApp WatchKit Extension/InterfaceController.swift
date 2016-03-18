@@ -25,6 +25,8 @@ class InterfaceController: WKInterfaceController {
     var viewModel: ClickerViewModel = ClickerViewModel()
     
     var settingsViewModel: SettingsViewModel = SettingsViewModel()
+    
+    var incrementMultiplier: Int = 1
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -40,6 +42,8 @@ class InterfaceController: WKInterfaceController {
                          .subscribeNext{ [weak self] settings in
                             
                     self?.backgroundContainer.setBackgroundColor(settings.color.uiColor)
+                            
+                    self?.incrementMultiplier = settings.incrementMultiplier
             
             
         }.addDisposableTo(disposeBag)
@@ -62,10 +66,21 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func clickedAddTouched() {
         
-        viewModel.incrementClikerByMultiplier()
+        viewModel.incrementClikerByMultiplier(incrementMultiplier)
         
     }
     
 
+    @IBAction func resetMenuTouched() {
+        
+        viewModel.resetClicker()
+        
+    }
+    
+    @IBAction func substractMenuTouched() {
+        
+        viewModel.decrementClikerByMultiplier(incrementMultiplier)
+    }
+    
 }
 

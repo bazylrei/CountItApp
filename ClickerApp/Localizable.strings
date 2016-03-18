@@ -9,6 +9,6 @@
 
 "app_name" = "Clicker";
 "increment_text" = "Increment by";
-"reset_message" = "Do you want to reset the clicker count?";
+"reset_message" = "Do you really want to reset the Clicker count?";
 "cancel" = "Cancel";
 "ok" = "Ok";
