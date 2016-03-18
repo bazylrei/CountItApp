@@ -9,7 +9,7 @@
         <!--Clicker-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClickerApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ClickerViewController" customModule="ClickerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -76,7 +76,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="tei-Wz-hSA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Clicker" id="oJB-RJ-RrG">
                                 <cells>
@@ -102,7 +102,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="GbO-4X-WtS"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -208,7 +208,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -225,7 +225,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -238,17 +238,34 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0r1-s0-L0Y">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Github" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0r1-s0-L0Y">
                                                     <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="j4P-VM-KwW" style="IBUITableViewCellStyleDefault" id="Lyq-7j-0Tq">
+                                        <rect key="frame" x="0.0" y="383.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lyq-7j-0Tq" id="4Ff-k7-9pd">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j4P-VM-KwW">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="B7e-gD-JTq" kind="show" id="Thh-nj-LV4"/>
+                                            <segue destination="B7e-gD-JTq" kind="show" id="e4t-ub-jSJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -272,10 +289,10 @@
             </objects>
             <point key="canvasLocation" x="2734" y="399"/>
         </scene>
-        <!--View Controller-->
+        <!--About-->
         <scene sceneID="aNi-sE-fPd">
             <objects>
-                <viewController id="B7e-gD-JTq" sceneMemberID="viewController">
+                <viewController title="About" id="B7e-gD-JTq" customClass="AboutViewController" customModule="ClickerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a8W-Px-PzM"/>
                         <viewControllerLayoutGuide type="bottom" id="QHi-vL-eet"/>
@@ -283,8 +300,70 @@
                     <view key="view" contentMode="scaleToFill" id="PZh-fS-ZQB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="gTh-yc-5ob">
+                                <rect key="frame" x="273" y="72" width="55" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="4bt-zG-vej"/>
+                                    <constraint firstAttribute="height" constant="56" id="SZI-zr-0ED"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clicker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghd-5Y-w66">
+                                <rect key="frame" x="265" y="146" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="2qv-fv-LZh"/>
+                                    <constraint firstAttribute="height" constant="21" id="6ue-Ku-TPt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2016 Chris Jimenez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8E-V7-oYJ">
+                                <rect key="frame" x="231" y="226" width="138" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GFt-Lk-o7h"/>
+                                    <constraint firstAttribute="width" constant="138" id="eOk-gw-rKP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clicker is brought to you by Chris Jimenez, a solo developer passioned about Open Source Software and Technology." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyf-mg-5zw">
+                                <rect key="frame" x="20" y="181" width="560" height="37.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvM-mv-NdD">
+                                <rect key="frame" x="236" y="255.5" width="129" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QY5-f9-vsh"/>
+                                    <constraint firstAttribute="width" constant="129" id="bSL-gM-XTo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gTh-yc-5ob" firstAttribute="top" secondItem="a8W-Px-PzM" secondAttribute="bottom" constant="8" id="2Ft-bs-NZp"/>
+                            <constraint firstItem="Vyf-mg-5zw" firstAttribute="top" secondItem="ghd-5Y-w66" secondAttribute="bottom" constant="14" id="2Nu-xl-ISc"/>
+                            <constraint firstItem="jvM-mv-NdD" firstAttribute="centerX" secondItem="PZh-fS-ZQB" secondAttribute="centerX" id="55C-dH-Ahq"/>
+                            <constraint firstItem="Vyf-mg-5zw" firstAttribute="centerX" secondItem="PZh-fS-ZQB" secondAttribute="centerX" id="5GU-Xi-V5a"/>
+                            <constraint firstItem="g8E-V7-oYJ" firstAttribute="top" secondItem="Vyf-mg-5zw" secondAttribute="bottom" constant="8" id="D35-co-9zb"/>
+                            <constraint firstItem="gTh-yc-5ob" firstAttribute="centerX" secondItem="PZh-fS-ZQB" secondAttribute="centerX" id="Qih-si-fhb"/>
+                            <constraint firstItem="Vyf-mg-5zw" firstAttribute="leading" secondItem="PZh-fS-ZQB" secondAttribute="leadingMargin" id="ZFB-gF-Qwb"/>
+                            <constraint firstItem="ghd-5Y-w66" firstAttribute="top" secondItem="gTh-yc-5ob" secondAttribute="bottom" constant="18" id="cHn-Ws-s3R"/>
+                            <constraint firstItem="Vyf-mg-5zw" firstAttribute="trailing" secondItem="PZh-fS-ZQB" secondAttribute="trailingMargin" id="giV-8o-86u"/>
+                            <constraint firstItem="ghd-5Y-w66" firstAttribute="centerX" secondItem="PZh-fS-ZQB" secondAttribute="centerX" id="j5I-Y5-hDr"/>
+                            <constraint firstItem="jvM-mv-NdD" firstAttribute="top" secondItem="g8E-V7-oYJ" secondAttribute="bottom" constant="8" id="rmy-F7-cdW"/>
+                            <constraint firstItem="g8E-V7-oYJ" firstAttribute="centerX" secondItem="PZh-fS-ZQB" secondAttribute="centerX" id="t87-vx-VSL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="versionLabel" destination="jvM-mv-NdD" id="yqa-Hu-Y5j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zX9-Xk-Aod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,6 +395,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Icon" width="57" height="57"/>
         <image name="ic_add_48pt" width="48" height="48"/>
         <image name="settingIcon" width="22" height="22"/>
     </resources>

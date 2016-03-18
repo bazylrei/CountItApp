@@ -18,6 +18,11 @@
 		830F2B811C97927300B01638 /* Dictionatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B7E1C97904200B01638 /* Dictionatable.swift */; };
 		830F2BBD1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2BBC1C98C31700B01638 /* UIColor-LighterDarker.swift */; };
 		830F2BBE1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2BBC1C98C31700B01638 /* UIColor-LighterDarker.swift */; };
+		832A4CD11C9B7306000EEEBB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A4CD01C9B7306000EEEBB /* AboutViewController.swift */; };
+		832A4CD41C9B7376000EEEBB /* VersionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A4CD31C9B7376000EEEBB /* VersionUtil.swift */; };
+		832A4CD51C9B7376000EEEBB /* VersionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A4CD31C9B7376000EEEBB /* VersionUtil.swift */; };
+		832A4CD71C9B7C0E000EEEBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A4CD61C9B7C0E000EEEBB /* Constants.swift */; };
+		832A4CD81C9B7C0E000EEEBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832A4CD61C9B7C0E000EEEBB /* Constants.swift */; };
 		834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
@@ -26,7 +31,7 @@
 		8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382876C1C90CF3900F5D92D /* Clicker.swift */; };
 		8382876E1C90CFA800F5D92D /* Clicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382876C1C90CF3900F5D92D /* Clicker.swift */; };
 		838298FF1C8F7EFB00AC17ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */; };
-		838299011C8F7EFB00AC17ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838299001C8F7EFB00AC17ED /* ViewController.swift */; };
+		838299011C8F7EFB00AC17ED /* ClickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838299001C8F7EFB00AC17ED /* ClickerViewController.swift */; };
 		838299041C8F7EFB00AC17ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838299021C8F7EFB00AC17ED /* Main.storyboard */; };
 		838299061C8F7EFB00AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838299051C8F7EFB00AC17ED /* Assets.xcassets */; };
 		838299091C8F7EFB00AC17ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838299071C8F7EFB00AC17ED /* LaunchScreen.storyboard */; };
@@ -125,13 +130,16 @@
 		830F2B7B1C978E5700B01638 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		830F2B7E1C97904200B01638 /* Dictionatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionatable.swift; sourceTree = "<group>"; };
 		830F2BBC1C98C31700B01638 /* UIColor-LighterDarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-LighterDarker.swift"; sourceTree = "<group>"; };
+		832A4CD01C9B7306000EEEBB /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		832A4CD31C9B7376000EEEBB /* VersionUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionUtil.swift; sourceTree = "<group>"; };
+		832A4CD61C9B7C0E000EEEBB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		834AC7D21C92278200524C20 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		834AC7D51C92517C00524C20 /* ClickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModel.swift; sourceTree = "<group>"; };
 		838287671C8FF1CB00F5D92D /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStorage.swift; path = "ClickerApp WatchKit Extension/ClickerSharedCode/DataStorage.swift"; sourceTree = SOURCE_ROOT; };
 		8382876C1C90CF3900F5D92D /* Clicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clicker.swift; sourceTree = "<group>"; };
 		838298FB1C8F7EFB00AC17ED /* ClickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838298FE1C8F7EFB00AC17ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		838299001C8F7EFB00AC17ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		838299001C8F7EFB00AC17ED /* ClickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerViewController.swift; sourceTree = "<group>"; };
 		838299031C8F7EFB00AC17ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		838299051C8F7EFB00AC17ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		838299081C8F7EFB00AC17ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -231,6 +239,14 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		832A4CD21C9B7360000EEEBB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				832A4CD31C9B7376000EEEBB /* VersionUtil.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		838287661C8FF17C00F5D92D /* ClickerSharedCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +310,7 @@
 		838298FD1C8F7EFB00AC17ED /* ClickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				832A4CD21C9B7360000EEEBB /* Utils */,
 				83887FEF1C9A77B000E44C28 /* Views */,
 				83887FE91C9A6AB000E44C28 /* SupportingFiles */,
 				83887FE41C9A696800E44C28 /* ViewControllers */,
@@ -302,6 +319,7 @@
 				838299051C8F7EFB00AC17ED /* Assets.xcassets */,
 				838299071C8F7EFB00AC17ED /* LaunchScreen.storyboard */,
 				8382990A1C8F7EFB00AC17ED /* Info.plist */,
+				832A4CD61C9B7C0E000EEEBB /* Constants.swift */,
 			);
 			path = ClickerApp;
 			sourceTree = "<group>";
@@ -360,8 +378,9 @@
 		83887FE41C9A696800E44C28 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				838299001C8F7EFB00AC17ED /* ViewController.swift */,
+				838299001C8F7EFB00AC17ED /* ClickerViewController.swift */,
 				83BF9BC41C97597300962289 /* SettingsViewController.swift */,
+				832A4CD01C9B7306000EEEBB /* AboutViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -802,7 +821,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				838299011C8F7EFB00AC17ED /* ViewController.swift in Sources */,
+				838299011C8F7EFB00AC17ED /* ClickerViewController.swift in Sources */,
 				8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */,
 				83887FE71C9A6A7A00E44C28 /* String-Extensions.swift in Sources */,
 				830F2BBD1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */,
@@ -816,7 +835,10 @@
 				830F2B761C97676900B01638 /* Settings.swift in Sources */,
 				834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */,
 				83BF9BC51C97597300962289 /* SettingsViewController.swift in Sources */,
+				832A4CD41C9B7376000EEEBB /* VersionUtil.swift in Sources */,
+				832A4CD11C9B7306000EEEBB /* AboutViewController.swift in Sources */,
 				83FE52211C97ADAA00246976 /* UIColor-Hex.swift in Sources */,
+				832A4CD71C9B7C0E000EEEBB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,8 +876,10 @@
 				8382993A1C8F7EFC00AC17ED /* InterfaceController.swift in Sources */,
 				834AC7D71C92517C00524C20 /* ClickerViewModel.swift in Sources */,
 				830F2B771C97676900B01638 /* Settings.swift in Sources */,
+				832A4CD51C9B7376000EEEBB /* VersionUtil.swift in Sources */,
 				838299401C8F7EFC00AC17ED /* GlanceController.swift in Sources */,
 				830F2B7D1C978E5700B01638 /* SettingsViewModel.swift in Sources */,
+				832A4CD81C9B7C0E000EEEBB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

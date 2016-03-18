@@ -11,7 +11,7 @@ import WatchConnectivity
 import RxSwift
 import RxCocoa
 
-class ViewController: UIViewController {
+class ClickerViewController: UIViewController {
 
     @IBOutlet weak var clickerCountLabel: UILabel!
     

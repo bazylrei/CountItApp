@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 
 class SettingsViewController: UITableViewController {
+    
 
     @IBOutlet weak var yellowButton: ColorPickerButton!
     
@@ -113,5 +114,50 @@ class SettingsViewController: UITableViewController {
         
         
     }
+    
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        switch(indexPath.section, indexPath.row)
+        {
+        case(1,0):
+            self.rateApp()
+            
+        case(1,1):
+            self.showTwitter()
+            
+        case(1,2):
+            self.showGithub()
+            
+        default:
+            break
+            
+        }
+    }
+    
+    
+    private func rateApp(){
+        
+        
+        
+    }
+    
+    /**
+     Opens the twitter app link
+     */
+    private func showTwitter(){
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: Constants.twitterURL)!)
+    }
+    
+    /**
+     Opens the github app link
+     */
+    private func showGithub(){
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: Constants.githubURL)!)
+    }
+    
+    
 
 }
