@@ -41,7 +41,19 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Xxo-cK-uSI"/>
                                 </constraints>
-                                <items/>
+                                <items>
+                                    <barButtonItem image="ic_clear_36pt" style="plain" id="Ymk-aV-NBz">
+                                        <connections>
+                                            <action selector="resetClickerTouched:" destination="BYZ-38-t0r" id="UMP-5f-2rT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Yio-AR-Xeh"/>
+                                    <barButtonItem image="ic_remove_36pt" style="plain" id="djF-E9-xxr">
+                                        <connections>
+                                            <action selector="clickerDecrementTouched:" destination="BYZ-38-t0r" id="ick-O4-c5b"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.0" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,6 +75,7 @@
                     <connections>
                         <outlet property="clickerButton" destination="XZW-qX-j6a" id="D4a-AC-Kx6"/>
                         <outlet property="clickerCountLabel" destination="EK8-v5-iaK" id="cko-qd-ZMJ"/>
+                        <outlet property="toolbar" destination="xHC-Vw-DCA" id="Wg3-AX-38Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -397,6 +410,8 @@
     <resources>
         <image name="Icon" width="57" height="57"/>
         <image name="ic_add_48pt" width="48" height="48"/>
+        <image name="ic_clear_36pt" width="36" height="36"/>
+        <image name="ic_remove_36pt" width="36" height="36"/>
         <image name="settingIcon" width="22" height="22"/>
     </resources>
     <color key="tintColor" red="0.95686274510000002" green="0.0" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>

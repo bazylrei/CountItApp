@@ -17,11 +17,14 @@ class ClickerViewController: UIViewController {
     
     @IBOutlet weak var clickerButton: UIButton!
     
+    @IBOutlet weak var toolbar: UIToolbar!
     var disposeBag: DisposeBag = DisposeBag()
     
     let viewModel:ClickerViewModel = ClickerViewModel()
     
     let settingsViewModel: SettingsViewModel = SettingsViewModel()
+    
+    var multiplier: Int = 1
 
     
     override func viewDidLoad() {
@@ -38,6 +41,10 @@ class ClickerViewController: UIViewController {
             self?.view.backgroundColor = settings.color.uiColor
             
             self?.navigationController?.navigationBar.tintColor = settings.color.uiColor
+            
+            self?.toolbar.tintColor = settings.color.uiColor
+            
+            self?.multiplier = settings.incrementMultiplier
             
             self?.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: settings.color.uiColor]
         
@@ -60,12 +67,33 @@ class ClickerViewController: UIViewController {
 
     @IBAction func clickerIncrementTouched(sender: AnyObject) {
         
-        let multiplier = settingsViewModel.settings.incrementMultiplier
-        
         viewModel.incrementClikerByMultiplier(multiplier)
         
     }
 
+    @IBAction func clickerDecrementTouched(sender: AnyObject) {
+        
+        viewModel.decrementClikerByMultiplier(multiplier)
+        
+    }
+
+    @IBAction func resetClickerTouched(sender: AnyObject) {
+        
+        let resetAlert = UIAlertController(title: "app_name".localized, message: "reset_message".localized, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let cancelAction = UIAlertAction(title: "cancel".localized, style: .Cancel, handler: nil )
+        
+        resetAlert.addAction(cancelAction)
+        
+        let okAction = UIAlertAction(title: "ok".localized, style: .Default){ [weak self] action in
+             self?.viewModel.resetClicker()
+        }
+        
+        resetAlert.addAction(okAction)
+       
+        self.presentViewController(resetAlert, animated: true, completion: nil)
+        
+    }
 }
 
 
