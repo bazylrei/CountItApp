@@ -97,7 +97,7 @@ class ClickerViewController: UIViewController {
             self.clickerCountLabel.transform = scaleTransform
             self.clickerCountLabel.text = count
             
-            //When animation completes, grow the image
+            //When animation completes, grow
             }, completion: { finished in
                 
                 
