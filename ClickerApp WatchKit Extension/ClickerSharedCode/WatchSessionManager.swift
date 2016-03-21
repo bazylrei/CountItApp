@@ -17,6 +17,7 @@ public protocol ApplicationContextChangedDelegate {
 /// Manager for the WCSession object to be shared
 public class WatchSessionManager: NSObject{
     
+    /// Singleton of the object
     static let sharedManager = WatchSessionManager()
     
     private var applicationContextChangedDelegates = [ApplicationContextChangedDelegate]()

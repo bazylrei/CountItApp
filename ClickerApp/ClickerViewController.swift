@@ -11,6 +11,7 @@ import WatchConnectivity
 import RxSwift
 import RxCocoa
 
+
 class ClickerViewController: UIViewController {
 
     @IBOutlet weak var clickerCountLabel: UILabel!
@@ -58,7 +59,8 @@ class ClickerViewController: UIViewController {
         viewModel.updateToLatestClicker()
         
         settingsViewModel.getLatestSettings()
-    }
+    }    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

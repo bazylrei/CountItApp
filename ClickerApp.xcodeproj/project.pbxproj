@@ -28,6 +28,7 @@
 		834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
 		834AC7D71C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
+		8351F91D1C9FA3B000D339B5 /* WatchComplicationTransferManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351F91C1C9FA3B000D339B5 /* WatchComplicationTransferManager.swift */; };
 		838287681C8FF1CB00F5D92D /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287671C8FF1CB00F5D92D /* DataStorage.swift */; };
 		8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382876C1C90CF3900F5D92D /* Clicker.swift */; };
 		8382876E1C90CFA800F5D92D /* Clicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382876C1C90CF3900F5D92D /* Clicker.swift */; };
@@ -137,6 +138,7 @@
 		832A4CD91C9B833F000EEEBB /* AlertControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerBuilder.swift; sourceTree = "<group>"; };
 		834AC7D21C92278200524C20 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		834AC7D51C92517C00524C20 /* ClickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModel.swift; sourceTree = "<group>"; };
+		8351F91C1C9FA3B000D339B5 /* WatchComplicationTransferManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchComplicationTransferManager.swift; sourceTree = "<group>"; };
 		838287671C8FF1CB00F5D92D /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStorage.swift; path = "ClickerApp WatchKit Extension/ClickerSharedCode/DataStorage.swift"; sourceTree = SOURCE_ROOT; };
 		8382876C1C90CF3900F5D92D /* Clicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clicker.swift; sourceTree = "<group>"; };
 		838298FB1C8F7EFB00AC17ED /* ClickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,6 +252,14 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		8351F91B1C9FA39E00D339B5 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				8351F91C1C9FA3B000D339B5 /* WatchComplicationTransferManager.swift */,
+			);
+			name = Watch;
+			sourceTree = "<group>";
+		};
 		838287661C8FF17C00F5D92D /* ClickerSharedCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +323,7 @@
 		838298FD1C8F7EFB00AC17ED /* ClickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				8351F91B1C9FA39E00D339B5 /* Watch */,
 				832A4CD21C9B7360000EEEBB /* Utils */,
 				83887FEF1C9A77B000E44C28 /* Views */,
 				83887FE91C9A6AB000E44C28 /* SupportingFiles */,
@@ -826,6 +837,7 @@
 			files = (
 				838299011C8F7EFB00AC17ED /* ClickerViewController.swift in Sources */,
 				8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */,
+				8351F91D1C9FA3B000D339B5 /* WatchComplicationTransferManager.swift in Sources */,
 				83887FE71C9A6A7A00E44C28 /* String-Extensions.swift in Sources */,
 				830F2BBD1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */,
 				830F2B7F1C97904200B01638 /* Dictionatable.swift in Sources */,

@@ -23,8 +23,8 @@ public class ClickerViewModel: NSObject{
         
     }
     
-    /// Clicker model marked as dynamic for KVO
-    var clicker: Clicker = Clicker()
+    /// Clicker model
+    public var clicker: Clicker = Clicker()
     {
         didSet{
            
@@ -33,10 +33,10 @@ public class ClickerViewModel: NSObject{
         }
     }
     
-    var clickerCount =  Variable(0)
+    public var clickerCount =  Variable(0)
     
     
-    var clickerCountDriver: Driver<Int>?
+    public var clickerCountDriver: Driver<Int>?
     
     
     public override init(){
@@ -130,6 +130,7 @@ public class ClickerViewModel: NSObject{
         
         watchSession.updateApplicationContext(withKey: ApplicationContextKey.ClikerKey.rawValue, content: clicker.toDictionary())
     }
+    
     
     deinit{
         

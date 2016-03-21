@@ -7,6 +7,7 @@
 //
 
 import WatchKit
+import ClockKit
 import Foundation
 import WatchConnectivity
 import RxSwift
@@ -58,11 +59,16 @@ class InterfaceController: WKInterfaceController {
         settingsViewModel.getLatestSettings()
 
     }
+    
+    
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        
+         updateComplication()
     }
+    
 
     @IBAction func clickedAddTouched() {
         
@@ -80,6 +86,17 @@ class InterfaceController: WKInterfaceController {
     @IBAction func substractMenuTouched() {
         
         viewModel.decrementClikerByMultiplier(incrementMultiplier)
+    }
+    
+    func updateComplication()
+    {
+        
+        let server = CLKComplicationServer.sharedInstance()
+        
+        for complication in server.activeComplications {
+            server.reloadTimelineForComplication(complication)
+        }
+
     }
     
 }
