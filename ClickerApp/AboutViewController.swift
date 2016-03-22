@@ -20,10 +20,7 @@ class AboutViewController: UIViewController {
         if let versionNumber = VersionUtil.getAppVersion() {
             
             self.versionLabel.text = "Version \(versionNumber)"
-            
         }
-        
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -36,7 +33,4 @@ class AboutViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-
 }

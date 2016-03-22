@@ -120,13 +120,13 @@ class SettingsViewController: UITableViewController {
         
         switch(indexPath.section, indexPath.row)
         {
-        case(1,0):
+        case(1,1):
             self.rateApp()
             
-        case(1,1):
+        case(1,2):
             self.showTwitter()
             
-        case(1,2):
+        case(1,3):
             self.showGithub()
             
         default:
