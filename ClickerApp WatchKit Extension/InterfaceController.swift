@@ -27,6 +27,8 @@ class InterfaceController: WKInterfaceController {
     
     var settingsViewModel: SettingsViewModel = SettingsViewModel()
     
+    let interfaceDevice = WKInterfaceDevice()
+    
     var incrementMultiplier: Int = 1
 
     override func awakeWithContext(context: AnyObject?) {
@@ -39,9 +41,14 @@ class InterfaceController: WKInterfaceController {
                     .map { String($0) }
                     .driveNext{ [weak self] count in
                         
-                        self?.animateWithDuration(0.35, animations: { () -> Void in
+                        self?.animateWithDuration(0.10
+                            , animations: { () -> Void in
                         
                             self?.clickerCountLabel.setText(count)
+                                
+                            self?.interfaceDevice.playHaptic(WKHapticType.Click)
+                            
+
                         });
                         
                     }.addDisposableTo(disposeBag)
@@ -102,6 +109,8 @@ class InterfaceController: WKInterfaceController {
         
         viewModel.resetClicker()
         
+        interfaceDevice.playHaptic(WKHapticType.Failure)
+        
     }
     
     /**
@@ -110,6 +119,8 @@ class InterfaceController: WKInterfaceController {
     @IBAction func substractMenuTouched() {
         
         viewModel.decrementClikerByMultiplier(incrementMultiplier)
+        
+        interfaceDevice.playHaptic(WKHapticType.DirectionDown)
     }
     
     func updateComplication()
