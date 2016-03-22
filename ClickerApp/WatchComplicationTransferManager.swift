@@ -24,7 +24,7 @@ public class WatchComplicationManager: NSObject{
         session?.activateSession()
     }
     
-    var session: WCSession?
+    public var session: WCSession?
    
     /**
      Transfer data to complication

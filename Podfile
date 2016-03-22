@@ -16,7 +16,8 @@ target 'ClickerApp' do
 end
 
 target 'ClickerAppTests' do
-    test_pods
+   core_pods 
+   test_pods
 end
 
 target 'ClickerAppUITests' do
