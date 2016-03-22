@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- *  Clicker to countain the current ecount
+ *  Clicker to countain the current count
  */
 public class Clicker: NSObject, NSCoding, Dictionatable{
     

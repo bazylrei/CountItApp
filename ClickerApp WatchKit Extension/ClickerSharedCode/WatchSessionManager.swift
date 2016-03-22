@@ -9,7 +9,9 @@
 import Foundation
 import WatchConnectivity
 
-
+/**
+ *  Protocol to be implemented by the objects that are interested in subscribing to Update of Watch session
+ */
 public protocol ApplicationContextChangedDelegate {
     func applicationContextDidUpdate(applicationContext: [String : AnyObject])
 }
@@ -20,6 +22,7 @@ public class WatchSessionManager: NSObject{
     /// Singleton of the object
     static let sharedManager = WatchSessionManager()
     
+    /// Defines the array of delegates
     private var applicationContextChangedDelegates = [ApplicationContextChangedDelegate]()
     
     public override init(){

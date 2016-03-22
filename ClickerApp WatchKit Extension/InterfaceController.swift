@@ -15,20 +15,24 @@ import RxSwift
 
 class InterfaceController: WKInterfaceController {
     
+    /// UI Components
     @IBOutlet var backgroundContainer: WKInterfaceGroup!
     
     @IBOutlet var clickerCountLabel: WKInterfaceLabel!
     
     @IBOutlet var clickerCountButton: WKInterfaceButton!
     
+    //RX dispose and observers
     var disposeBag = DisposeBag()
     
     var viewModel: ClickerViewModel = ClickerViewModel()
     
     var settingsViewModel: SettingsViewModel = SettingsViewModel()
     
+    //Interface device, mostly us for haptic feedback
     let interfaceDevice = WKInterfaceDevice()
     
+    //Default multiplier
     var incrementMultiplier: Int = 1
 
     override func awakeWithContext(context: AnyObject?) {

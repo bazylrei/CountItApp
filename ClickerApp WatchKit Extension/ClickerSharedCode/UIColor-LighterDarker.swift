@@ -9,8 +9,14 @@
 import Foundation
 import UIKit
 
+// MARK: - Extension to get Lighter or darker colors
 public extension UIColor{
     
+    /**
+     Returns a darker color tone
+     
+     - returns: <#return value description#>
+     */
     func darkerColor() -> UIColor {
         
         var r:CGFloat = 0, g:CGFloat = 0, b:CGFloat = 0, a:CGFloat = 0
@@ -22,7 +28,11 @@ public extension UIColor{
         return self
     }
     
-    
+    /**
+     Returns a ligter color tone
+     
+     - returns: <#return value description#>
+     */
     func lighterColor() -> UIColor {
         
         var r:CGFloat = 0, g:CGFloat = 0, b:CGFloat = 0, a:CGFloat = 0

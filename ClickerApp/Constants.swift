@@ -9,6 +9,9 @@
 import Foundation
 
 
+/**
+ *  Constants class
+ */
 public struct Constants{
     
     

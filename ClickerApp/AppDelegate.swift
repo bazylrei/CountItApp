@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    /// Use this view model to optain data of the clicker to be send to the complication if installed
     let viewModel:ClickerViewModel = ClickerViewModel()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -30,11 +31,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     }
     
+    /**
+     Updates teh complication
+     */
     private func updateComplication()
     {
-        
+        /// Gets the complication manager
         let complicationManager = WatchComplicationManager()
-        
+        /**
+        Updates teh complication with key and info of the clicker
+        */
         complicationManager.updateComplication(withKey: "clicker", content: viewModel.clicker.toDictionary())
     }
 

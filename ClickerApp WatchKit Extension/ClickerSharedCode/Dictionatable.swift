@@ -10,7 +10,7 @@ import Foundation
 
 
 /**
- *  Kind of a ugly name for a protocol, but its that, classes that implement this can be converted to a from dictionaries
+ *  Classes that implement this can be converted to a from dictionaries
  */
 public protocol Dictionatable{
     

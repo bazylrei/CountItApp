@@ -12,6 +12,7 @@ import UIKit
 /// Colors to be used for the App
 public enum ClickerColors : String{
     
+    /// Colors of the Apple Watch Activity functionality
     case RedColor    = "F40059"
     case BlueColor   = "1EEFC9"
     case YellowColor = "FDF855"

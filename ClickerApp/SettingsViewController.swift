@@ -41,6 +41,9 @@ class SettingsViewController: UITableViewController {
         // Do any additional setup after loading the view.
     }
     
+    /**
+     Setups the UI with the different colors
+     */
     func setupUI(){
         
         self.yellowButton.setupWithColor(ClickerColors.YellowColor.uiColor)
@@ -53,16 +56,23 @@ class SettingsViewController: UITableViewController {
 
     }
     
+    /**
+     Setup the observers
+     */
     func setupObservers(){
         
-        
+        /**
+        *  If the settings is change update the color
+        */
         viewModel.settingsChangedDriver.driveNext{ [weak self ]settings in
             
             self?.incrementStepper.tintColor = settings.color.uiColor.darkerColor()
             
             }.addDisposableTo(disposeBag)
         
-        
+        /**
+        *  If the settings is change, map the multiplier to a double and set that to the value of the stepper
+        */
         viewModel.settingsChangedDriver.map{
             
             return Double($0.incrementMultiplier)
@@ -71,6 +81,9 @@ class SettingsViewController: UITableViewController {
             .addDisposableTo(disposeBag)
         
         
+        /**
+        *  If the settings are change map the multiplier to an string and set that to the value of the label
+        */
         viewModel.settingsChangedDriver.map{
             
             return "\("increment_text".localized) \($0.incrementMultiplier)"
@@ -115,7 +128,7 @@ class SettingsViewController: UITableViewController {
         
     }
     
-    
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         switch(indexPath.section, indexPath.row)
@@ -137,7 +150,6 @@ class SettingsViewController: UITableViewController {
     
     
     private func rateApp(){
-        
         
         
     }

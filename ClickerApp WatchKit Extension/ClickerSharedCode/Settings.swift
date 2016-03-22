@@ -11,9 +11,10 @@ import UIKit
 public class Settings: NSObject, NSCoding, Dictionatable {
     
     
-    /// The currentCount
+    ///The selected setting color, defaults to red color
     public var color: ClickerColors = ClickerColors.RedColor
     
+    /// The increment multiplier, defaults to 1
     public var incrementMultiplier : Int  = 1
     
     // Storage and dictionary keys

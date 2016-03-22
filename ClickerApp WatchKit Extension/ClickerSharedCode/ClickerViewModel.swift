@@ -10,10 +10,13 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+/// View model for the clicker class
 public class ClickerViewModel: NSObject{
     
+    /// Data storage save information of the models
     let dataStorage : DataStorage = DataStorage()
     
+    /// Watch session manager
     let watchSession : WatchSessionManager = WatchSessionManager.sharedManager
     
     /// Key to be use in the application context dictionary
@@ -27,22 +30,25 @@ public class ClickerViewModel: NSObject{
     public var clicker: Clicker = Clicker()
     {
         didSet{
-           
+           //If the value is set update the RXVariable with the value
             clickerCount.value = clicker.currentCount
             
         }
     }
     
+    /// RX Variable of the count to be observed
     public var clickerCount =  Variable(0)
     
-    
+    /// The driver to be updated when changes happen
     public var clickerCountDriver: Driver<Int>?
     
     
     public override init(){
         
         super.init()
-        
+        /**
+        Create the driver from the RX Variable
+        */
         clickerCountDriver = clickerCount.asDriver()
         
         updateToLatestClicker()
@@ -141,6 +147,7 @@ public class ClickerViewModel: NSObject{
 
 }
 
+// MARK: - Extension to implement the ApplicationContextChangedDelegate of the info sent by the watch and the iOS device
 extension ClickerViewModel: ApplicationContextChangedDelegate{
     
     

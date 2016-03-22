@@ -44,18 +44,25 @@ class ClickerViewController: UIViewController {
 
         
         
+        /**
+        *  Observes the settings view model and updates background and tint color
+        */
         settingsViewModel.settingsChangedDriver.driveNext { [weak self] settings in
             
+            /**
+            Updates color based on the settings selected
+            */
             self?.view.backgroundColor = settings.color.uiColor
-            
             self?.navigationController?.navigationBar.tintColor = settings.color.uiColor
-            
             self?.toolbar.tintColor = settings.color.uiColor
+            self?.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: settings.color.uiColor]
             
+            /**
+            Updates the multipier
+            */
             self?.multiplier = settings.incrementMultiplier
             
-            self?.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: settings.color.uiColor]
-        
+
         }.addDisposableTo(disposeBag)
         
     }
@@ -74,52 +81,69 @@ class ClickerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    /**
+     Increment the clicker count action
+     
+     - parameter sender: <#sender description#>
+     */
     @IBAction func clickerIncrementTouched(sender: AnyObject) {
         
         viewModel.incrementClikerByMultiplier(multiplier)
         
     }
 
+    /**
+     Decrements the clicker count
+     
+     - parameter sender: <#sender description#>
+     */
     @IBAction func clickerDecrementTouched(sender: AnyObject) {
         
         viewModel.decrementClikerByMultiplier(multiplier)
         
     }
     
+    /**
+     Updates the label with a pop animation
+     
+     - parameter count:
+     */
     private func updateCountLabelWithAnimation(count: String){
         
         
-        //Define the shink and grow duration based on the duration parameter
-        let shrinkDuration: NSTimeInterval = 0.20
+        //Define the shink and grow duration 
+        let duration: NSTimeInterval = 0.20
         
-        //Plays the shrink animation
-        UIView.animateWithDuration(shrinkDuration, delay: 0, usingSpringWithDamping: 10, initialSpringVelocity: 10, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+        //Plays the pop animation
+        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 10, initialSpringVelocity: 10, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
             //Shrinks the image
             let scaleTransform: CGAffineTransform = CGAffineTransformMakeScale(1.25,1.25)
             self.clickerCountLabel.transform = scaleTransform
-            self.clickerCountLabel.text = count
             
-            //When animation completes, grow
+            //Updates the label
+            self.clickerCountLabel.text = count
+            //When done return the label to the regular size
             }, completion: { finished in
                 
                 
                 //Plays the shrink animation
-                UIView.animateWithDuration(shrinkDuration, delay: 0, usingSpringWithDamping: 10, initialSpringVelocity: 10, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 10, initialSpringVelocity: 10, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
                     //Shrinks the image
                     let scaleTransform: CGAffineTransform = CGAffineTransformMakeScale(1,1)
                     self.clickerCountLabel.transform = scaleTransform
                     
                     //When animation completes, grow the image
                     }, completion: { finished in
-                        
-                        
                 })
-                
-                
         })
     }
     
 
+    /**
+     Resets the clicker count after showing an alert
+     
+     - parameter sender:
+     */
     @IBAction func resetClickerTouched(sender: AnyObject) {
         
         

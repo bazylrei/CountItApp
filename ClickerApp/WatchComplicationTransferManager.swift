@@ -9,9 +9,14 @@
 import Foundation
 import WatchConnectivity
 
-
+/// Complication manager to update the complication if installed
 public class WatchComplicationManager: NSObject{
     
+    /**
+     Initilize the WCSession
+     
+     - returns: <#return value description#>
+     */
     public override init(){
         super.init()
         
@@ -21,6 +26,12 @@ public class WatchComplicationManager: NSObject{
     
     var session: WCSession?
    
+    /**
+     Transfer data to complication
+     
+     - parameter key:     key of the dictionary to use
+     - parameter content: content to transfer
+     */
     public func updateComplication(withKey key:String, content:[String : AnyObject]){
         
         

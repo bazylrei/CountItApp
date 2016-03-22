@@ -10,10 +10,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+/// View model of the settings functionality
 public class SettingsViewModel: NSObject {
     
+    /// A data storage to save model information
     let dataStorage : DataStorage = DataStorage()
     
+    /// The watch session 
     let watchSession : WatchSessionManager = WatchSessionManager.sharedManager
     
     /// Key to be use in the application context dictionary
@@ -27,19 +30,23 @@ public class SettingsViewModel: NSObject {
     var settings: Settings = Settings()
     {
         didSet{
-            
+           //When the settings are update, update their observers
            updateObservers()
         }
     }
     
+    /// A Replay subjeft to update teh settings
     var settingsChangedSubject: ReplaySubject<Settings>
    
+    /// Driver when the settings are change
     var settingsChangedDriver : Driver<Settings>
     
     public override init(){
         
+        //Create the replay subject
         settingsChangedSubject = ReplaySubject.create(bufferSize: 1)
         
+        //Create teh driver from based on the notification senter observer
         settingsChangedDriver =  NSNotificationCenter.defaultCenter().rx_notification(SettingsViewModel.ApplicationContextKey.SettingsKey.rawValue, object: settings).map{
             
             return $0.object as! Settings
@@ -48,6 +55,9 @@ public class SettingsViewModel: NSObject {
         
         super.init()
         
+        /**
+        Get the latest settings information
+        */
         getLatestSettings()
         
         //Add view model to the datasource delegate so we get application context changes
@@ -108,10 +118,19 @@ public class SettingsViewModel: NSObject {
         watchSession.updateApplicationContext(withKey: ApplicationContextKey.SettingsKey.rawValue, content: settings.toDictionary())
     }
     
+    /**
+     Updates teh observer
+     */
     private func updateObservers(){
         
+        /**
+        Update the subject
+        */
         settingsChangedSubject.on(.Next(settings))
         
+        /**
+        Sends a notification
+        */
         NSNotificationCenter.defaultCenter().postNotificationName(ApplicationContextKey.SettingsKey.rawValue, object: settings)
     }
     

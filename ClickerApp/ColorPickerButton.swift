@@ -8,10 +8,13 @@
 
 import UIKit
 
+/// Custom UI Button to pick colors
 public class ColorPickerButton: UIButton {
     
+    /// Radius of the button
     let buttonCornerRadius: CGFloat = 15
     
+    /// Width of the border
     let buttonBorderWidth: CGFloat = 1
     
     /**
@@ -27,6 +30,11 @@ public class ColorPickerButton: UIButton {
         
     }
     
+    /**
+     Setup the button with a color
+     
+     - parameter color: <#color description#>
+     */
     public func setupWithColor(color: UIColor){
         
         layer.cornerRadius = buttonCornerRadius
