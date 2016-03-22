@@ -120,12 +120,13 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let modularSmall = CLKComplicationTemplateModularSmallStackText()
             modularSmall.line1TextProvider = CLKSimpleTextProvider(text: "+")
             modularSmall.line2TextProvider = CLKSimpleTextProvider(text: clickerCountString)
-            
             complicationTemplate = modularSmall
+            
         case .UtilitarianSmall:
             let smallFlat = CLKComplicationTemplateUtilitarianSmallFlat()
             smallFlat.textProvider = CLKSimpleTextProvider(text: "+ \(clickerCountString)")
             complicationTemplate = smallFlat
+            
         case .CircularSmall:
             let circularSmall = CLKComplicationTemplateCircularSmallStackText()
             circularSmall.line1TextProvider = CLKSimpleTextProvider(text: "+")
