@@ -29,6 +29,9 @@
 		832FB7A01CA1F75C00CB3227 /* WatchComplicationManagerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FB79F1CA1F75C00CB3227 /* WatchComplicationManagerSpecs.swift */; };
 		832FB7A31CA1F86500CB3227 /* ColorPickerButtonSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FB7A21CA1F86500CB3227 /* ColorPickerButtonSpecs.swift */; };
 		832FB7A51CA1FAA700CB3227 /* NSCoderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FB7A41CA1FAA700CB3227 /* NSCoderExtensions.swift */; };
+		832FB7A81CA2005A00CB3227 /* UIColorExtensionsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FB7A71CA2005A00CB3227 /* UIColorExtensionsSpecs.swift */; };
+		832FB7AA1CA207B100CB3227 /* StringExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FB7A91CA207B100CB3227 /* StringExtensionSpecs.swift */; };
+		832FB7AD1CA2085B00CB3227 /* DataStorageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FB7AC1CA2085B00CB3227 /* DataStorageSpecs.swift */; };
 		834AC7D31C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D41C92278200524C20 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D21C92278200524C20 /* WatchSessionManager.swift */; };
 		834AC7D61C92517C00524C20 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834AC7D51C92517C00524C20 /* ClickerViewModel.swift */; };
@@ -146,6 +149,9 @@
 		832FB79F1CA1F75C00CB3227 /* WatchComplicationManagerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchComplicationManagerSpecs.swift; sourceTree = "<group>"; };
 		832FB7A21CA1F86500CB3227 /* ColorPickerButtonSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerButtonSpecs.swift; sourceTree = "<group>"; };
 		832FB7A41CA1FAA700CB3227 /* NSCoderExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCoderExtensions.swift; sourceTree = "<group>"; };
+		832FB7A71CA2005A00CB3227 /* UIColorExtensionsSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensionsSpecs.swift; sourceTree = "<group>"; };
+		832FB7A91CA207B100CB3227 /* StringExtensionSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionSpecs.swift; sourceTree = "<group>"; };
+		832FB7AC1CA2085B00CB3227 /* DataStorageSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorageSpecs.swift; sourceTree = "<group>"; };
 		834AC7D21C92278200524C20 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		834AC7D51C92517C00524C20 /* ClickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModel.swift; sourceTree = "<group>"; };
 		8351F91C1C9FA3B000D339B5 /* WatchComplicationTransferManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchComplicationTransferManager.swift; sourceTree = "<group>"; };
@@ -287,6 +293,23 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		832FB7A61CA2003C00CB3227 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				832FB7A71CA2005A00CB3227 /* UIColorExtensionsSpecs.swift */,
+				832FB7A91CA207B100CB3227 /* StringExtensionSpecs.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		832FB7AB1CA2084D00CB3227 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				832FB7AC1CA2085B00CB3227 /* DataStorageSpecs.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		8351F91B1C9FA39E00D339B5 /* Watch */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +399,8 @@
 		838299121C8F7EFC00AC17ED /* ClickerAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				832FB7AB1CA2084D00CB3227 /* Data */,
+				832FB7A61CA2003C00CB3227 /* Extensions */,
 				832FB7A11CA1F85400CB3227 /* Views */,
 				832FB79E1CA1F73100CB3227 /* Watch */,
 				832FB7991CA1F00500CB3227 /* Utils */,
@@ -905,8 +930,11 @@
 				832FB7A01CA1F75C00CB3227 /* WatchComplicationManagerSpecs.swift in Sources */,
 				838299141C8F7EFC00AC17ED /* ClickerAppTests.swift in Sources */,
 				832FB7A31CA1F86500CB3227 /* ColorPickerButtonSpecs.swift in Sources */,
+				832FB7A81CA2005A00CB3227 /* UIColorExtensionsSpecs.swift in Sources */,
 				832FB79D1CA1F4C200CB3227 /* AlertControllerBuilderSpecs.swift in Sources */,
 				832FB79B1CA1F0E900CB3227 /* VersionUtilSpecs.swift in Sources */,
+				832FB7AA1CA207B100CB3227 /* StringExtensionSpecs.swift in Sources */,
+				832FB7AD1CA2085B00CB3227 /* DataStorageSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
