@@ -6,12 +6,17 @@ def core_pods
      pod 'RxCocoa',    '~> 2.0'
 end
 
+def test_pods
+     pod 'Quick', '~> 0.8.0'
+     pod 'Nimble', '~> 3.0.0'
+end
+
 target 'ClickerApp' do
     core_pods
 end
 
 target 'ClickerAppTests' do
-
+    test_pods
 end
 
 target 'ClickerAppUITests' do

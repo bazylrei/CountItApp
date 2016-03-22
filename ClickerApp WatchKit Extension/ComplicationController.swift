@@ -12,12 +12,11 @@ import RxSwift
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
-    var disposeBag = DisposeBag()
-    
+    /// View model fot he clicker information
     var viewModel: ClickerViewModel = ClickerViewModel()
     
+    /// View model to get the information of the settings
     var settingsViewModel: SettingsViewModel = SettingsViewModel()
-    
     
     // MARK: - Timeline Configuration
     
@@ -94,26 +93,54 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler(complication)
     }
     
+    /**
+     Builds the complication template using the complication
+     
+     - parameter complication: <#complication description#>
+     
+     - returns: <#return value description#>
+     */
     func buildComplicationTemplateWithLatestUsingComplication(complication: CLKComplication) -> CLKComplicationTemplate?{
         
+        /**
+        Get latest information
         
+        - returns: <#return value description#>
+        */
         viewModel.updateToLatestClicker()
         
+        /**
+        Get the latest settings
+        
+        - returns: <#return value description#>
+        */
         settingsViewModel.getLatestSettings()
         
+        /// Creates the complication
         let complication = createTemplaceForComplication(complication, withClickerCount: viewModel.clicker.currentCount, andColor: settingsViewModel.settings.color.uiColor)
         
         return complication
         
     }
 
-    
+    /**
+     Creates the template for the complication
+     
+     - parameter complication: Complication type to base de template
+     - parameter clickerCount: The count to display
+     - parameter color:        The color to set
+     
+     - returns: <#return value description#>
+     */
     func createTemplaceForComplication(complication: CLKComplication, withClickerCount clickerCount: Int, andColor color:UIColor) -> CLKComplicationTemplate? {
         
         var complicationTemplate: CLKComplicationTemplate? = nil
         
         let clickerCountString = String(clickerCount)
         
+        /**
+        *  Check for the supported families
+        */
         switch complication.family{
             
         case .ModularSmall:
