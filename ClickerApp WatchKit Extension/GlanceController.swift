@@ -11,6 +11,7 @@ import Foundation
 import RxSwift
 
 
+/// The controller for the glance
 class GlanceController: WKInterfaceController {
     
     @IBOutlet var titleLabel: WKInterfaceLabel!
@@ -19,15 +20,19 @@ class GlanceController: WKInterfaceController {
     
     @IBOutlet var countLabel: WKInterfaceLabel!
     
+    /// Dispose bag for the disposing of the observers
     var disposeBag = DisposeBag()
     
+    /// View model to get the clicker data
     var viewModel: ClickerViewModel = ClickerViewModel()
     
+    /// Settings view model
     var settingsViewModel: SettingsViewModel = SettingsViewModel()
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
+        //Observe the view model clicker count, map it to a string and drive the label
         viewModel.clickerCountDriver?
             .map { String($0) }
             .driveNext{ [weak self] count in
@@ -35,6 +40,9 @@ class GlanceController: WKInterfaceController {
             }.addDisposableTo(disposeBag)
         
         
+        /**
+        *  Update the color of the label when the settings are change
+        */
         settingsViewModel.settingsChangedSubject
             .subscribeNext{ [weak self] settings in
                 
