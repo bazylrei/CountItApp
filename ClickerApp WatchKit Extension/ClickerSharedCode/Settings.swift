@@ -18,10 +18,10 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     public var incrementMultiplier : Int  = 1
     
     // Storage and dictionary keys
-    private enum DictionaryKeys{
+    public enum DictionaryKeys{
         
-        static let color = "color"
-        static let incrementMultiples = "incrementMultiplier"
+        public static let color = "color"
+        public static let incrementMultiples = "incrementMultiplier"
     }
     
     /**

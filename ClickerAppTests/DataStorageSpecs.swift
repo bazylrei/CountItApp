@@ -11,7 +11,7 @@ import Nimble
 import Quick
 import ClickerApp
 
-/// Test for the color extensions
+/// Test for the data storage functionality
 class DataStorageSpecs: QuickSpec {
     
     var dataStorage: DataStorage = DataStorage()
@@ -28,17 +28,37 @@ class DataStorageSpecs: QuickSpec {
                 
                 let clicker = Clicker()
                 
+                let currentCount = 5
                 
+                clicker.currentCount = currentCount
                 
                 self.dataStorage.saveClicker(clicker)
                 
-                expect(self.dataStorage.getClicker().currentCount).to(equal(0))
+                expect(self.dataStorage.getClicker().currentCount).to(equal(currentCount))
                 
             }
             
         }
         
-       
+        
+        describe("Settings storage"){
+            
+            it("save and get the settings from the storage"){
+                
+                let settings = Settings()
+                
+                let incrementMultiplier = 2
+                
+                settings.incrementMultiplier = incrementMultiplier
+                
+                self.dataStorage.saveSettings(settings)
+                
+                expect(self.dataStorage.getSettings().incrementMultiplier).to(equal(incrementMultiplier))
+                
+            }
+            
+        }
+        
     }
 }
 

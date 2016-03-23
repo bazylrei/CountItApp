@@ -19,10 +19,10 @@ public class Clicker: NSObject, NSCoding, Dictionatable{
     public var timeStamp : NSDate = NSDate()
     
     // Storage and dictionary keys
-    private enum DictionaryKeys{
+    public enum DictionaryKeys{
         
-        static let currentCount = "currentCount"
-        static let timeStamp  = "timeStamp"
+        public static let currentCount = "currentCount"
+        public static let timeStamp  = "timeStamp"
     }
     
     /**

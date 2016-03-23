@@ -35,7 +35,7 @@ class ClickerViewController: UIViewController {
         *  Observe clicker model, map it to String and update Label with animation
         */
         viewModel.clickerCountDriver?
-            .map { String($0) }
+            .map { $0.description }
             .driveNext{ [weak self] count in
                 
              self?.updateCountLabelWithAnimation(count)

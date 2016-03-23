@@ -19,7 +19,7 @@ public enum ClickerColors : String{
     case GreenColor  = "A2FB09"
     
     /// Gets the UIColor 
-    var uiColor: UIColor{
+    public var uiColor: UIColor{
         
         return UIColor(hexString: self.rawValue)!
 
