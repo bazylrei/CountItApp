@@ -28,10 +28,11 @@ class DataStorageSpecs: QuickSpec {
                 
                 let clicker = Clicker()
                 
+                
+                
                 self.dataStorage.saveClicker(clicker)
                 
                 expect(self.dataStorage.getClicker().currentCount).to(equal(0))
-                
                 
             }
             

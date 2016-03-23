@@ -70,8 +70,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         let server=CLKComplicationServer.sharedInstance()
         
         
-        for complication in server.activeComplications {
-            server.reloadTimelineForComplication(complication)
+        if let complications = server.activeComplications{
+            
+            for complication in complications {
+                server.reloadTimelineForComplication(complication)
+            }
         }
     }
     
