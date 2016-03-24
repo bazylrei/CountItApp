@@ -70,6 +70,8 @@
 		83BF9BC51C97597300962289 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF9BC41C97597300962289 /* SettingsViewController.swift */; };
 		83E0E3651CA337E9000AB0B0 /* SettingsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E3641CA337E9000AB0B0 /* SettingsSpecs.swift */; };
 		83E0E3671CA33AE5000AB0B0 /* ClickerColorSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E3661CA33AE5000AB0B0 /* ClickerColorSpecs.swift */; };
+		83E0E36A1CA3967F000AB0B0 /* ClickerViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E3691CA3967F000AB0B0 /* ClickerViewModelSpecs.swift */; };
+		83E0E36C1CA39849000AB0B0 /* SettingsViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E36B1CA39849000AB0B0 /* SettingsViewModelSpecs.swift */; };
 		83F816621C9124BB00773DF3 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287671C8FF1CB00F5D92D /* DataStorage.swift */; };
 		83FE52211C97ADAA00246976 /* UIColor-Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE52201C97ADAA00246976 /* UIColor-Hex.swift */; };
 		83FE52221C97ADAA00246976 /* UIColor-Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE52201C97ADAA00246976 /* UIColor-Hex.swift */; };
@@ -194,6 +196,8 @@
 		83BF9BC41C97597300962289 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		83E0E3641CA337E9000AB0B0 /* SettingsSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSpecs.swift; sourceTree = "<group>"; };
 		83E0E3661CA33AE5000AB0B0 /* ClickerColorSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerColorSpecs.swift; sourceTree = "<group>"; };
+		83E0E3691CA3967F000AB0B0 /* ClickerViewModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModelSpecs.swift; sourceTree = "<group>"; };
+		83E0E36B1CA39849000AB0B0 /* SettingsViewModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModelSpecs.swift; sourceTree = "<group>"; };
 		83FE52201C97ADAA00246976 /* UIColor-Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Hex.swift"; sourceTree = "<group>"; };
 		8A21CB43E118CC9D93B2B35E /* Pods_ClickerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD199217418770747E15F955 /* Pods-ClickerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppUITests/Pods-ClickerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -405,6 +409,7 @@
 		838299121C8F7EFC00AC17ED /* ClickerAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				83E0E3681CA39671000AB0B0 /* ViewModel */,
 				83B7831A1CA32D400010DCE7 /* Model */,
 				832FB7AB1CA2084D00CB3227 /* Data */,
 				832FB7A61CA2003C00CB3227 /* Extensions */,
@@ -494,6 +499,15 @@
 				83E0E3661CA33AE5000AB0B0 /* ClickerColorSpecs.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		83E0E3681CA39671000AB0B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				83E0E3691CA3967F000AB0B0 /* ClickerViewModelSpecs.swift */,
+				83E0E36B1CA39849000AB0B0 /* SettingsViewModelSpecs.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		E0C466A05FA768D4FAFBD1C2 /* Frameworks */ = {
@@ -948,12 +962,14 @@
 				832FB7A51CA1FAA700CB3227 /* NSCoderExtensions.swift in Sources */,
 				832FB7A01CA1F75C00CB3227 /* WatchComplicationManagerSpecs.swift in Sources */,
 				838299141C8F7EFC00AC17ED /* ClickerAppTests.swift in Sources */,
+				83E0E36A1CA3967F000AB0B0 /* ClickerViewModelSpecs.swift in Sources */,
 				832FB7A31CA1F86500CB3227 /* ColorPickerButtonSpecs.swift in Sources */,
 				832FB7A81CA2005A00CB3227 /* UIColorExtensionsSpecs.swift in Sources */,
 				832FB79D1CA1F4C200CB3227 /* AlertControllerBuilderSpecs.swift in Sources */,
 				832FB79B1CA1F0E900CB3227 /* VersionUtilSpecs.swift in Sources */,
 				832FB7AA1CA207B100CB3227 /* StringExtensionSpecs.swift in Sources */,
 				83E0E3651CA337E9000AB0B0 /* SettingsSpecs.swift in Sources */,
+				83E0E36C1CA39849000AB0B0 /* SettingsViewModelSpecs.swift in Sources */,
 				832FB7AD1CA2085B00CB3227 /* DataStorageSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

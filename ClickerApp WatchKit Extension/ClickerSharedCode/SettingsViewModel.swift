@@ -36,10 +36,10 @@ public class SettingsViewModel: NSObject {
     }
     
     /// A Replay subjeft to update teh settings
-    var settingsChangedSubject: ReplaySubject<Settings>
+    public var settingsChangedSubject: ReplaySubject<Settings>
    
     /// Driver when the settings are change
-    var settingsChangedDriver : Driver<Settings>
+    public var settingsChangedDriver : Driver<Settings>
     
     public override init(){
         
