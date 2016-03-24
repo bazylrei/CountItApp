@@ -65,6 +65,10 @@ class ClickerViewController: UIViewController {
 
         }.addDisposableTo(disposeBag)
         
+        
+        clickerCountLabel.userInteractionEnabled = true
+        clickerCountLabel.addGestureRecognizer(UITapGestureRecognizer(target:self, action: #selector(self.clickerIncrementTouched(_:))))
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -81,15 +85,9 @@ class ClickerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /**
-     Increment the clicker count action
-     
-     - parameter sender: <#sender description#>
-     */
     @IBAction func clickerIncrementTouched(sender: AnyObject) {
         
-        viewModel.incrementClikerByMultiplier(multiplier)
-        
+          viewModel.incrementClikerByMultiplier(multiplier)
     }
 
     /**
