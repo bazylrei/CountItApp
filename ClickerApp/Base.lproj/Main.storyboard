@@ -273,7 +273,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Github" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0r1-s0-L0Y">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Github project page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0r1-s0-L0Y">
                                                     <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -437,7 +437,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2016 Chris Jimenez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8E-V7-oYJ">
-                                <rect key="frame" x="231" y="226" width="138" height="21"/>
+                                <rect key="frame" x="231" y="224" width="138" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="GFt-Lk-o7h"/>
                                     <constraint firstAttribute="width" constant="138" id="eOk-gw-rKP"/>
@@ -447,13 +447,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clicker is brought to you by Chris Jimenez, a solo developer passioned about Open Source Software and Technology." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyf-mg-5zw">
-                                <rect key="frame" x="20" y="181" width="560" height="37.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <rect key="frame" x="20" y="181" width="560" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvM-mv-NdD">
-                                <rect key="frame" x="236" y="255.5" width="129" height="21"/>
+                                <rect key="frame" x="236" y="253" width="129" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="QY5-f9-vsh"/>
                                     <constraint firstAttribute="width" constant="129" id="bSL-gM-XTo"/>
