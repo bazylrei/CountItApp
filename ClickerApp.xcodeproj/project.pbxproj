@@ -46,7 +46,6 @@
 		838299061C8F7EFB00AC17ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838299051C8F7EFB00AC17ED /* Assets.xcassets */; };
 		838299091C8F7EFB00AC17ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838299071C8F7EFB00AC17ED /* LaunchScreen.storyboard */; };
 		838299141C8F7EFC00AC17ED /* ClickerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838299131C8F7EFC00AC17ED /* ClickerAppTests.swift */; };
-		8382991F1C8F7EFC00AC17ED /* ClickerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382991E1C8F7EFC00AC17ED /* ClickerAppUITests.swift */; };
 		838299241C8F7EFC00AC17ED /* ClickerApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 838299231C8F7EFC00AC17ED /* ClickerApp WatchKit App.app */; };
 		8382992A1C8F7EFC00AC17ED /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838299281C8F7EFC00AC17ED /* Interface.storyboard */; };
 		838299331C8F7EFC00AC17ED /* ClickerApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 838299321C8F7EFC00AC17ED /* ClickerApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -72,6 +71,8 @@
 		83E0E3671CA33AE5000AB0B0 /* ClickerColorSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E3661CA33AE5000AB0B0 /* ClickerColorSpecs.swift */; };
 		83E0E36A1CA3967F000AB0B0 /* ClickerViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E3691CA3967F000AB0B0 /* ClickerViewModelSpecs.swift */; };
 		83E0E36C1CA39849000AB0B0 /* SettingsViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E36B1CA39849000AB0B0 /* SettingsViewModelSpecs.swift */; };
+		83E0E36E1CA5CA22000AB0B0 /* ClickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E36D1CA5CA22000AB0B0 /* ClickerTests.swift */; };
+		83E0E3701CA5CF38000AB0B0 /* Delayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E36F1CA5CF38000AB0B0 /* Delayer.swift */; };
 		83F816621C9124BB00773DF3 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287671C8FF1CB00F5D92D /* DataStorage.swift */; };
 		83FE52211C97ADAA00246976 /* UIColor-Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE52201C97ADAA00246976 /* UIColor-Hex.swift */; };
 		83FE52221C97ADAA00246976 /* UIColor-Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE52201C97ADAA00246976 /* UIColor-Hex.swift */; };
@@ -173,7 +174,6 @@
 		838299131C8F7EFC00AC17ED /* ClickerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerAppTests.swift; sourceTree = "<group>"; };
 		838299151C8F7EFC00AC17ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8382991A1C8F7EFC00AC17ED /* ClickerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8382991E1C8F7EFC00AC17ED /* ClickerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerAppUITests.swift; sourceTree = "<group>"; };
 		838299201C8F7EFC00AC17ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838299231C8F7EFC00AC17ED /* ClickerApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ClickerApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		838299291C8F7EFC00AC17ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -198,6 +198,8 @@
 		83E0E3661CA33AE5000AB0B0 /* ClickerColorSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerColorSpecs.swift; sourceTree = "<group>"; };
 		83E0E3691CA3967F000AB0B0 /* ClickerViewModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModelSpecs.swift; sourceTree = "<group>"; };
 		83E0E36B1CA39849000AB0B0 /* SettingsViewModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModelSpecs.swift; sourceTree = "<group>"; };
+		83E0E36D1CA5CA22000AB0B0 /* ClickerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerTests.swift; sourceTree = "<group>"; };
+		83E0E36F1CA5CF38000AB0B0 /* Delayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delayer.swift; sourceTree = "<group>"; };
 		83FE52201C97ADAA00246976 /* UIColor-Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Hex.swift"; sourceTree = "<group>"; };
 		8A21CB43E118CC9D93B2B35E /* Pods_ClickerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD199217418770747E15F955 /* Pods-ClickerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppUITests/Pods-ClickerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -426,8 +428,9 @@
 		8382991D1C8F7EFC00AC17ED /* ClickerAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8382991E1C8F7EFC00AC17ED /* ClickerAppUITests.swift */,
 				838299201C8F7EFC00AC17ED /* Info.plist */,
+				83E0E36D1CA5CA22000AB0B0 /* ClickerTests.swift */,
+				83E0E36F1CA5CF38000AB0B0 /* Delayer.swift */,
 			);
 			path = ClickerAppUITests;
 			sourceTree = "<group>";
@@ -978,7 +981,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8382991F1C8F7EFC00AC17ED /* ClickerAppUITests.swift in Sources */,
+				83E0E3701CA5CF38000AB0B0 /* Delayer.swift in Sources */,
+				83E0E36E1CA5CA22000AB0B0 /* ClickerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
