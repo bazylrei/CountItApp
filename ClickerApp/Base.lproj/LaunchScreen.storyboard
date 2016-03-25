@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,16 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clicker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oe-5s-bUB">
-                                <rect key="frame" x="225" y="420" width="151" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="151" id="RLv-Xh-8Pb"/>
-                                    <constraint firstAttribute="height" constant="29" id="Xpq-ty-QYT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="AKh-Fv-t2M">
                                 <rect key="frame" x="190" y="188" width="221" height="224"/>
                                 <constraints>
@@ -38,9 +28,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AKh-Fv-t2M" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DmU-kV-FEi"/>
-                            <constraint firstItem="1oe-5s-bUB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KvN-uj-6VH"/>
                             <constraint firstItem="AKh-Fv-t2M" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="h5J-hg-6vJ"/>
-                            <constraint firstItem="1oe-5s-bUB" firstAttribute="top" secondItem="AKh-Fv-t2M" secondAttribute="bottom" constant="8" id="hYb-VW-eVX"/>
                         </constraints>
                     </view>
                 </viewController>
