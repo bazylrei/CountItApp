@@ -9,7 +9,7 @@
 import Foundation
 import Nimble
 import Quick
-import ClickerApp
+@testable import ClickerApp
 
 /// Settings Model Specs
 class SettingsSpecs: QuickSpec {
