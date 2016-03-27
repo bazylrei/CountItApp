@@ -16,8 +16,7 @@ public protocol Timeable : Comparable{
 
 
     /**
-     Timeable is compared by the timestamp not by the clicker values
-     
+     Timeable is compared by the timestamp      
      - parameter lhs: <#lhs description#>
      - parameter rhs: <#rhs description#>
      

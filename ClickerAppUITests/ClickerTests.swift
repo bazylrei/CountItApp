@@ -26,7 +26,7 @@ class ClickerTests: XCTestCase {
          
          - returns: <#return value description#>
          */
-        XCUIApplication().otherElements.containingType(.NavigationBar, identifier:"Clicker").childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.tap()
+        XCUIApplication().otherElements.containingType(.NavigationBar, identifier:"Count It").childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.tap()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
@@ -39,7 +39,7 @@ class ClickerTests: XCTestCase {
     func testSetMultiplierSettings(){
         
         let app = XCUIApplication()
-        app.navigationBars["Clicker"].buttons["settingIcon"].tap()
+        app.navigationBars["Count It"].buttons["settingIcon"].tap()
         
         let tablesQuery = app.tables
         let incrementButton = tablesQuery.buttons["Increment"]
@@ -57,7 +57,7 @@ class ClickerTests: XCTestCase {
         
         let app = XCUIApplication()
         app.toolbars.buttons["ic clear 36pt"].tap()
-        app.alerts["Clicker"].collectionViews.buttons["Ok"].tap()
+        app.alerts["Count It"].collectionViews.buttons["Ok"].tap()
         
         XCTAssert(app.staticTexts["0"].exists)
         
