@@ -11,7 +11,7 @@ import Foundation
 /**
  *  Clicker to countain the current count
  */
-public class Clicker: NSObject, NSCoding, Dictionatable{
+public class Clicker: NSObject, NSCoding, Dictionatable, Timeable{
     
     /// The currentCount
     public var currentCount: Int = 0
@@ -142,23 +142,4 @@ public class Clicker: NSObject, NSCoding, Dictionatable{
         timeStamp = NSDate()
     }
   
-}
-
-// MARK: - Comparable
-extension Clicker : Comparable{}
-
-/**
- Clicker is compared by the timestamp not by the clicker values
- 
- - parameter lhs: <#lhs description#>
- - parameter rhs: <#rhs description#>
- 
- - returns: <#return value description#>
- */
-func == (lhs: Clicker, rhs: Clicker) -> Bool {
-    return lhs.timeStamp === rhs.timeStamp || lhs.timeStamp.compare(rhs.timeStamp) == .OrderedSame
-}
-
-public func < (lhs: Clicker, rhs: Clicker) -> Bool {
-    return lhs.timeStamp.compare(rhs.timeStamp) == .OrderedAscending
 }

@@ -11,11 +11,9 @@ import Foundation
 /**
  *  NSUserDefault storage of the clicker instance
  */
-public class DataStorage {
+public struct DataStorage {
     
     let defaults = NSUserDefaults.standardUserDefaults()
-    
-    public init(){}
     
     /// Storage keys
     private enum StorageKeys{

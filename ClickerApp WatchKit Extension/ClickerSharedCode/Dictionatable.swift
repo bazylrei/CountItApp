@@ -19,3 +19,6 @@ public protocol Dictionatable{
     func toDictionary() -> [String : AnyObject]
 
 }
+
+
+

@@ -10,6 +10,8 @@
 		147F13CCE922F8320C51F5FE /* Pods_ClickerAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70225997BBAE3C3AA3FA6A91 /* Pods_ClickerAppUITests.framework */; };
 		4BDF55FE896B65BD82A16186 /* Pods_ClickerAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1887DDB0D450CAE2AE986BD /* Pods_ClickerAppTests.framework */; };
 		7578DF99E7EBB0D1FE3F1456 /* Pods_ClickerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A21CB43E118CC9D93B2B35E /* Pods_ClickerApp.framework */; };
+		83077FA91CA86BDD004681CC /* Timeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83077FA81CA86BDD004681CC /* Timeable.swift */; };
+		83077FAA1CA86BDD004681CC /* Timeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83077FA81CA86BDD004681CC /* Timeable.swift */; };
 		830F2B761C97676900B01638 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B751C97676900B01638 /* Settings.swift */; };
 		830F2B771C97676900B01638 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B751C97676900B01638 /* Settings.swift */; };
 		830F2B7C1C978E5700B01638 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F2B7B1C978E5700B01638 /* SettingsViewModel.swift */; };
@@ -142,6 +144,7 @@
 		7879FED7BDAC453005D4BCD6 /* Pods-ClickerAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppUITests/Pods-ClickerAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C7BF5624236BBF6C4E062A7 /* Pods-ClickerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerApp/Pods-ClickerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		80590DBE5D6D0F651A854BB2 /* Pods-ClickerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppTests/Pods-ClickerAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		83077FA81CA86BDD004681CC /* Timeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeable.swift; sourceTree = "<group>"; };
 		830F2B751C97676900B01638 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		830F2B7B1C978E5700B01638 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		830F2B7E1C97904200B01638 /* Dictionatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionatable.swift; sourceTree = "<group>"; };
@@ -338,7 +341,6 @@
 				838287721C90DDB300F5D92D /* Data */,
 				8382876B1C90CF2F00F5D92D /* Model */,
 				834AC7D21C92278200524C20 /* WatchSessionManager.swift */,
-				830F2B7E1C97904200B01638 /* Dictionatable.swift */,
 			);
 			name = ClickerSharedCode;
 			path = "ClickerApp WatchKit Extension/ClickerSharedCode";
@@ -350,6 +352,8 @@
 				8382876C1C90CF3900F5D92D /* Clicker.swift */,
 				830F2B751C97676900B01638 /* Settings.swift */,
 				839369881C97DBFD00DB85DB /* ClickerColors.swift */,
+				83077FA81CA86BDD004681CC /* Timeable.swift */,
+				830F2B7E1C97904200B01638 /* Dictionatable.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -937,6 +941,7 @@
 				8382876D1C90CF3900F5D92D /* Clicker.swift in Sources */,
 				8351F91D1C9FA3B000D339B5 /* WatchComplicationTransferManager.swift in Sources */,
 				83887FE71C9A6A7A00E44C28 /* String-Extensions.swift in Sources */,
+				83077FA91CA86BDD004681CC /* Timeable.swift in Sources */,
 				830F2BBD1C98C31700B01638 /* UIColor-LighterDarker.swift in Sources */,
 				830F2B7F1C97904200B01638 /* Dictionatable.swift in Sources */,
 				838287681C8FF1CB00F5D92D /* DataStorage.swift in Sources */,
@@ -1006,6 +1011,7 @@
 				830F2B771C97676900B01638 /* Settings.swift in Sources */,
 				832A4CD51C9B7376000EEEBB /* VersionUtil.swift in Sources */,
 				838299401C8F7EFC00AC17ED /* GlanceController.swift in Sources */,
+				83077FAA1CA86BDD004681CC /* Timeable.swift in Sources */,
 				830F2B7D1C978E5700B01638 /* SettingsViewModel.swift in Sources */,
 				832A4CD81C9B7C0E000EEEBB /* Constants.swift in Sources */,
 			);
