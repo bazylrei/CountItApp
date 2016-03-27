@@ -24,11 +24,35 @@
                                     <constraint firstAttribute="height" constant="224" id="AVd-rm-fKR"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count It" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYf-8N-Nhe">
+                                <rect key="frame" x="220" y="420" width="161" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="06l-J2-hN0"/>
+                                    <constraint firstAttribute="width" constant="161" id="pzq-SM-zAI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never lose the count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l05-SK-Olo">
+                                <rect key="frame" x="215.5" y="449" width="169" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="LzK-I8-Bgd"/>
+                                    <constraint firstAttribute="height" constant="21" id="MsR-AG-Ish"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AKh-Fv-t2M" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DmU-kV-FEi"/>
+                            <constraint firstItem="vYf-8N-Nhe" firstAttribute="top" secondItem="AKh-Fv-t2M" secondAttribute="bottom" constant="8" id="Qxd-NC-GSP"/>
+                            <constraint firstItem="vYf-8N-Nhe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UAW-OH-RBV"/>
+                            <constraint firstItem="l05-SK-Olo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V4b-NP-aRa"/>
                             <constraint firstItem="AKh-Fv-t2M" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="h5J-hg-6vJ"/>
+                            <constraint firstItem="l05-SK-Olo" firstAttribute="top" secondItem="vYf-8N-Nhe" secondAttribute="bottom" constant="8" id="wPf-aZ-hAt"/>
                         </constraints>
                     </view>
                 </viewController>
