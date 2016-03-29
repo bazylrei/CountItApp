@@ -17,7 +17,7 @@ public struct Constants{
     
     static let twitterURL = "https://twitter.com/ChrisJimenezNat"
     
-    static let githubURL = "https://github.com/PiXeL16/ClickerApp"
+    static let githubURL = "https://github.com/PiXeL16/CountItApp"
     
     
 }
