@@ -14,9 +14,10 @@ import Foundation
  */
 public struct Constants{
     
-    
+     /// Twitter URL
     static let twitterURL = "https://twitter.com/ChrisJimenezNat"
     
+     /// Github Project URL
     static let githubURL = "https://github.com/PiXeL16/CountItApp"
     
 }
