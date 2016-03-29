@@ -19,5 +19,4 @@ public struct Constants{
     
     static let githubURL = "https://github.com/PiXeL16/CountItApp"
     
-    
 }
