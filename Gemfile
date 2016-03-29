@@ -8,7 +8,3 @@ gem 'label'
 
 # A CocoaPods plugin to remove and de-intergrate CocoaPods from your project.
 gem 'cocoapods-deintegrate'
-
-# Script, that automatically generate changelog from your tags, issues, labels and pull
-# requests.
-gem 'github_changelog_generator'
