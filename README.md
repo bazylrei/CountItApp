@@ -83,7 +83,7 @@ viewModel.clickerCountDriver?
          }.addDisposableTo(disposeBag)
 ```
 
-This will update the counter label with an animation the latest information.
+This will update the counter label with an animation to latest information.
 
 ## Data Storage
 `NSUserDefault` is use as the Datastore since the data is really simple. All Model objects implement `NSCoding` and are saved by using the `NSKeyedArchiver`.
