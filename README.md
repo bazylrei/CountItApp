@@ -45,7 +45,7 @@ Watch Screenshots
 
 The Code
 ---
-The idea of the app was to just really to play with WatchKit 2 and try to create something in a couple of days.
+The idea of the app was to just play with WatchKit 2 and try to create something in a couple of days.
 
 Perhaps, one of the most interesting parts its the two way communication between the App and the Watch.
 
