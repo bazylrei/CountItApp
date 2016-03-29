@@ -30,8 +30,8 @@
                                     <constraint firstAttribute="height" constant="21" id="06l-J2-hN0"/>
                                     <constraint firstAttribute="width" constant="161" id="pzq-SM-zAI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never lose the count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l05-SK-Olo">
@@ -41,7 +41,7 @@
                                     <constraint firstAttribute="height" constant="21" id="MsR-AG-Ish"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
