@@ -11,7 +11,6 @@ import Foundation
 /// Util to get and parse the current App version
 public class VersionUtil{
     
-    
     /**
      Gets the app version as a string
      
