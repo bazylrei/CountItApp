@@ -5,7 +5,7 @@ env:
   - LC_CTYPE=en_US.UTF-8
   - LANG=en_US.UTF-8
 before_script:
-  - gem install cocoapods -v 1.0.0.beta.6
+  - bundle exec pod install
 script:
   - set -o pipefail
   - xcodebuild -version
