@@ -2,13 +2,13 @@ platform :ios, '9.0'
 use_frameworks!
 
 def core_pods
-     pod 'RxSwift',    '~> 2.0'
-     pod 'RxCocoa',    '~> 2.0'
+     pod 'RxSwift'
+     pod 'RxCocoa'
 end
 
 def test_pods
-     pod 'Quick', '~> 0.8.0'
-     pod 'Nimble', '~> 3.2.0'
+     pod 'Quick'
+     pod 'Nimble'
 end
 
 target 'ClickerApp' do
