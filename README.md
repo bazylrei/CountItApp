@@ -1,5 +1,5 @@
 ![Banner](/Web/banner.png)
-[![Build Status](https://travis-ci.org/PiXeL16/CountItApp.svg?branch=master)](https://travis-ci.org/PiXeL16/CountItApp/) [![codecov.io](https://codecov.io/github/PiXeL16/CountItApp/coverage.svg?branch=master)](https://codecov.io/github/PiXeL16/CountItApp?branch=master)[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/PiXeL16/CountItApp/master/LICENSE)
+[![Build Status](https://travis-ci.org/PiXeL16/CountItApp.svg?branch=master)](https://travis-ci.org/PiXeL16/CountItApp/) [![codecov.io](https://codecov.io/github/PiXeL16/CountItApp/coverage.svg?branch=master)](https://codecov.io/github/PiXeL16/CountItApp?branch=master) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/PiXeL16/CountItApp/master/LICENSE)
 
 # Count It
 Never lose the count again.
