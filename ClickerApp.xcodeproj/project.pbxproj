@@ -660,7 +660,7 @@
 				TargetAttributes = {
 					838298FA1C8F7EFB00AC17ED = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = WEENFV7RVZ;
+						DevelopmentTeam = 7JMURSKQQ8;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -677,7 +677,7 @@
 					};
 					838299221C8F7EFC00AC17ED = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = WEENFV7RVZ;
+						DevelopmentTeam = 7JMURSKQQ8;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -686,7 +686,7 @@
 					};
 					838299311C8F7EFC00AC17ED = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = WEENFV7RVZ;
+						DevelopmentTeam = 7JMURSKQQ8;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -1176,7 +1176,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ClickerApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp.watchkitapp.extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.countit.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -1195,7 +1195,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ClickerApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp.watchkitapp.extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.countit.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -1216,7 +1216,7 @@
 				IBSC_MODULE = ClickerApp_WatchKit_Extension;
 				INFOPLIST_FILE = "ClickerApp WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.countit.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -1238,7 +1238,7 @@
 				IBSC_MODULE = ClickerApp_WatchKit_Extension;
 				INFOPLIST_FILE = "ClickerApp WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.countit.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -1255,9 +1255,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = ClickerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.countit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1272,7 +1273,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ClickerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.clickerapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.countit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

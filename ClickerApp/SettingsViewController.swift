@@ -151,6 +151,7 @@ class SettingsViewController: UITableViewController {
     
     private func rateApp(){
         
+        UIApplication.sharedApplication().openURL(NSURL(string: Constants.iTunesURL)!)
         
     }
     

@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.greenpixels.clickerapp</string>
+	<string>com.greenpixels.countit</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
