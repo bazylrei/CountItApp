@@ -6,7 +6,7 @@ Never lose the count again.
 Dead simple App with Apple Watch integration that lets you count anything.
 
 * Laps while exercising.
-* How much beers you drink at the pub.
+* How many beers you drink at the pub.
 * Days since you quit smoking.
 * Glasses of water you drink during the day.
 * People that enter your restaurant or  club.
