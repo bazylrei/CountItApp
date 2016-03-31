@@ -11,8 +11,14 @@ def test_pods
      pod 'Nimble'
 end
 
+def crash_pods
+    pod 'Fabric'
+    pod 'Crashlytics'
+end
+
 target 'ClickerApp' do
     core_pods
+    crash_pods
 end
 
 target 'ClickerAppTests' do

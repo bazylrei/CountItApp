@@ -557,6 +557,7 @@
 				8382994F1C8F7EFC00AC17ED /* Embed Watch Content */,
 				B04EE3421ABD2EC7235C6AC9 /* 📦 Embed Pods Frameworks */,
 				AF1547A053AA3178CC8FF4BE /* 📦 Copy Pods Resources */,
+				839C616A1CACE4BC00DF36F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -809,6 +810,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickerAppTests/Pods-ClickerAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		839C616A1CACE4BC00DF36F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3160fd05c86b98a455a64fa5c6cb284df7829cd0 4dc21e46dbfa26147a0e0c3cf9abd210d060a8c8bebb5cfc50210ae16ef41d45";
 		};
 		8B0B2DBE45A68EAA84C27CB0 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

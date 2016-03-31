@@ -1,4 +1,7 @@
 PODS:
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - Nimble (3.2.0)
   - Quick (0.9.1)
   - RxCocoa (2.3.1):
@@ -6,17 +9,21 @@ PODS:
   - RxSwift (2.3.1)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - Nimble
   - Quick
   - RxCocoa
   - RxSwift
 
 SPEC CHECKSUMS:
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
   Quick: a5221fc21788b6aeda934805e68b061839bc3165
   RxCocoa: a2baaf3462b989559a51dce59d78fbebb8fe0afa
   RxSwift: 829b2843e9eddc77a02cb3f5117f0d55f8f646f1
 
-PODFILE CHECKSUM: 7e44a249a91208ba9bfffbb7573e9f22c434bc80
+PODFILE CHECKSUM: 9dd15cf6a962a06c17879412b396986920a23739
 
 COCOAPODS: 1.0.0.beta.6
