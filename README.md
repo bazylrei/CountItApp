@@ -106,7 +106,7 @@ There are several protocols like `Dictionable` and `Timeable` that encapsulates 
 
 TODO
 -----
-* Set a Goal, count limit, so when you know when you are near your Goal
+* Set a Goal of counts, so when you know when you are near your Goal
 * Add a invert color option, so the numbers will show in color and use a black background.
 * Better code coverage
 * Improve animations on Watch
