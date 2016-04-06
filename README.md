@@ -24,6 +24,8 @@ You can also modify the look to several color options to fit your style.
 
 The step count can also be modify so you can count in higher numbers not just one by one.
 
+[![DownloadAppStore](/Web/downloadAppStore.png)](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1098893335&mt=8)
+
 Screenshots
 ---
 <img src="/Web/Screenshot1.jpg" width="250">
