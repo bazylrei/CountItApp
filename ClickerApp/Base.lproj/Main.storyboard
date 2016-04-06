@@ -337,54 +337,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h1i-zc-utS">
-                                <rect key="frame" x="140.5" y="262" width="319" height="126"/>
+                                <rect key="frame" x="25" y="262" width="550" height="126"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="1)  Install Count It in your watch. ⌚️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEL-nZ-YOX">
-                                        <rect key="frame" x="0.0" y="0.0" width="319" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="1)  Install Count It in your watch. ⌚️" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEL-nZ-YOX">
+                                        <rect key="frame" x="0.0" y="0.0" width="550" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2) Add Count It as a complication." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQz-1k-BsL">
-                                        <rect key="frame" x="0.0" y="18" width="319" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2) Add Count It as a complication." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQz-1k-BsL">
+                                        <rect key="frame" x="0.0" y="18" width="550" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3) Launch Count It on your watch." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oo0-VF-whb">
-                                        <rect key="frame" x="0.0" y="36" width="319" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3) Launch Count It on your watch." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oo0-VF-whb">
+                                        <rect key="frame" x="0.0" y="36" width="550" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4) Tap to start counting." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ii7-WW-2vI">
-                                        <rect key="frame" x="0.0" y="54" width="319" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4) Tap to start counting." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ii7-WW-2vI">
+                                        <rect key="frame" x="0.0" y="54" width="550" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5) Force press for other options." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCh-QA-ejb">
-                                        <rect key="frame" x="0.0" y="72" width="319" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5) Force press for other options." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCh-QA-ejb">
+                                        <rect key="frame" x="0.0" y="72" width="550" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6) You can also use your phone to count." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0J-P1-Vci">
-                                        <rect key="frame" x="0.0" y="90" width="319" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6) You can also use your phone to count." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0J-P1-Vci">
+                                        <rect key="frame" x="0.0" y="90" width="550" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7) Enjoy!! 😃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwo-Tm-rwD">
-                                        <rect key="frame" x="0.0" y="108" width="319" height="18"/>
+                                        <rect key="frame" x="0.0" y="108" width="550" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="h1i-zc-utS" secondAttribute="height" multiplier="362:143" id="u03-An-Bdu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="h1i-zc-utS" secondAttribute="height" multiplier="1:1" constant="400" id="u03-An-Bdu"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="u03-An-Bdu"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fJ1-6L-eo7">
                                 <rect key="frame" x="235" y="116" width="131" height="115"/>
@@ -399,7 +404,9 @@
                             <constraint firstItem="h1i-zc-utS" firstAttribute="centerX" secondItem="Uvn-Sp-qGd" secondAttribute="centerX" id="00g-gG-VPf"/>
                             <constraint firstItem="fJ1-6L-eo7" firstAttribute="centerX" secondItem="Uvn-Sp-qGd" secondAttribute="centerX" id="E3t-yT-aEv"/>
                             <constraint firstItem="fJ1-6L-eo7" firstAttribute="top" secondItem="4MF-eG-lkX" secondAttribute="bottom" constant="52" id="aG7-RT-BTW"/>
+                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="h1i-zc-utS" secondAttribute="trailing" constant="5" id="mZS-Et-K1X"/>
                             <constraint firstItem="h1i-zc-utS" firstAttribute="top" secondItem="fJ1-6L-eo7" secondAttribute="bottom" constant="31" id="tlG-og-9Up"/>
+                            <constraint firstItem="h1i-zc-utS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Uvn-Sp-qGd" secondAttribute="leadingMargin" constant="5" id="vlA-FX-RfB"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -427,7 +434,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2016 Green Pixels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8E-V7-oYJ">
-                                <rect key="frame" x="231" y="214" width="138" height="21"/>
+                                <rect key="frame" x="231" y="218.5" width="138" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="GFt-Lk-o7h"/>
                                     <constraint firstAttribute="width" constant="138" id="eOk-gw-rKP"/>
@@ -436,28 +443,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyf-mg-5zw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Vyf-mg-5zw">
                                 <rect key="frame" x="20" y="181" width="560" height="35.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Count It ">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="is brought to you by Chris Jimenez, a solo developer passioned about Open Source Software and Technology.">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvM-mv-NdD">
-                                <rect key="frame" x="236" y="243.5" width="129" height="21"/>
+                                <rect key="frame" x="236" y="247.5" width="129" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="QY5-f9-vsh"/>
                                     <constraint firstAttribute="width" constant="129" id="bSL-gM-XTo"/>
@@ -483,7 +490,7 @@
                             <constraint firstItem="Vyf-mg-5zw" firstAttribute="top" secondItem="ghd-5Y-w66" secondAttribute="bottom" constant="14" id="2Nu-xl-ISc"/>
                             <constraint firstItem="jvM-mv-NdD" firstAttribute="centerX" secondItem="PZh-fS-ZQB" secondAttribute="centerX" id="55C-dH-Ahq"/>
                             <constraint firstItem="Vyf-mg-5zw" firstAttribute="centerX" secondItem="PZh-fS-ZQB" secondAttribute="centerX" id="5GU-Xi-V5a"/>
-                            <constraint firstItem="g8E-V7-oYJ" firstAttribute="top" secondItem="Vyf-mg-5zw" secondAttribute="bottom" constant="-2" id="D35-co-9zb"/>
+                            <constraint firstItem="g8E-V7-oYJ" firstAttribute="top" secondItem="Vyf-mg-5zw" secondAttribute="bottom" constant="2" id="D35-co-9zb"/>
                             <constraint firstItem="gTh-yc-5ob" firstAttribute="centerX" secondItem="PZh-fS-ZQB" secondAttribute="centerX" id="Qih-si-fhb"/>
                             <constraint firstItem="Vyf-mg-5zw" firstAttribute="leading" secondItem="PZh-fS-ZQB" secondAttribute="leadingMargin" id="ZFB-gF-Qwb"/>
                             <constraint firstItem="ghd-5Y-w66" firstAttribute="top" secondItem="gTh-yc-5ob" secondAttribute="bottom" constant="18" id="cHn-Ws-s3R"/>
