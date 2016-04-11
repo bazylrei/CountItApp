@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites tests='4' failures='0'>
+  <testsuite name='ClickerAppUITests.ClickerTests' tests='4' failures='0'>
+    <testcase classname='ClickerAppUITests.ClickerTests' name='testDecrementClicker' time='7.352'/>
+    <testcase classname='ClickerAppUITests.ClickerTests' name='testIncrementClicker' time='6.557'/>
+    <testcase classname='ClickerAppUITests.ClickerTests' name='testResetClicker' time='5.759'/>
+    <testcase classname='ClickerAppUITests.ClickerTests' name='testSetMultiplierSettings' time='5.669'/>
+  </testsuite>
+</testsuites>

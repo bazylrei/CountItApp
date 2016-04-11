@@ -21,7 +21,7 @@ public struct Constants{
     static let githubURL = "https://github.com/PiXeL16/CountItApp"
     
      /// Rate app URL
-    static let iTunesURL = "https://itunes.apple.com/us/app/count-it-never-lose-count/id1098893335?ls=1&mt=8"
+    static let iTunesURL = "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1098893335&mt=8"
     
 
     

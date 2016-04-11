@@ -10,7 +10,7 @@ Dead simple App with Apple Watch integration that lets you count anything.
 * Days since you quit smoking.
 * Glasses of water you drink during the day.
 * People that enter your restaurant or  club.
-* Sheeps while you sleep 😜
+* Sheep while you sleep 😜
 
 Count It has two way communication between the App and the Watch, meaning that you can start your count on your Watch and continue it on your Phone and vice versa.
 
