@@ -32,7 +32,7 @@
                     </items>
                     <menu key="menu" id="gNM-wK-N5b">
                         <items>
-                            <menuItem title="Substract" image="substractIcon" id="dyY-WH-aqS">
+                            <menuItem title="Subtract" image="substractIcon" id="dyY-WH-aqS">
                                 <connections>
                                     <action selector="substractMenuTouched" destination="AgC-eL-Hgc" id="K1F-Ng-nmJ"/>
                                 </connections>

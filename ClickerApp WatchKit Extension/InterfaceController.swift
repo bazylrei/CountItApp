@@ -118,7 +118,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     /**
-     Substract the counter
+     Subtract the counter
      */
     @IBAction func substractMenuTouched() {
         
