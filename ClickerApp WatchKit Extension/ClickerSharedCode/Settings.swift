@@ -17,11 +17,15 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     /// The increment multiplier, defaults to 1
     public var incrementMultiplier : Int  = 1
     
+    /// Inverts the colors and the background, defaults to false
+    public var invertColors: Bool = false
+    
     // Storage and dictionary keys
     enum DictionaryKeys{
         
          static let color = "color"
          static let incrementMultiples = "incrementMultiplier"
+         static let invertColors = "invertColors"
     }
     
     /**
@@ -50,6 +54,10 @@ public class Settings: NSObject, NSCoding, Dictionatable {
         if let incrementsMultiples = dictionary[DictionaryKeys.incrementMultiples] as? Int {
             self.incrementMultiplier = incrementsMultiples
         }
+        
+        if let invertColors = dictionary[DictionaryKeys.invertColors] as? Bool {
+            self.invertColors = invertColors
+        }
     }
     
     /**
@@ -60,7 +68,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     public func toDictionary() -> [String : AnyObject]
     {
         
-        return [DictionaryKeys.color : self.color.rawValue, DictionaryKeys.incrementMultiples : self.incrementMultiplier]
+        return [DictionaryKeys.color : self.color.rawValue, DictionaryKeys.incrementMultiples : self.incrementMultiplier, DictionaryKeys.invertColors: self.invertColors]
     }
     
     /**
@@ -77,6 +85,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
         
         self.incrementMultiplier = decoder.decodeIntegerForKey(DictionaryKeys.incrementMultiples)
         
+        self.invertColors = Bool.fromInt(decoder.decodeIntegerForKey(DictionaryKeys.invertColors))
         
         super.init()
     }
@@ -89,6 +98,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     public func encodeWithCoder(coder: NSCoder) {
         coder.encodeObject(self.color.rawValue, forKey: DictionaryKeys.color)
         coder.encodeInt(Int32(self.incrementMultiplier), forKey: DictionaryKeys.incrementMultiples)
+        coder.encodeInt(Int32(self.invertColors.intValue), forKey: DictionaryKeys.invertColors)
     }
     
 }
