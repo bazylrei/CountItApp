@@ -63,6 +63,25 @@ class SettingsViewModelSpecs: QuickSpec {
                 expect(color).toEventuallyNot(equal(""),timeout:2)
                 
             }
+            
+            it("Invert Colors"){
+                
+                var color = ClickerColors.RedColor.uiColor
+                
+                self.viewModel.settingsChangedDriver
+                    .map { $0.backgroundColor }
+                    .driveNext{ colorIn in
+                        
+                        color = colorIn
+                        
+                    }.addDisposableTo(self.disposeBag)
+                
+                
+                self.viewModel.setInvertColors(true)
+                
+                expect(color).toEventuallyNot(equal(ClickerColors.RedColor.uiColor),timeout:2)
+                
+            }
         }
     }
 }

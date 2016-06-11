@@ -102,3 +102,20 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     }
     
 }
+
+// MARK: - Background and tint color functionality
+extension Settings{
+    
+    public var tintColor : UIColor{
+        
+        return self.invertColors ? self.color.uiColor : ClickerColors.BlackColor.uiColor
+        
+    }
+    
+    public var backgroundColor: UIColor {
+        
+        return self.invertColors ? ClickerColors.BlackColor.uiColor : self.color.uiColor
+    }
+    
+    
+}

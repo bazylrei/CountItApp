@@ -17,6 +17,7 @@ public enum ClickerColors : String{
     case BlueColor   = "1EEFC9"
     case YellowColor = "FDF855"
     case GreenColor  = "A2FB09"
+    case BlackColor  = "000000"
     
     /// Gets the UIColor 
     public var uiColor: UIColor{
