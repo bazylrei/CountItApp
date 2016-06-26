@@ -63,6 +63,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.0" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="9Ef-lf-58C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6uq-bO-4iT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xHC-Vw-DCA" secondAttribute="bottom" id="99T-LS-QZh"/>
@@ -70,6 +71,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="xHC-Vw-DCA" secondAttribute="trailing" constant="-20" id="QPI-mK-Prx"/>
                             <constraint firstItem="xHC-Vw-DCA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="XC7-PT-APy"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="t3u-jM-TBS" appends="YES" id="dB5-Jk-BRZ"/>
+                            <outletCollection property="gestureRecognizers" destination="GtM-BE-Ewn" appends="YES" id="8KI-vU-KGW"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Count It" id="Soe-KL-mBZ">
                         <barButtonItem key="rightBarButtonItem" image="settingIcon" id="2Pc-1L-QZj">
@@ -85,6 +90,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="t3u-jM-TBS" userLabel="Swipe Down">
+                    <connections>
+                        <action selector="clickerDecrementTouched:" destination="BYZ-38-t0r" id="bQq-4u-qyj"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="GtM-BE-Ewn" userLabel="Swipe Up">
+                    <connections>
+                        <action selector="clickerIncrementTouched:" destination="BYZ-38-t0r" id="GaP-eJ-5ha"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1929" y="389"/>
         </scene>

@@ -26,15 +26,43 @@ class MainScreenTests: XCTestCase {
     assertCurrentCount(equals: 0, app: app)
   }
 
-  func testIncrementClicker() {
+  func testIncrementClickerByTapping() {
     increaseCount(times: 1, app: app)
 
     assertCurrentCount(equals: 1, app: app)
   }
 
-  func testDecrementClicker() {
+  func testIncrementClickerBySwiping() {
+    increaseCount(times: 2, app: app, byTapping: false)
+
+    assertCurrentCount(equals: 2, app: app)
+  }
+
+  func testIncrementClickerCombiningInteractions() {
+    increaseCount(times: 1, app: app)
+    increaseCount(times: 1, app: app, byTapping: false)
+
+    assertCurrentCount(equals: 2, app: app)
+  }
+
+  func testDecrementClickerByTapping() {
     increaseCount(times: 2, app: app)
     decreaseCount(times: 1, app: app)
+
+    assertCurrentCount(equals: 1, app: app)
+  }
+
+  func testDecrementClickerBySwiping() {
+    increaseCount(times: 2, app: app)
+    decreaseCount(times: 1, app: app, byTapping: false)
+
+    assertCurrentCount(equals: 1, app: app)
+  }
+
+  func testDecrementClickerCombiningInteractions() {
+    increaseCount(times: 3, app: app)
+    decreaseCount(times: 1, app: app)
+    decreaseCount(times: 1, app: app, byTapping: false)
 
     assertCurrentCount(equals: 1, app: app)
   }
