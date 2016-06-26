@@ -9,18 +9,34 @@
 import Foundation
 import XCTest
 
-class SettingSCreenTests: XCTestCase {
+class SettingScreenTests: XCTestCase {
   var app = XCUIApplication()
 
   override func setUp() {
     super.setUp()
     continueAfterFailure = false
     app.launch()
-    resetMultiplier(app: app)
-    resetCount(app: app)
   }
 
-  func testSetMultiplierSettings() {
+  func testBasicUI() {
+    resetMultiplier(app: app)
+    visitSettingsScreen(app: app)
+    XCTAssertTrue(app.tables.cells.staticTexts["Increment by 1"].exists)
+    XCTAssertTrue(app.tables.cells.staticTexts["Color"].exists)
+    ["redButton", "blueButton", "greenButton", "yellowButton"].forEach { identifier in
+      XCTAssertTrue(app.buttons[identifier].exists)
+    }
+    XCTAssertTrue(app.tables.cells.staticTexts["Apple Watch Help"].exists)
+    XCTAssertTrue(app.tables.cells.staticTexts["Rate"].exists)
+    XCTAssertTrue(app.tables.cells.staticTexts["Follow me on Twitter"].exists)
+    XCTAssertTrue(app.tables.cells.staticTexts["Github project page"].exists)
+    XCTAssertTrue(app.tables.cells.staticTexts["About"].exists)
+  }
+
+  func testChangeMultiplier() {
+    resetMultiplier(app: app)
+    resetCount(app: app)
+
     visitSettingsScreen(app: app)
     XCTAssertTrue(app.navigationBars["Settings"].exists)
 
@@ -35,4 +51,20 @@ class SettingSCreenTests: XCTestCase {
     visitSettingsScreen(app: app)
     XCTAssert(app.staticTexts["Increment by 2"].exists)
   }
+
+  func testChangeColor() {
+    visitSettingsScreen(app: app)
+
+    let yellowButton = app.buttons["yellowButton"]
+    yellowButton.tap()
+
+    XCTAssertTrue(yellowButton.selected)
+
+    let blueButton = app.buttons["blueButton"]
+    blueButton.tap()
+    
+    XCTAssertTrue(blueButton.selected)
+    XCTAssertFalse(yellowButton.selected)
+  }
+
 }

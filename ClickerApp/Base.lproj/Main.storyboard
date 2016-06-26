@@ -117,6 +117,7 @@
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Increment by 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkv-AT-kRL">
                                                     <rect key="frame" x="14" y="12" width="112" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="multiplierLabel"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="GbO-4X-WtS"/>
                                                     </constraints>
@@ -145,28 +146,44 @@
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSB-9S-gSk" customClass="ColorPickerButton" customModule="ClickerApp" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
-                                                            <state key="normal" title="Red Color"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="redButton"/>
+                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <state key="normal" title="Red Color">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
                                                             <connections>
                                                                 <action selector="redButtonTouched:" destination="5Wo-Nf-qLe" eventType="touchUpInside" id="or1-iD-4zq"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knc-Y0-aPB" customClass="ColorPickerButton" customModule="ClickerApp" customModuleProvider="target">
                                                             <rect key="frame" x="130" y="0.0" width="120" height="35"/>
-                                                            <state key="normal" title="Blue Color"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="blueButton"/>
+                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <state key="normal" title="Blue Color">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
                                                             <connections>
                                                                 <action selector="blueButtonTouched:" destination="5Wo-Nf-qLe" eventType="touchUpInside" id="3AP-4i-u9i"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yB0-Pa-xau" customClass="ColorPickerButton" customModule="ClickerApp" customModuleProvider="target">
                                                             <rect key="frame" x="260" y="0.0" width="120" height="35"/>
-                                                            <state key="normal" title="Green Color"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="greenButton"/>
+                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <state key="normal" title="Green Color">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
                                                             <connections>
                                                                 <action selector="greenButtonTouched:" destination="5Wo-Nf-qLe" eventType="touchUpInside" id="UrT-qn-ffi"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeM-o3-XS2" customClass="ColorPickerButton" customModule="ClickerApp" customModuleProvider="target">
                                                             <rect key="frame" x="390" y="0.0" width="119" height="35"/>
-                                                            <state key="normal" title="Yellow Color"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="yellowButton"/>
+                                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <state key="normal" title="Yellow Color">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
                                                             <connections>
                                                                 <action selector="yellowButtonTouched:" destination="5Wo-Nf-qLe" eventType="touchUpInside" id="jKQ-Un-AP0"/>
                                                             </connections>

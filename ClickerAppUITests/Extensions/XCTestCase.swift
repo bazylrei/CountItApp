@@ -10,12 +10,6 @@ import Foundation
 import XCTest
 
 extension XCTestCase {
-  func tap(button button: XCUIElement, times: Int = 1) {
-    for _ in 1...times {
-      button.tap()
-    }
-  }
-
   func visitSettingsScreen(app app: XCUIApplication) {
     guard !app.navigationBars["Settings"].exists else { return }
 
@@ -30,13 +24,13 @@ extension XCTestCase {
 
   func increaseCount(times times: Int = 1, app: XCUIApplication) {
     let incrementCountButton = app.buttons["incrementCount"]
-    tap(button: incrementCountButton, times: times)
+    incrementCountButton.tapWithNumberOfTaps(UInt(times), numberOfTouches: 1)
   }
 
   func decreaseCount(times times: Int = 1, app: XCUIApplication) {
     let bottomToolbar = app.toolbars.elementBoundByIndex(0)
     let decreaseButton = bottomToolbar.buttons.elementBoundByIndex(1)
-    tap(button: decreaseButton, times: times)
+    decreaseButton.tapWithNumberOfTaps(UInt(times), numberOfTouches: 1)
   }
 
   func assertCurrentCount(equals equals: Int, app: XCUIApplication) {
@@ -71,7 +65,7 @@ extension XCTestCase {
     }
 
     while !app.staticTexts["Increment by 1"].exists {
-      tap(button: app.tables.buttons["Decrement"])
+      app.tables.buttons["Decrement"].tap()
     }
     
     visitMainScreen(app: app)
