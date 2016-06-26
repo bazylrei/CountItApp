@@ -77,10 +77,10 @@
 		83E0E36A1CA3967F000AB0B0 /* ClickerViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E3691CA3967F000AB0B0 /* ClickerViewModelSpecs.swift */; };
 		83E0E36C1CA39849000AB0B0 /* SettingsViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E36B1CA39849000AB0B0 /* SettingsViewModelSpecs.swift */; };
 		83E0E36E1CA5CA22000AB0B0 /* ClickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E36D1CA5CA22000AB0B0 /* ClickerTests.swift */; };
-		83E0E3701CA5CF38000AB0B0 /* Delayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0E36F1CA5CF38000AB0B0 /* Delayer.swift */; };
 		83F816621C9124BB00773DF3 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287671C8FF1CB00F5D92D /* DataStorage.swift */; };
 		83FE52211C97ADAA00246976 /* UIColor-Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE52201C97ADAA00246976 /* UIColor-Hex.swift */; };
 		83FE52221C97ADAA00246976 /* UIColor-Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE52201C97ADAA00246976 /* UIColor-Hex.swift */; };
+		B314B5211D1F936D002DB2F7 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B314B5201D1F936D002DB2F7 /* XCTestCase.swift */; };
 		DD8C2ECD4282FCD5B1FEE5A1 /* Pods_ClickerApp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D40C74E2EDDF32A48E4A17B /* Pods_ClickerApp_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
@@ -207,9 +207,9 @@
 		83E0E3691CA3967F000AB0B0 /* ClickerViewModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerViewModelSpecs.swift; sourceTree = "<group>"; };
 		83E0E36B1CA39849000AB0B0 /* SettingsViewModelSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModelSpecs.swift; sourceTree = "<group>"; };
 		83E0E36D1CA5CA22000AB0B0 /* ClickerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickerTests.swift; sourceTree = "<group>"; };
-		83E0E36F1CA5CF38000AB0B0 /* Delayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delayer.swift; sourceTree = "<group>"; };
 		83FE52201C97ADAA00246976 /* UIColor-Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Hex.swift"; sourceTree = "<group>"; };
 		8A21CB43E118CC9D93B2B35E /* Pods_ClickerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B314B5201D1F936D002DB2F7 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XCTestCase.swift; path = Extensions/XCTestCase.swift; sourceTree = "<group>"; };
 		BD199217418770747E15F955 /* Pods-ClickerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppUITests/Pods-ClickerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D1887DDB0D450CAE2AE986BD /* Pods_ClickerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickerAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9DC749CE939B06F7B63EBD /* Pods-ClickerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickerAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickerAppTests/Pods-ClickerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -441,7 +441,7 @@
 			children = (
 				838299201C8F7EFC00AC17ED /* Info.plist */,
 				83E0E36D1CA5CA22000AB0B0 /* ClickerTests.swift */,
-				83E0E36F1CA5CF38000AB0B0 /* Delayer.swift */,
+				B314B5201D1F936D002DB2F7 /* XCTestCase.swift */,
 			);
 			path = ClickerAppUITests;
 			sourceTree = "<group>";
@@ -1009,7 +1009,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83E0E3701CA5CF38000AB0B0 /* Delayer.swift in Sources */,
+				B314B5211D1F936D002DB2F7 /* XCTestCase.swift in Sources */,
 				83E0E36E1CA5CA22000AB0B0 /* ClickerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,83 +9,98 @@
 import XCTest
 
 class ClickerTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-       
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-        
-        /**
-         Give focus to the current view
-         Dont know why I have to do thi
-         
-         - returns: <#return value description#>
-         */
-        XCUIApplication().otherElements.containingType(.NavigationBar, identifier:"Count It").childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.tap()
+  var app = XCUIApplication()
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testSetMultiplierSettings(){
-        
-        let app = XCUIApplication()
-        app.navigationBars["Count It"].buttons["settingIcon"].tap()
-        
-        let tablesQuery = app.tables
-        let incrementButton = tablesQuery.buttons["Increment"]
-        incrementButton.tap()
-        let decrementButton = tablesQuery.buttons["Decrement"]
-        decrementButton.tap()
-        
-        XCTAssert(app.staticTexts["Increment by 5"].exists)
-        
-        
-       
+  override func setUp() {
+    super.setUp()
+    continueAfterFailure = false
+    app.launch()
+    resetMultiplier()
+    resetCount()
+  }
+
+  func testSetMultiplierSettings() {
+    visitSettingsScreen(app: app)
+    XCTAssertTrue(app.navigationBars["Settings"].exists)
+
+    app.tables.buttons["Increment"].tap()
+
+    visitMainScreen(app: app)
+    XCTAssertTrue(app.navigationBars["Count It"].exists)
+
+    increaseCount(times: 1)
+    assertCurrentCount(equals: 2)
+
+    visitSettingsScreen(app: app)
+    XCTAssert(app.staticTexts["Increment by 2"].exists)
+  }
+
+  func testReset() {
+    increaseCount(times: 1)
+    resetCount()
+
+    assertCurrentCount(equals: 0)
+  }
+
+  func testIncrementClicker() {
+    increaseCount(times: 1)
+
+    assertCurrentCount(equals: 1)
+  }
+
+  func testDecrementClicker() {
+    increaseCount(times: 2)
+    decreaseCount(times: 1)
+
+    assertCurrentCount(equals: 1)
+  }
+
+  private func increaseCount(times times: Int = 1) {
+    let incrementCountButton = app.buttons["incrementCount"]
+    tap(button: incrementCountButton, times: times)
+  }
+
+  private func decreaseCount(times times: Int = 1) {
+    let bottomToolbar = app.toolbars.elementBoundByIndex(0)
+    let decreaseButton = bottomToolbar.buttons.elementBoundByIndex(1)
+    tap(button: decreaseButton, times: times)
+  }
+
+  private func assertCurrentCount(equals equals: Int) {
+    XCTAssertEqual(getCurrentCount(), equals)
+  }
+
+  private func getCurrentCount() -> Int {
+    return Int(app.staticTexts["currentCount"].label)!
+  }
+
+  private func resetCount() {
+    visitMainScreen(app: app)
+
+    guard getCurrentCount() != 0 else { return }
+
+    let bottomToolbar = app.toolbars.elementBoundByIndex(0)
+    let resetButton = bottomToolbar.buttons.elementBoundByIndex(0)
+
+    resetButton.tap()
+
+    let resetAlert = app.alerts["Count It"]
+    let okayButton = resetAlert.buttons["Ok"]
+    okayButton.tap()
+  }
+
+  private func resetMultiplier() {
+    visitSettingsScreen(app: app)
+
+    guard !app.staticTexts["Increment by 1"].exists else {
+      visitMainScreen(app: app)
+      return
     }
 
-    func testResetClicker(){
-        
-        let app = XCUIApplication()
-        app.toolbars.buttons["ic clear 36pt"].tap()
-        app.alerts["Count It"].collectionViews.buttons["Ok"].tap()
-        
-        XCTAssert(app.staticTexts["0"].exists)
-        
+    while !app.staticTexts["Increment by 1"].exists {
+      tap(button: app.tables.buttons["Decrement"])
     }
-    
-    func testIncrementClicker(){
-        
-        testResetClicker()
-        
-        let app = XCUIApplication()
-        XCUIApplication().buttons["incrementCount"].tap()
-        XCTAssert(app.staticTexts["5"].exists)
-        
-    }
-    
-    
-    func testDecrementClicker(){
-        
-        testResetClicker()
-        
-        
-        let app = XCUIApplication()
-        app.toolbars.buttons["ic remove 36pt"].tap()
-        app.buttons["incrementCount"].tap()
-        XCTAssert(app.staticTexts["0"].exists)
-        
-    }
-    
-    
 
+    visitMainScreen(app: app)
+  }
 }
