@@ -6,7 +6,7 @@ env:
   - LANG=en_US.UTF-8
 before_install:
   - bundle update
-  - bundle exec pod install
+  - bundle exec pod update
 install: true
 script:
   - set -o pipefail
