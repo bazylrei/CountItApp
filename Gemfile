@@ -10,4 +10,4 @@ gem 'label'
 gem 'cocoapods-deintegrate'
 
 #Fastlane for releases and general awesomeness
-gem 'fastlane'
+gem 'fastlane', '1.96.0'

@@ -4,12 +4,12 @@
     <testcase classname='ClickerAppTests.AlertControllerBuilderSpecs' name='build_valid_alert_controller' time='0.008'/>
   </testsuite>
   <testsuite name='ClickerAppTests.BooleanExtensionSpecs' tests='2' failures='0'>
-    <testcase classname='ClickerAppTests.BooleanExtensionSpecs' name='Boolean_extensions__can_convert_from_boolean_fo_int' time='0.001'/>
+    <testcase classname='ClickerAppTests.BooleanExtensionSpecs' name='Boolean_extensions__can_convert_from_boolean_fo_int' time='0.000'/>
     <testcase classname='ClickerAppTests.BooleanExtensionSpecs' name='Boolean_extensions__can_convert_a_int_into_bool' time='0.001'/>
   </testsuite>
   <testsuite name='ClickerAppTests.ClickerAppTests' tests='2' failures='0'>
     <testcase classname='ClickerAppTests.ClickerAppTests' name='testExample' time='0.000'/>
-    <testcase classname='ClickerAppTests.ClickerAppTests' name='testPerformanceExample' time='0.309'/>
+    <testcase classname='ClickerAppTests.ClickerAppTests' name='testPerformanceExample' time='0.269'/>
   </testsuite>
   <testsuite name='ClickerAppTests.ClickerColorSpecs' tests='1' failures='0'>
     <testcase classname='ClickerAppTests.ClickerColorSpecs' name='Basic_color_functionality__Get_UI_Color' time='0.001'/>
@@ -19,9 +19,9 @@
     <testcase classname='ClickerAppTests.ClickerSpecs' name='Clicker_functionality__decrement_clicker' time='0.001'/>
     <testcase classname='ClickerAppTests.ClickerSpecs' name='Clicker_functionality__reset_clicker' time='0.001'/>
     <testcase classname='ClickerAppTests.ClickerSpecs' name='Clicker_functionality__get_description' time='0.001'/>
-    <testcase classname='ClickerAppTests.ClickerSpecs' name='Clicker_functionality__get_description_2' time='0.000'/>
+    <testcase classname='ClickerAppTests.ClickerSpecs' name='Clicker_functionality__get_description_2' time='0.001'/>
     <testcase classname='ClickerAppTests.ClickerSpecs' name='Clicker_functionality__gets_dictionary' time='0.002'/>
-    <testcase classname='ClickerAppTests.ClickerSpecs' name='Clicker_functionality__sets_dictionary' time='0.001'/>
+    <testcase classname='ClickerAppTests.ClickerSpecs' name='Clicker_functionality__sets_dictionary' time='0.002'/>
     <testcase classname='ClickerAppTests.ClickerSpecs' name='Clicker_functionality__compares_clickers' time='0.001'/>
     <testcase classname='ClickerAppTests.ClickerSpecs' name='Clicker_functionality__Clicker_are_equals' time='0.001'/>
   </testsuite>
@@ -42,8 +42,8 @@
   </testsuite>
   <testsuite name='ClickerAppTests.SettingsViewModelSpecs' tests='3' failures='0'>
     <testcase classname='ClickerAppTests.SettingsViewModelSpecs' name='Settings_ViewModel_Functionality__Change_settings__increment_multiplier' time='0.003'/>
-    <testcase classname='ClickerAppTests.SettingsViewModelSpecs' name='Settings_ViewModel_Functionality__Change_settings__change_color' time='0.003'/>
-    <testcase classname='ClickerAppTests.SettingsViewModelSpecs' name='Settings_ViewModel_Functionality__Invert_Colors' time='0.004'/>
+    <testcase classname='ClickerAppTests.SettingsViewModelSpecs' name='Settings_ViewModel_Functionality__Change_settings__change_color' time='0.009'/>
+    <testcase classname='ClickerAppTests.SettingsViewModelSpecs' name='Settings_ViewModel_Functionality__Invert_Colors' time='0.003'/>
   </testsuite>
   <testsuite name='ClickerAppTests.StringExtensionSpecs' tests='1' failures='0'>
     <testcase classname='ClickerAppTests.StringExtensionSpecs' name='String_extensions__get_valid_localized_string' time='0.001'/>
@@ -60,9 +60,9 @@
     <testcase classname='ClickerAppTests.WatchComplicationManagerSpecs' name='build_valid_complication_manager' time='0.001'/>
   </testsuite>
   <testsuite name='ClickerAppUITests.ClickerTests' tests='4' failures='0'>
-    <testcase classname='ClickerAppUITests.ClickerTests' name='testDecrementClicker' time='6.436'/>
-    <testcase classname='ClickerAppUITests.ClickerTests' name='testIncrementClicker' time='5.878'/>
-    <testcase classname='ClickerAppUITests.ClickerTests' name='testResetClicker' time='4.893'/>
-    <testcase classname='ClickerAppUITests.ClickerTests' name='testSetMultiplierSettings' time='4.668'/>
+    <testcase classname='ClickerAppUITests.ClickerTests' name='testDecrementClicker' time='6.410'/>
+    <testcase classname='ClickerAppUITests.ClickerTests' name='testIncrementClicker' time='5.537'/>
+    <testcase classname='ClickerAppUITests.ClickerTests' name='testResetClicker' time='4.662'/>
+    <testcase classname='ClickerAppUITests.ClickerTests' name='testSetMultiplierSettings' time='4.629'/>
   </testsuite>
 </testsuites>
