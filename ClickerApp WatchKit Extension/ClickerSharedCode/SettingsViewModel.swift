@@ -106,6 +106,18 @@ public class SettingsViewModel: NSObject {
     }
     
     /**
+     Sets the invert color settings property
+     
+     - parameter value: if inverting colors or not
+     */
+    public func setInvertColors(value: Bool){
+        
+        settings.invertColors = value
+        
+        saveAndUpdate()
+    }
+    
+    /**
      Save the settings to dataStorage and update the application context with the information of the settings
      */
     private func saveAndUpdate()
@@ -144,6 +156,7 @@ public class SettingsViewModel: NSObject {
     
 }
 
+// MARK: - application context delegate extension
 extension SettingsViewModel: ApplicationContextChangedDelegate{
     
     
@@ -160,4 +173,8 @@ extension SettingsViewModel: ApplicationContextChangedDelegate{
     }
     
 }
+
+
+
+
 

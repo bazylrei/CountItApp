@@ -23,6 +23,8 @@ class SettingsViewController: UITableViewController {
     
     @IBOutlet weak var incrementStepper: UIStepper!
     
+    @IBOutlet weak var invertColorSwitch: UISwitch!
+    
     @IBOutlet weak var incrementLabel: UILabel!
 
     let viewModel: SettingsViewModel = SettingsViewModel()
@@ -67,6 +69,7 @@ class SettingsViewController: UITableViewController {
         viewModel.settingsChangedDriver.driveNext{ [weak self ]settings in
             
             self?.incrementStepper.tintColor = settings.color.uiColor.darkerColor()
+            self?.invertColorSwitch.onTintColor = settings.color.uiColor
             
             }.addDisposableTo(disposeBag)
         
@@ -79,6 +82,16 @@ class SettingsViewController: UITableViewController {
             
             }.drive(incrementStepper.rx_value)
             .addDisposableTo(disposeBag)
+        
+        /**
+         *  If the settings are change, map the value to the invert color switch
+         */
+        viewModel.settingsChangedDriver.map{
+            
+            return Bool($0.invertColors)
+            
+        }.drive(invertColorSwitch.rx_value)
+        .addDisposableTo(disposeBag)
         
         
         /**
@@ -124,10 +137,20 @@ class SettingsViewController: UITableViewController {
     @IBAction func stepperChanged(sender: UIStepper) {
         
         viewModel.setIncrementsMultiple(Int(sender.value))
-        
-        
     }
     
+    
+    /**
+     When the switch is changed
+     
+     - parameter sender: <#sender description#>
+     */
+    @IBAction func invertColorChanged(sender: UISwitch) {
+        //TODO: Change this event to RX instead
+        
+        viewModel.setInvertColors(sender.on)
+        
+    }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         

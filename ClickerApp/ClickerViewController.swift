@@ -52,14 +52,15 @@ class ClickerViewController: UIViewController {
             /**
             Updates color based on the settings selected
             */
-            self?.view.backgroundColor = settings.color.uiColor
+            self?.view.backgroundColor = settings.backgroundColor
             self?.navigationController?.navigationBar.tintColor = settings.color.uiColor
             self?.toolbar.tintColor = settings.color.uiColor
             self?.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: settings.color.uiColor]
+            self?.clickerCountLabel.textColor = settings.tintColor
             
-            /**
-            Updates the multipier
-            */
+            self?.clickerButton.setTitleColor(settings.tintColor, forState: UIControlState.Normal)
+            
+            
             self?.multiplier = settings.incrementMultiplier
             
 

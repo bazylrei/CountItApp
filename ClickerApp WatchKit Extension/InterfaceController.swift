@@ -22,6 +22,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var clickerCountButton: WKInterfaceButton!
     
+    @IBOutlet var clickerAddLabel: WKInterfaceLabel!
     //RX dispose and observers
     var disposeBag = DisposeBag()
     
@@ -67,7 +68,9 @@ class InterfaceController: WKInterfaceController {
                         //Add an animation for the transition
                         self?.animateWithDuration(1, animations: { () -> Void in
                                 
-                            self?.backgroundContainer.setBackgroundColor(settings.color.uiColor)
+                            self?.backgroundContainer.setBackgroundColor(settings.backgroundColor)
+                            self?.clickerCountLabel.setTextColor(settings.tintColor)
+                            self?.clickerAddLabel.setTextColor(settings.tintColor)
                         });
                             
                     self?.incrementMultiplier = settings.incrementMultiplier
