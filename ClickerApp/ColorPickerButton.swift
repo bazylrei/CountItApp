@@ -46,7 +46,9 @@ public class ColorPickerButton: UIButton {
         layer.backgroundColor = color.CGColor
         
         setTitle("", forState: UIControlState.Normal)
-        
+
+        setTitle("✔", forState: UIControlState.Selected)
+        setTitleColor(UIColor.blackColor(), forState: UIControlState.Selected)
     }
     
 }

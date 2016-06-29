@@ -70,7 +70,8 @@ class SettingsViewController: UITableViewController {
             
             self?.incrementStepper.tintColor = settings.color.uiColor.darkerColor()
             self?.invertColorSwitch.onTintColor = settings.color.uiColor
-            
+            self?.enableCurrentColor(settings)
+
             }.addDisposableTo(disposeBag)
         
         /**
@@ -113,25 +114,24 @@ class SettingsViewController: UITableViewController {
     
     
     @IBAction func yellowButtonTouched(sender: AnyObject) {
-        
-        viewModel.setColor(ClickerColors.YellowColor)
+
+      changeModelColor(yellowButton, color: ClickerColors.YellowColor)
     }
     
 
     @IBAction func blueButtonTouched(sender: AnyObject) {
         
-        viewModel.setColor(ClickerColors.BlueColor)
+      changeModelColor(blueButton, color: ClickerColors.BlueColor)
     }
     
     @IBAction func greenButtonTouched(sender: AnyObject) {
-        
-         viewModel.setColor(ClickerColors.GreenColor)
-        
+
+      changeModelColor(greenButton, color: ClickerColors.GreenColor)
     }
     
     @IBAction func redButtonTouched(sender: AnyObject) {
-        
-         viewModel.setColor(ClickerColors.RedColor)
+
+      changeModelColor(redButton, color: ClickerColors.RedColor)
     }
     
     @IBAction func stepperChanged(sender: UIStepper) {
@@ -194,6 +194,17 @@ class SettingsViewController: UITableViewController {
         UIApplication.sharedApplication().openURL(NSURL(string: Constants.githubURL)!)
     }
     
-    
+    private func changeModelColor(button: ColorPickerButton, color: ClickerColors) {
+      [yellowButton, redButton, greenButton, blueButton].forEach { $0.selected = false }
+      button.selected = true
+      viewModel.setColor(color)
+    }
+
+    private func enableCurrentColor(settings: Settings) {
+      redButton.selected = settings.color == ClickerColors.RedColor
+      yellowButton.selected = settings.color == ClickerColors.YellowColor
+      greenButton.selected = settings.color == ClickerColors.GreenColor
+      blueButton.selected = settings.color == ClickerColors.BlueColor
+    }
 
 }

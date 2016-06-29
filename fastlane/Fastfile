@@ -23,8 +23,8 @@ platform :ios do
   end
 
   desc "Runs all the tests"
-  lane :test do
-    scan
+  lane :test do |options|
+    scan(scheme: options[:scheme] || "ClickerApp")
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
