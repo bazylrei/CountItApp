@@ -18,7 +18,7 @@ public class Settings: NSObject, NSCoding, Dictionatable {
     public var incrementMultiplier : Int  = 1
     
     /// Inverts the colors and the background, defaults to false
-    public var invertColors: Bool = false
+    public var invertColors: Bool = true
     
     // Storage and dictionary keys
     enum DictionaryKeys{

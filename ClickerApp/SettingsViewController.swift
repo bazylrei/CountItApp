@@ -200,6 +200,11 @@ class SettingsViewController: UITableViewController {
       viewModel.setColor(color)
     }
 
+    /**
+     Selects the current selected color
+     
+     - parameter settings: <#settings description#>
+     */
     private func enableCurrentColor(settings: Settings) {
       redButton.selected = settings.color == ClickerColors.RedColor
       yellowButton.selected = settings.color == ClickerColors.YellowColor
