@@ -48,6 +48,29 @@ Watch Screenshots
 
 The Code
 ---
+
+### Installation
+
+This project comes with a `Makefile` to simplify the onboarding of the project.
+
+To bootstrap the project just clone the repo, navigate to the root directory on terminal and run the following command:
+
+```console
+make bootstrap
+```
+
+This will install all the gems specified in the `Gemfile` as well as installing all the dependencies specified by the `Podfile`.
+
+In case `bundler` is not detected the `Makefile` target will fail.
+
+There are multiple targets supported by the `Makefile` which can be easily know by running:
+
+```console
+make help
+```
+
+### Details
+
 The idea of the app was to just play with WatchKit 2 and try to create something in a couple of days.
 
 Perhaps, one of the most interesting parts its the two way communication between the App and the Watch.
