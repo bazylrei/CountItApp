@@ -9,7 +9,7 @@ Dead simple App with Apple Watch integration that lets you count anything.
 * How many beers you drink at the pub.
 * Days since you quit smoking.
 * Glasses of water you drink during the day.
-* People that enter your restaurant or  club.
+* People that enter your restaurant or club.
 * Sheep while you sleep 😜
 
 Count It has two way communication between the App and the Watch, meaning that you can start your count on your Watch and continue it on your Phone and vice versa.
@@ -71,7 +71,7 @@ make help
 
 ### Details
 
-The idea of the app was to just play with WatchKit 2 and try to create something in a couple of days.
+The idea of the app was to play with WatchKit 2 and try to create something in a couple of days.
 
 Perhaps, one of the most interesting parts its the two way communication between the App and the Watch.
 
@@ -129,15 +129,14 @@ There are several protocols like `Dictionable` and `Timeable` that encapsulates 
 
 TODO
 -----
-* Set a Goal of counts, so when you know when you are near your Goal
-* Add a invert color option, so the numbers will show in color and use a black background.
+* Set a Goal of counts, so you know when you are near your Goal.
 * Better code coverage
 * Improve animations on Watch
 * Watch UI Testing (Not supported by Apple)
 
 :alien: Author
 ------
-Chris Jimenez - http://chrisjimenez.net, [@chrisjimeneznat](http://twitter.com/chrisjimeneznat)
+Chris Jimenez - http://code.chrisjimenez.net, [@chrisjimeneznat](http://twitter.com/chrisjimeneznat)
 
 ## License
 `Count It` is released under the MIT license. See [LICENSE](https://github.com/pixel16/CountItApp/blob/master/LICENSE) for details.
