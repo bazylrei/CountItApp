@@ -1,6 +1,8 @@
 ![Banner](/Web/banner.png)
 [![Build Status](https://travis-ci.org/PiXeL16/CountItApp.svg?branch=master)](https://travis-ci.org/PiXeL16/CountItApp/) [![codecov.io](https://codecov.io/github/PiXeL16/CountItApp/coverage.svg?branch=master)](https://codecov.io/github/PiXeL16/CountItApp?branch=master) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/PiXeL16/CountItApp/master/LICENSE)
 
+[![DownloadAppStore](/Web/appstorebadge.png)](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1098893335&mt=8)
+
 # Count It
 Never lose the count again.
 Dead simple App with Apple Watch integration that lets you count anything.
@@ -24,7 +26,6 @@ You can also modify the look to several color options to fit your style.
 
 The step count can also be modify so you can count in higher numbers not just one by one.
 
-[![DownloadAppStore](/Web/downloadAppStore.png)](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1098893335&mt=8)
 
 Screenshots
 ---
